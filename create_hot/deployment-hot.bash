@@ -10,7 +10,7 @@ if [ "$SUB_COMMAND" = "create" ]; then
   openstack stack create -t $(dirname $0)/hot-instances.yaml instances
 elif [ "$SUB_COMMAND" = "delete" ]; then
   for i in $(ls $(dirname $0)/network); do
-    openstack stack delete $i -y
+    openstack stack delete as-$i -y
   done
   openstack stack delete instances
 fi
