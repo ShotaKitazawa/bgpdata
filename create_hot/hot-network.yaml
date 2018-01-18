@@ -20,6 +20,7 @@ resources:
     properties:
       name: { get_param: network-name }
       network_id: { get_resource: my_net }
+      ip_version: 4
       cidr: { get_param: cidr }
       dns_nameservers: [ "8.8.8.8", "8.8.4.4" ]
-      ip_version: 4
+      enable_dhcp: false
