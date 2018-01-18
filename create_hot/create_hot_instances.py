@@ -47,6 +47,18 @@ for line in f:
         g.write("        - AllAllow\n")
         g.write("      key_name: default\n")
         g.write("\n")
+        
+        g.write("  cinder_volume:\n)
+        g.write("    type: OS::Cinder::Volume\n)
+        g.write("    properties:\n)
+        g.write("      size: { get_param: volume_size }\n)
+        g.write("      availability_zone: { get_param: availability_zone }\n)
+        g.write("  volume_attachment:\n)
+        g.write("    type: OS::Cinder::VolumeAttachment\n)
+        g.write("    properties:\n)
+        g.write("      volume_id: { get_resource: cinder_volume }\n)
+        g.write("      instance_uuid: { get_resource: nova_instance }\n)
+        g.write("      mountpoint: /dev/vda\n)
         s = 0
 g.close()
 f.close()
