@@ -35,10 +35,10 @@ for line in f:
         s = 0
         for i in neighbor:
             if int(AS) < int(i):
-                if not os.path.exists("as{0}".format(AS)):
-                    os.mkdir("as{0}".format(AS))
-                if not os.path.exists("as{0}".format(i)):
-                    os.mkdir("as{0}".format(i))
+                #if not os.path.exists("as{0}".format(AS)):
+                #    os.mkdir("as{0}".format(AS))
+                #if not os.path.exists("as{0}".format(i)):
+                #    os.mkdir("as{0}".format(i))
                 filename = os.path.abspath(os.path.dirname(__file__)) + "/network/" + AS + "-" + i 
                 g = open(filename,"w")
                 a = address.format("{0}","{1}",str(mask))

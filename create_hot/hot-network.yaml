@@ -1,0 +1,25 @@
+heat_template_version: pike
+
+description: create network from openstack command's argment
+
+parameters:
+  network-name:
+    type: string
+    label: Network Name
+  cidr:
+    type: string
+    label: Network CIDR
+
+resources:
+  my_net:
+    type: OS::Neutron::Net
+    properties:
+      name: { get_param: network-name }
+  my_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      name: { get_param: network-name }
+      network_id: { get_resource: my_net }
+      cidr: { get_param: cidr }
+      dns_nameservers: [ "8.8.8.8", "8.8.4.4" ]
+      ip_version: 4

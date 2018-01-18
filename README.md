@@ -16,13 +16,13 @@
 実行方法
 
 ```
-./analyze/analyze.sh
+bash analyze/analyze.sh
 ```
 
 結果
 
 ```
-less result.all
+less analyze/result.all
 ```
 
 ##  Sampling
@@ -43,7 +43,7 @@ python sampling_analyzedfile/sampling.py 100
 結果
 
 ```
-less neighbors_100.txt
+less sampling_analyzedfile/neighbors_100.txt
 ```
 
 ## Integration
@@ -59,7 +59,7 @@ python integration_analyzedfile/integration_address.py neighbors_100.txt
 結果
 
 ```
-less addCombined.txt
+less integration_analyzedfile/addCombined.txt
 ```
 
 ## Create Heat Template
@@ -68,16 +68,20 @@ analyzedファイルを元に OpenStack Heat Template を作成します。
 
 実行方法
 
-* Network を作成するための HOT に必要なValuesファイルを生成
+* Network を作成するための HOT に必要なValuesファイル、Instance を作成するための HOT を生成
 
 ```
-python create_hot/create_values_network.py addCombined.txt
+bash create_hot/create_hot.bash integration_analyzedfile/addCombined.txt
 ```
 
-* Instance を作成するための HOT を生成
+* HOT を OpenStack 上にデプロイ
 
 ```
-python create_hot_instances.py addCombined.txt
+bash create_hot/deployment-hot.bash create
 ```
 
+* HOT を OpenStack 上から削除
 
+```
+bash create_hot/deployment-hot.bash delete
+```

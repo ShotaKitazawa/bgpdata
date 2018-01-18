@@ -1,17 +1,21 @@
 # Author: Shigemitsu Misato
+
+import os
 import sys
 import linecache
 
-if len(sys.argv) < 1 and type(sys.argv[1]) == "int":
-    print("err: invalid command: python", sys.argv[0], "number_of_as (Integer)")
+if len(sys.argv) < 2 and not os.path.isfile(sys.argv[1]) and type(sys.argv[2]) == "int":
+    print("err: invalid command: python", sys.argv[0], "analyzed_file", "number_of_as (Integer)")
     sys.exit(1)
 
+DIR = os.path.abspath(os.path.dirname(__file__))
+
 as_num = set()
-read = open('../result.all', 'r')
-number = int(sys.argv[1]) - 4
+read = open(sys.argv[1], 'r')
+number = int(sys.argv[2]) - 4
 
 line = read.readline()
-#verizon
+# verizon
 while True:
     line = read.readline()
     if(line == 'AS: 701\n'):
@@ -20,7 +24,7 @@ line = read.readline()
 line = read.readline()
 verizon_n = set(line.split(' '))
 
-#iij
+# iij
 while True:
     line = read.readline()
     if(line == 'AS: 2497\n'):
@@ -29,7 +33,7 @@ while True:
 line = read.readline()
 iij_n = set(line.split(' '))
 
-#ocn
+# ocn
 while True:
     line = read.readline()
     if(line == 'AS: 4713\n'):
@@ -38,7 +42,7 @@ while True:
 line = read.readline()
 ocn_n = set(line.split(' '))
 
-#google
+# google
 while True:
     line = read.readline()
     if(line == 'AS: 15169\n'):
@@ -49,21 +53,21 @@ line = read.readline()
 google_n = set(line.split(' '))
 
 
-new_ocn_n = ocn_n.difference(google_n) #OCNのneighber - Googleのneighber
+new_ocn_n = ocn_n.difference(google_n)  # OCNのneighber - Googleのneighber
 
-ocn_verizon = new_ocn_n.intersection(verizon_n) #OCNとverizonの共通要素 - Google
-ocn_verizon_iij = ocn_verizon.intersection(iij_n) #3社の共通要素 - Google
+ocn_verizon = new_ocn_n.intersection(verizon_n)  # OCNとverizonの共通要素 - Google
+ocn_verizon_iij = ocn_verizon.intersection(iij_n)  # 3社の共通要素 - Google
 
 number = number - len(ocn_verizon_iij)
 
 
-#1段目のneighbor
+# 1段目のneighbor
 neighbors_1 = set()
 for i in range(len(ocn_verizon_iij)):
     a = ocn_verizon_iij.pop()
     neighbors_1.add("AS: " + a + "\n")
     as_num.add(a)
-    
+
 result = set()
 neighbors_1.add("AS: 701\n")
 neighbors_1.add("AS: 2497\n")
@@ -80,7 +84,7 @@ as_num.add('15169')
 n_x = set()
 while True:
     for x in result:
-        read.seek(0,0)
+        read.seek(0, 0)
         while True:
             l = read.readline()
             if l == x:
@@ -100,13 +104,13 @@ while True:
     for x in as_num:
         result.add("AS: " + x + "\n")
     print(len(result))
-    
+
     if number <= 0:
         break
-    
 
-read.seek(0,0)
-write = open('../neighbors_{}.txt'.format(argv[1]), 'w')
+
+read.seek(0, 0)
+write = open(DIR + '/neighbors_{}.txt'.format(sys.argv[2]), 'w')
 
 count = 0
 for l in read:
@@ -114,10 +118,10 @@ for l in read:
     for AS in result:
         if l == AS:
             write.write(l)
-            n_line = linecache.getline('result.all', int(count + 2))
-            neighbors = set(n_line.split()) #各ASのneighborの集合
+            n_line = linecache.getline(sys.argv[1], int(count + 2))
+            neighbors = set(n_line.split())  # 各ASのneighborの集合
             neighbors.intersection_update(as_num)
-            write.write(linecache.getline('result.all', int(count + 1)))
+            write.write(linecache.getline(sys.argv[1], int(count + 1)))
             write.write("  NEIGHBOR:")
             for x in sorted(list(map(lambda x: int(x), neighbors))):
                 write.write(" " + str(x))
@@ -125,8 +129,6 @@ for l in read:
 
 read.close()
 write.close()
-   
-    
 
 print(len(as_num))
 print(len(result))

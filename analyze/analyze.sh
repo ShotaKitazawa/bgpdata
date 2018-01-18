@@ -35,4 +35,3 @@ for i in $PREFIX; do
 done
 
 python analyze-rib.py $RIB.*.raw > result.all
-ln -s result.all ../
