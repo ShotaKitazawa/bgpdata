@@ -9,7 +9,7 @@ if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 
-output = open(DIR + "addCombined.txt", 'a')
+output = open(DIR + "/addCombined.txt", 'a')
 with open(sys.argv[1],'r') as datas:
     for data in datas:
         line = data
