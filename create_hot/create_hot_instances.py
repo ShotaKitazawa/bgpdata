@@ -1,0 +1,54 @@
+# Author: Takehiko Momma
+
+import os
+import sys
+
+if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
+    print("err: invalid command: python", sys.argv[0], "analyzed_file")
+    sys.exit(1)
+
+f = open(sys.argv[1],"r",encoding='utf-8')
+
+Dir = os.path.abspath(os.path.dirname(__file__))
+files = os.listdir(Dir + "/network")
+filename = Dir + "/heat-instance-create-as.yaml" 
+g = open(filename,"w")
+g.write("heat_template_version: pike\n")
+g.write("\n")
+g.write("resources:\n")
+
+
+s = 0
+
+for line in f:
+    l = line[:-1].split(" ")
+    if s == 0:
+        AS = l[1]
+        s = 1
+    elif s == 1:
+        s = 2
+    elif s == 2:
+        #if AS == "15169":
+        #    s = 0
+        #    continue
+        g.write("  instances: as{0}\n".format(AS))
+        #g.write("    type: OS::Heat::ResourceGroup\n")
+        #g.write("    properties:\n")
+        g.write("    resource_def:\n")
+        g.write("      type: OS::Nova::Server\n")
+        g.write("      properties:\n")
+        g.write("        name: asxxx\n".replace("xxx",str(AS)))
+        g.write("        image: Ubuntu\n")
+        g.write("        flavor: m1.small\n")
+        g.write("        networks:\n")
+        for file in files:
+            if "-"+AS in file or AS+"-" in file:
+                g.write("          - network: {0}\n".format(str(file)))
+        g.write("        security_groups:\n")
+        g.write("          - AllAllow\n")
+        g.write("        key_name: default\n")
+        g.write("\n\n")
+        s = 0
+g.close()
+f.close()
+
