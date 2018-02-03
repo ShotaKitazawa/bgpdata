@@ -35,8 +35,8 @@ resources:
   as42_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as42_cinder_volume }
+      instance_uuid: { get_resource: as42 }
       mountpoint: /dev/vda
 
   as209:
@@ -75,8 +75,8 @@ resources:
   as209_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as209_cinder_volume }
+      instance_uuid: { get_resource: as209 }
       mountpoint: /dev/vda
 
   as701:
@@ -116,8 +116,8 @@ resources:
   as701_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as701_cinder_volume }
+      instance_uuid: { get_resource: as701 }
       mountpoint: /dev/vda
 
   as1239:
@@ -152,8 +152,8 @@ resources:
   as1239_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1239_cinder_volume }
+      instance_uuid: { get_resource: as1239 }
       mountpoint: /dev/vda
 
   as1299:
@@ -199,8 +199,8 @@ resources:
   as1299_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1299_cinder_volume }
+      instance_uuid: { get_resource: as1299 }
       mountpoint: /dev/vda
 
   as1916:
@@ -244,8 +244,8 @@ resources:
   as1916_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1916_cinder_volume }
+      instance_uuid: { get_resource: as1916 }
       mountpoint: /dev/vda
 
   as2497:
@@ -288,8 +288,8 @@ resources:
   as2497_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2497_cinder_volume }
+      instance_uuid: { get_resource: as2497 }
       mountpoint: /dev/vda
 
   as2500:
@@ -315,8 +315,8 @@ resources:
   as2500_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2500_cinder_volume }
+      instance_uuid: { get_resource: as2500 }
       mountpoint: /dev/vda
 
   as2905:
@@ -342,8 +342,8 @@ resources:
   as2905_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2905_cinder_volume }
+      instance_uuid: { get_resource: as2905 }
       mountpoint: /dev/vda
 
   as2906:
@@ -382,8 +382,8 @@ resources:
   as2906_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2906_cinder_volume }
+      instance_uuid: { get_resource: as2906 }
       mountpoint: /dev/vda
 
   as2907:
@@ -411,8 +411,8 @@ resources:
   as2907_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2907_cinder_volume }
+      instance_uuid: { get_resource: as2907 }
       mountpoint: /dev/vda
 
   as2914:
@@ -462,8 +462,8 @@ resources:
   as2914_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2914_cinder_volume }
+      instance_uuid: { get_resource: as2914 }
       mountpoint: /dev/vda
 
   as3225:
@@ -491,8 +491,8 @@ resources:
   as3225_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3225_cinder_volume }
+      instance_uuid: { get_resource: as3225 }
       mountpoint: /dev/vda
 
   as3269:
@@ -515,8 +515,8 @@ resources:
   as3269_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3269_cinder_volume }
+      instance_uuid: { get_resource: as3269 }
       mountpoint: /dev/vda
 
   as3573:
@@ -544,8 +544,8 @@ resources:
   as3573_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3573_cinder_volume }
+      instance_uuid: { get_resource: as3573 }
       mountpoint: /dev/vda
 
   as3613:
@@ -568,8 +568,8 @@ resources:
   as3613_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3613_cinder_volume }
+      instance_uuid: { get_resource: as3613 }
       mountpoint: /dev/vda
 
   as3693:
@@ -592,8 +592,8 @@ resources:
   as3693_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3693_cinder_volume }
+      instance_uuid: { get_resource: as3693 }
       mountpoint: /dev/vda
 
   as3944:
@@ -615,8 +615,8 @@ resources:
   as3944_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3944_cinder_volume }
+      instance_uuid: { get_resource: as3944 }
       mountpoint: /dev/vda
 
   as4436:
@@ -654,8 +654,8 @@ resources:
   as4436_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4436_cinder_volume }
+      instance_uuid: { get_resource: as4436 }
       mountpoint: /dev/vda
 
   as4713:
@@ -687,8 +687,8 @@ resources:
   as4713_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4713_cinder_volume }
+      instance_uuid: { get_resource: as4713 }
       mountpoint: /dev/vda
 
   as4755:
@@ -712,8 +712,8 @@ resources:
   as4755_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4755_cinder_volume }
+      instance_uuid: { get_resource: as4755 }
       mountpoint: /dev/vda
 
   as4761:
@@ -747,8 +747,8 @@ resources:
   as4761_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4761_cinder_volume }
+      instance_uuid: { get_resource: as4761 }
       mountpoint: /dev/vda
 
   as6391:
@@ -771,8 +771,8 @@ resources:
   as6391_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6391_cinder_volume }
+      instance_uuid: { get_resource: as6391 }
       mountpoint: /dev/vda
 
   as6777:
@@ -798,8 +798,8 @@ resources:
   as6777_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6777_cinder_volume }
+      instance_uuid: { get_resource: as6777 }
       mountpoint: /dev/vda
 
   as6939:
@@ -877,8 +877,8 @@ resources:
   as6939_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6939_cinder_volume }
+      instance_uuid: { get_resource: as6939 }
       mountpoint: /dev/vda
 
   as7670:
@@ -906,8 +906,8 @@ resources:
   as7670_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7670_cinder_volume }
+      instance_uuid: { get_resource: as7670 }
       mountpoint: /dev/vda
 
   as7726:
@@ -930,8 +930,8 @@ resources:
   as7726_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7726_cinder_volume }
+      instance_uuid: { get_resource: as7726 }
       mountpoint: /dev/vda
 
   as7738:
@@ -966,8 +966,8 @@ resources:
   as7738_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7738_cinder_volume }
+      instance_uuid: { get_resource: as7738 }
       mountpoint: /dev/vda
 
   as7922:
@@ -1005,8 +1005,8 @@ resources:
   as7922_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7922_cinder_volume }
+      instance_uuid: { get_resource: as7922 }
       mountpoint: /dev/vda
 
   as8492:
@@ -1047,8 +1047,8 @@ resources:
   as8492_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as8492_cinder_volume }
+      instance_uuid: { get_resource: as8492 }
       mountpoint: /dev/vda
 
   as8674:
@@ -1081,8 +1081,8 @@ resources:
   as8674_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as8674_cinder_volume }
+      instance_uuid: { get_resource: as8674 }
       mountpoint: /dev/vda
 
   as9498:
@@ -1121,8 +1121,8 @@ resources:
   as9498_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as9498_cinder_volume }
+      instance_uuid: { get_resource: as9498 }
       mountpoint: /dev/vda
 
   as9930:
@@ -1149,8 +1149,8 @@ resources:
   as9930_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as9930_cinder_volume }
+      instance_uuid: { get_resource: as9930 }
       mountpoint: /dev/vda
 
   as11686:
@@ -1183,8 +1183,8 @@ resources:
   as11686_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as11686_cinder_volume }
+      instance_uuid: { get_resource: as11686 }
       mountpoint: /dev/vda
 
   as11758:
@@ -1208,8 +1208,8 @@ resources:
   as11758_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as11758_cinder_volume }
+      instance_uuid: { get_resource: as11758 }
       mountpoint: /dev/vda
 
   as12302:
@@ -1232,8 +1232,8 @@ resources:
   as12302_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as12302_cinder_volume }
+      instance_uuid: { get_resource: as12302 }
       mountpoint: /dev/vda
 
   as12989:
@@ -1277,8 +1277,8 @@ resources:
   as12989_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as12989_cinder_volume }
+      instance_uuid: { get_resource: as12989 }
       mountpoint: /dev/vda
 
   as13720:
@@ -1305,8 +1305,8 @@ resources:
   as13720_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as13720_cinder_volume }
+      instance_uuid: { get_resource: as13720 }
       mountpoint: /dev/vda
 
   as15169:
@@ -1347,8 +1347,8 @@ resources:
   as15169_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as15169_cinder_volume }
+      instance_uuid: { get_resource: as15169 }
       mountpoint: /dev/vda
 
   as15290:
@@ -1372,8 +1372,8 @@ resources:
   as15290_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as15290_cinder_volume }
+      instance_uuid: { get_resource: as15290 }
       mountpoint: /dev/vda
 
   as16668:
@@ -1399,8 +1399,8 @@ resources:
   as16668_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as16668_cinder_volume }
+      instance_uuid: { get_resource: as16668 }
       mountpoint: /dev/vda
 
   as17685:
@@ -1424,8 +1424,8 @@ resources:
   as17685_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17685_cinder_volume }
+      instance_uuid: { get_resource: as17685 }
       mountpoint: /dev/vda
 
   as17691:
@@ -1449,8 +1449,8 @@ resources:
   as17691_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17691_cinder_volume }
+      instance_uuid: { get_resource: as17691 }
       mountpoint: /dev/vda
 
   as17922:
@@ -1477,8 +1477,8 @@ resources:
   as17922_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17922_cinder_volume }
+      instance_uuid: { get_resource: as17922 }
       mountpoint: /dev/vda
 
   as18746:
@@ -1500,8 +1500,8 @@ resources:
   as18746_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as18746_cinder_volume }
+      instance_uuid: { get_resource: as18746 }
       mountpoint: /dev/vda
 
   as22822:
@@ -1539,8 +1539,8 @@ resources:
   as22822_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as22822_cinder_volume }
+      instance_uuid: { get_resource: as22822 }
       mountpoint: /dev/vda
 
   as23775:
@@ -1562,8 +1562,8 @@ resources:
   as23775_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23775_cinder_volume }
+      instance_uuid: { get_resource: as23775 }
       mountpoint: /dev/vda
 
   as23822:
@@ -1586,8 +1586,8 @@ resources:
   as23822_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23822_cinder_volume }
+      instance_uuid: { get_resource: as23822 }
       mountpoint: /dev/vda
 
   as23829:
@@ -1613,8 +1613,8 @@ resources:
   as23829_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23829_cinder_volume }
+      instance_uuid: { get_resource: as23829 }
       mountpoint: /dev/vda
 
   as23947:
@@ -1642,8 +1642,8 @@ resources:
   as23947_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23947_cinder_volume }
+      instance_uuid: { get_resource: as23947 }
       mountpoint: /dev/vda
 
   as24482:
@@ -1699,8 +1699,8 @@ resources:
   as24482_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as24482_cinder_volume }
+      instance_uuid: { get_resource: as24482 }
       mountpoint: /dev/vda
 
   as24516:
@@ -1736,8 +1736,8 @@ resources:
   as24516_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as24516_cinder_volume }
+      instance_uuid: { get_resource: as24516 }
       mountpoint: /dev/vda
 
   as26218:
@@ -1759,8 +1759,8 @@ resources:
   as26218_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as26218_cinder_volume }
+      instance_uuid: { get_resource: as26218 }
       mountpoint: /dev/vda
 
   as28329:
@@ -1798,8 +1798,8 @@ resources:
   as28329_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as28329_cinder_volume }
+      instance_uuid: { get_resource: as28329 }
       mountpoint: /dev/vda
 
   as29119:
@@ -1829,8 +1829,8 @@ resources:
   as29119_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as29119_cinder_volume }
+      instance_uuid: { get_resource: as29119 }
       mountpoint: /dev/vda
 
   as29534:
@@ -1853,8 +1853,8 @@ resources:
   as29534_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as29534_cinder_volume }
+      instance_uuid: { get_resource: as29534 }
       mountpoint: /dev/vda
 
   as30519:
@@ -1877,8 +1877,8 @@ resources:
   as30519_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as30519_cinder_volume }
+      instance_uuid: { get_resource: as30519 }
       mountpoint: /dev/vda
 
   as32590:
@@ -1914,8 +1914,8 @@ resources:
   as32590_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as32590_cinder_volume }
+      instance_uuid: { get_resource: as32590 }
       mountpoint: /dev/vda
 
   as33659:
@@ -1938,8 +1938,8 @@ resources:
   as33659_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as33659_cinder_volume }
+      instance_uuid: { get_resource: as33659 }
       mountpoint: /dev/vda
 
   as33660:
@@ -1962,8 +1962,8 @@ resources:
   as33660_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as33660_cinder_volume }
+      instance_uuid: { get_resource: as33660 }
       mountpoint: /dev/vda
 
   as36040:
@@ -1994,8 +1994,8 @@ resources:
   as36040_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as36040_cinder_volume }
+      instance_uuid: { get_resource: as36040 }
       mountpoint: /dev/vda
 
   as36324:
@@ -2018,8 +2018,8 @@ resources:
   as36324_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as36324_cinder_volume }
+      instance_uuid: { get_resource: as36324 }
       mountpoint: /dev/vda
 
   as37100:
@@ -2064,8 +2064,8 @@ resources:
   as37100_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37100_cinder_volume }
+      instance_uuid: { get_resource: as37100 }
       mountpoint: /dev/vda
 
   as37613:
@@ -2093,8 +2093,8 @@ resources:
   as37613_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37613_cinder_volume }
+      instance_uuid: { get_resource: as37613 }
       mountpoint: /dev/vda
 
   as37629:
@@ -2116,8 +2116,8 @@ resources:
   as37629_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37629_cinder_volume }
+      instance_uuid: { get_resource: as37629 }
       mountpoint: /dev/vda
 
   as41541:
@@ -2139,8 +2139,8 @@ resources:
   as41541_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as41541_cinder_volume }
+      instance_uuid: { get_resource: as41541 }
       mountpoint: /dev/vda
 
   as46428:
@@ -2164,8 +2164,8 @@ resources:
   as46428_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as46428_cinder_volume }
+      instance_uuid: { get_resource: as46428 }
       mountpoint: /dev/vda
 
   as47872:
@@ -2203,8 +2203,8 @@ resources:
   as47872_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as47872_cinder_volume }
+      instance_uuid: { get_resource: as47872 }
       mountpoint: /dev/vda
 
   as50129:
@@ -2226,8 +2226,8 @@ resources:
   as50129_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as50129_cinder_volume }
+      instance_uuid: { get_resource: as50129 }
       mountpoint: /dev/vda
 
   as50607:
@@ -2255,8 +2255,8 @@ resources:
   as50607_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as50607_cinder_volume }
+      instance_uuid: { get_resource: as50607 }
       mountpoint: /dev/vda
 
   as53237:
@@ -2285,8 +2285,8 @@ resources:
   as53237_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as53237_cinder_volume }
+      instance_uuid: { get_resource: as53237 }
       mountpoint: /dev/vda
 
   as53243:
@@ -2312,8 +2312,8 @@ resources:
   as53243_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as53243_cinder_volume }
+      instance_uuid: { get_resource: as53243 }
       mountpoint: /dev/vda
 
   as55947:
@@ -2337,8 +2337,8 @@ resources:
   as55947_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as55947_cinder_volume }
+      instance_uuid: { get_resource: as55947 }
       mountpoint: /dev/vda
 
   as59415:
@@ -2362,8 +2362,8 @@ resources:
   as59415_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as59415_cinder_volume }
+      instance_uuid: { get_resource: as59415 }
       mountpoint: /dev/vda
 
   as62081:
@@ -2394,8 +2394,8 @@ resources:
   as62081_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as62081_cinder_volume }
+      instance_uuid: { get_resource: as62081 }
       mountpoint: /dev/vda
 
   as62227:
@@ -2422,8 +2422,8 @@ resources:
   as62227_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as62227_cinder_volume }
+      instance_uuid: { get_resource: as62227 }
       mountpoint: /dev/vda
 
   as63511:
@@ -2446,8 +2446,8 @@ resources:
   as63511_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as63511_cinder_volume }
+      instance_uuid: { get_resource: as63511 }
       mountpoint: /dev/vda
 
   as64901:
@@ -2469,8 +2469,8 @@ resources:
   as64901_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as64901_cinder_volume }
+      instance_uuid: { get_resource: as64901 }
       mountpoint: /dev/vda
 
   as131158:
@@ -2493,8 +2493,8 @@ resources:
   as131158_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131158_cinder_volume }
+      instance_uuid: { get_resource: as131158 }
       mountpoint: /dev/vda
 
   as131735:
@@ -2518,8 +2518,8 @@ resources:
   as131735_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131735_cinder_volume }
+      instance_uuid: { get_resource: as131735 }
       mountpoint: /dev/vda
 
   as131907:
@@ -2541,8 +2541,8 @@ resources:
   as131907_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131907_cinder_volume }
+      instance_uuid: { get_resource: as131907 }
       mountpoint: /dev/vda
 
   as134698:
@@ -2564,8 +2564,8 @@ resources:
   as134698_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as134698_cinder_volume }
+      instance_uuid: { get_resource: as134698 }
       mountpoint: /dev/vda
 
   as198389:
@@ -2588,8 +2588,8 @@ resources:
   as198389_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as198389_cinder_volume }
+      instance_uuid: { get_resource: as198389 }
       mountpoint: /dev/vda
 
   as198723:
@@ -2611,8 +2611,8 @@ resources:
   as198723_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as198723_cinder_volume }
+      instance_uuid: { get_resource: as198723 }
       mountpoint: /dev/vda
 
   as199846:
@@ -2636,8 +2636,8 @@ resources:
   as199846_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as199846_cinder_volume }
+      instance_uuid: { get_resource: as199846 }
       mountpoint: /dev/vda
 
   as262317:
@@ -2674,8 +2674,8 @@ resources:
   as262317_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262317_cinder_volume }
+      instance_uuid: { get_resource: as262317 }
       mountpoint: /dev/vda
 
   as262560:
@@ -2697,8 +2697,8 @@ resources:
   as262560_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262560_cinder_volume }
+      instance_uuid: { get_resource: as262560 }
       mountpoint: /dev/vda
 
   as262589:
@@ -2732,8 +2732,8 @@ resources:
   as262589_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262589_cinder_volume }
+      instance_uuid: { get_resource: as262589 }
       mountpoint: /dev/vda
 
   as262625:
@@ -2755,8 +2755,8 @@ resources:
   as262625_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262625_cinder_volume }
+      instance_uuid: { get_resource: as262625 }
       mountpoint: /dev/vda
 
   as262716:
@@ -2779,8 +2779,8 @@ resources:
   as262716_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262716_cinder_volume }
+      instance_uuid: { get_resource: as262716 }
       mountpoint: /dev/vda
 
   as262760:
@@ -2807,8 +2807,8 @@ resources:
   as262760_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262760_cinder_volume }
+      instance_uuid: { get_resource: as262760 }
       mountpoint: /dev/vda
 
   as263415:
@@ -2834,8 +2834,8 @@ resources:
   as263415_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263415_cinder_volume }
+      instance_uuid: { get_resource: as263415 }
       mountpoint: /dev/vda
 
   as263566:
@@ -2858,8 +2858,8 @@ resources:
   as263566_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263566_cinder_volume }
+      instance_uuid: { get_resource: as263566 }
       mountpoint: /dev/vda
 
   as263661:
@@ -2886,8 +2886,8 @@ resources:
   as263661_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263661_cinder_volume }
+      instance_uuid: { get_resource: as263661 }
       mountpoint: /dev/vda
 
   as263665:
@@ -2915,8 +2915,8 @@ resources:
   as263665_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263665_cinder_volume }
+      instance_uuid: { get_resource: as263665 }
       mountpoint: /dev/vda
 
   as264101:
@@ -2943,8 +2943,8 @@ resources:
   as264101_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as264101_cinder_volume }
+      instance_uuid: { get_resource: as264101 }
       mountpoint: /dev/vda
 
   as264268:
@@ -2980,8 +2980,8 @@ resources:
   as264268_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as264268_cinder_volume }
+      instance_uuid: { get_resource: as264268 }
       mountpoint: /dev/vda
 
   as266256:
@@ -3008,8 +3008,8 @@ resources:
   as266256_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as266256_cinder_volume }
+      instance_uuid: { get_resource: as266256 }
       mountpoint: /dev/vda
 
   as267576:
@@ -3032,8 +3032,8 @@ resources:
   as267576_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as267576_cinder_volume }
+      instance_uuid: { get_resource: as267576 }
       mountpoint: /dev/vda
 
   as394096:
@@ -3056,8 +3056,8 @@ resources:
   as394096_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as394096_cinder_volume }
+      instance_uuid: { get_resource: as394096 }
       mountpoint: /dev/vda
 
   as42:
@@ -3094,8 +3094,8 @@ resources:
   as42_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as42_cinder_volume }
+      instance_uuid: { get_resource: as42 }
       mountpoint: /dev/vda
 
   as209:
@@ -3134,8 +3134,8 @@ resources:
   as209_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as209_cinder_volume }
+      instance_uuid: { get_resource: as209 }
       mountpoint: /dev/vda
 
   as701:
@@ -3175,8 +3175,8 @@ resources:
   as701_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as701_cinder_volume }
+      instance_uuid: { get_resource: as701 }
       mountpoint: /dev/vda
 
   as1239:
@@ -3211,8 +3211,8 @@ resources:
   as1239_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1239_cinder_volume }
+      instance_uuid: { get_resource: as1239 }
       mountpoint: /dev/vda
 
   as1299:
@@ -3258,8 +3258,8 @@ resources:
   as1299_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1299_cinder_volume }
+      instance_uuid: { get_resource: as1299 }
       mountpoint: /dev/vda
 
   as1916:
@@ -3303,8 +3303,8 @@ resources:
   as1916_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as1916_cinder_volume }
+      instance_uuid: { get_resource: as1916 }
       mountpoint: /dev/vda
 
   as2497:
@@ -3347,8 +3347,8 @@ resources:
   as2497_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2497_cinder_volume }
+      instance_uuid: { get_resource: as2497 }
       mountpoint: /dev/vda
 
   as2500:
@@ -3374,8 +3374,8 @@ resources:
   as2500_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2500_cinder_volume }
+      instance_uuid: { get_resource: as2500 }
       mountpoint: /dev/vda
 
   as2905:
@@ -3401,8 +3401,8 @@ resources:
   as2905_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2905_cinder_volume }
+      instance_uuid: { get_resource: as2905 }
       mountpoint: /dev/vda
 
   as2906:
@@ -3441,8 +3441,8 @@ resources:
   as2906_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2906_cinder_volume }
+      instance_uuid: { get_resource: as2906 }
       mountpoint: /dev/vda
 
   as2907:
@@ -3470,8 +3470,8 @@ resources:
   as2907_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2907_cinder_volume }
+      instance_uuid: { get_resource: as2907 }
       mountpoint: /dev/vda
 
   as2914:
@@ -3521,8 +3521,8 @@ resources:
   as2914_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as2914_cinder_volume }
+      instance_uuid: { get_resource: as2914 }
       mountpoint: /dev/vda
 
   as3225:
@@ -3550,8 +3550,8 @@ resources:
   as3225_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3225_cinder_volume }
+      instance_uuid: { get_resource: as3225 }
       mountpoint: /dev/vda
 
   as3269:
@@ -3574,8 +3574,8 @@ resources:
   as3269_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3269_cinder_volume }
+      instance_uuid: { get_resource: as3269 }
       mountpoint: /dev/vda
 
   as3573:
@@ -3603,8 +3603,8 @@ resources:
   as3573_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3573_cinder_volume }
+      instance_uuid: { get_resource: as3573 }
       mountpoint: /dev/vda
 
   as3613:
@@ -3627,8 +3627,8 @@ resources:
   as3613_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3613_cinder_volume }
+      instance_uuid: { get_resource: as3613 }
       mountpoint: /dev/vda
 
   as3693:
@@ -3651,8 +3651,8 @@ resources:
   as3693_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3693_cinder_volume }
+      instance_uuid: { get_resource: as3693 }
       mountpoint: /dev/vda
 
   as3944:
@@ -3674,8 +3674,8 @@ resources:
   as3944_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as3944_cinder_volume }
+      instance_uuid: { get_resource: as3944 }
       mountpoint: /dev/vda
 
   as4436:
@@ -3713,8 +3713,8 @@ resources:
   as4436_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4436_cinder_volume }
+      instance_uuid: { get_resource: as4436 }
       mountpoint: /dev/vda
 
   as4713:
@@ -3746,8 +3746,8 @@ resources:
   as4713_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4713_cinder_volume }
+      instance_uuid: { get_resource: as4713 }
       mountpoint: /dev/vda
 
   as4755:
@@ -3771,8 +3771,8 @@ resources:
   as4755_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4755_cinder_volume }
+      instance_uuid: { get_resource: as4755 }
       mountpoint: /dev/vda
 
   as4761:
@@ -3806,8 +3806,8 @@ resources:
   as4761_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as4761_cinder_volume }
+      instance_uuid: { get_resource: as4761 }
       mountpoint: /dev/vda
 
   as6391:
@@ -3830,8 +3830,8 @@ resources:
   as6391_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6391_cinder_volume }
+      instance_uuid: { get_resource: as6391 }
       mountpoint: /dev/vda
 
   as6777:
@@ -3857,8 +3857,8 @@ resources:
   as6777_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6777_cinder_volume }
+      instance_uuid: { get_resource: as6777 }
       mountpoint: /dev/vda
 
   as6939:
@@ -3936,8 +3936,8 @@ resources:
   as6939_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as6939_cinder_volume }
+      instance_uuid: { get_resource: as6939 }
       mountpoint: /dev/vda
 
   as7670:
@@ -3965,8 +3965,8 @@ resources:
   as7670_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7670_cinder_volume }
+      instance_uuid: { get_resource: as7670 }
       mountpoint: /dev/vda
 
   as7726:
@@ -3989,8 +3989,8 @@ resources:
   as7726_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7726_cinder_volume }
+      instance_uuid: { get_resource: as7726 }
       mountpoint: /dev/vda
 
   as7738:
@@ -4025,8 +4025,8 @@ resources:
   as7738_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7738_cinder_volume }
+      instance_uuid: { get_resource: as7738 }
       mountpoint: /dev/vda
 
   as7922:
@@ -4064,8 +4064,8 @@ resources:
   as7922_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as7922_cinder_volume }
+      instance_uuid: { get_resource: as7922 }
       mountpoint: /dev/vda
 
   as8492:
@@ -4106,8 +4106,8 @@ resources:
   as8492_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as8492_cinder_volume }
+      instance_uuid: { get_resource: as8492 }
       mountpoint: /dev/vda
 
   as8674:
@@ -4140,8 +4140,8 @@ resources:
   as8674_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as8674_cinder_volume }
+      instance_uuid: { get_resource: as8674 }
       mountpoint: /dev/vda
 
   as9498:
@@ -4180,8 +4180,8 @@ resources:
   as9498_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as9498_cinder_volume }
+      instance_uuid: { get_resource: as9498 }
       mountpoint: /dev/vda
 
   as9930:
@@ -4208,8 +4208,8 @@ resources:
   as9930_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as9930_cinder_volume }
+      instance_uuid: { get_resource: as9930 }
       mountpoint: /dev/vda
 
   as11686:
@@ -4242,8 +4242,8 @@ resources:
   as11686_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as11686_cinder_volume }
+      instance_uuid: { get_resource: as11686 }
       mountpoint: /dev/vda
 
   as11758:
@@ -4267,8 +4267,8 @@ resources:
   as11758_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as11758_cinder_volume }
+      instance_uuid: { get_resource: as11758 }
       mountpoint: /dev/vda
 
   as12302:
@@ -4291,8 +4291,8 @@ resources:
   as12302_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as12302_cinder_volume }
+      instance_uuid: { get_resource: as12302 }
       mountpoint: /dev/vda
 
   as12989:
@@ -4336,8 +4336,8 @@ resources:
   as12989_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as12989_cinder_volume }
+      instance_uuid: { get_resource: as12989 }
       mountpoint: /dev/vda
 
   as13720:
@@ -4364,8 +4364,8 @@ resources:
   as13720_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as13720_cinder_volume }
+      instance_uuid: { get_resource: as13720 }
       mountpoint: /dev/vda
 
   as15169:
@@ -4406,8 +4406,8 @@ resources:
   as15169_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as15169_cinder_volume }
+      instance_uuid: { get_resource: as15169 }
       mountpoint: /dev/vda
 
   as15290:
@@ -4431,8 +4431,8 @@ resources:
   as15290_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as15290_cinder_volume }
+      instance_uuid: { get_resource: as15290 }
       mountpoint: /dev/vda
 
   as16668:
@@ -4458,8 +4458,8 @@ resources:
   as16668_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as16668_cinder_volume }
+      instance_uuid: { get_resource: as16668 }
       mountpoint: /dev/vda
 
   as17685:
@@ -4483,8 +4483,8 @@ resources:
   as17685_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17685_cinder_volume }
+      instance_uuid: { get_resource: as17685 }
       mountpoint: /dev/vda
 
   as17691:
@@ -4508,8 +4508,8 @@ resources:
   as17691_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17691_cinder_volume }
+      instance_uuid: { get_resource: as17691 }
       mountpoint: /dev/vda
 
   as17922:
@@ -4536,8 +4536,8 @@ resources:
   as17922_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as17922_cinder_volume }
+      instance_uuid: { get_resource: as17922 }
       mountpoint: /dev/vda
 
   as18746:
@@ -4559,8 +4559,8 @@ resources:
   as18746_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as18746_cinder_volume }
+      instance_uuid: { get_resource: as18746 }
       mountpoint: /dev/vda
 
   as22822:
@@ -4598,8 +4598,8 @@ resources:
   as22822_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as22822_cinder_volume }
+      instance_uuid: { get_resource: as22822 }
       mountpoint: /dev/vda
 
   as23775:
@@ -4621,8 +4621,8 @@ resources:
   as23775_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23775_cinder_volume }
+      instance_uuid: { get_resource: as23775 }
       mountpoint: /dev/vda
 
   as23822:
@@ -4645,8 +4645,8 @@ resources:
   as23822_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23822_cinder_volume }
+      instance_uuid: { get_resource: as23822 }
       mountpoint: /dev/vda
 
   as23829:
@@ -4672,8 +4672,8 @@ resources:
   as23829_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23829_cinder_volume }
+      instance_uuid: { get_resource: as23829 }
       mountpoint: /dev/vda
 
   as23947:
@@ -4701,8 +4701,8 @@ resources:
   as23947_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as23947_cinder_volume }
+      instance_uuid: { get_resource: as23947 }
       mountpoint: /dev/vda
 
   as24482:
@@ -4758,8 +4758,8 @@ resources:
   as24482_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as24482_cinder_volume }
+      instance_uuid: { get_resource: as24482 }
       mountpoint: /dev/vda
 
   as24516:
@@ -4795,8 +4795,8 @@ resources:
   as24516_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as24516_cinder_volume }
+      instance_uuid: { get_resource: as24516 }
       mountpoint: /dev/vda
 
   as26218:
@@ -4818,8 +4818,8 @@ resources:
   as26218_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as26218_cinder_volume }
+      instance_uuid: { get_resource: as26218 }
       mountpoint: /dev/vda
 
   as28329:
@@ -4857,8 +4857,8 @@ resources:
   as28329_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as28329_cinder_volume }
+      instance_uuid: { get_resource: as28329 }
       mountpoint: /dev/vda
 
   as29119:
@@ -4888,8 +4888,8 @@ resources:
   as29119_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as29119_cinder_volume }
+      instance_uuid: { get_resource: as29119 }
       mountpoint: /dev/vda
 
   as29534:
@@ -4912,8 +4912,8 @@ resources:
   as29534_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as29534_cinder_volume }
+      instance_uuid: { get_resource: as29534 }
       mountpoint: /dev/vda
 
   as30519:
@@ -4936,8 +4936,8 @@ resources:
   as30519_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as30519_cinder_volume }
+      instance_uuid: { get_resource: as30519 }
       mountpoint: /dev/vda
 
   as32590:
@@ -4973,8 +4973,8 @@ resources:
   as32590_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as32590_cinder_volume }
+      instance_uuid: { get_resource: as32590 }
       mountpoint: /dev/vda
 
   as33659:
@@ -4997,8 +4997,8 @@ resources:
   as33659_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as33659_cinder_volume }
+      instance_uuid: { get_resource: as33659 }
       mountpoint: /dev/vda
 
   as33660:
@@ -5021,8 +5021,8 @@ resources:
   as33660_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as33660_cinder_volume }
+      instance_uuid: { get_resource: as33660 }
       mountpoint: /dev/vda
 
   as36040:
@@ -5053,8 +5053,8 @@ resources:
   as36040_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as36040_cinder_volume }
+      instance_uuid: { get_resource: as36040 }
       mountpoint: /dev/vda
 
   as36324:
@@ -5077,8 +5077,8 @@ resources:
   as36324_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as36324_cinder_volume }
+      instance_uuid: { get_resource: as36324 }
       mountpoint: /dev/vda
 
   as37100:
@@ -5123,8 +5123,8 @@ resources:
   as37100_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37100_cinder_volume }
+      instance_uuid: { get_resource: as37100 }
       mountpoint: /dev/vda
 
   as37613:
@@ -5152,8 +5152,8 @@ resources:
   as37613_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37613_cinder_volume }
+      instance_uuid: { get_resource: as37613 }
       mountpoint: /dev/vda
 
   as37629:
@@ -5175,8 +5175,8 @@ resources:
   as37629_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as37629_cinder_volume }
+      instance_uuid: { get_resource: as37629 }
       mountpoint: /dev/vda
 
   as41541:
@@ -5198,8 +5198,8 @@ resources:
   as41541_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as41541_cinder_volume }
+      instance_uuid: { get_resource: as41541 }
       mountpoint: /dev/vda
 
   as46428:
@@ -5223,8 +5223,8 @@ resources:
   as46428_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as46428_cinder_volume }
+      instance_uuid: { get_resource: as46428 }
       mountpoint: /dev/vda
 
   as47872:
@@ -5262,8 +5262,8 @@ resources:
   as47872_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as47872_cinder_volume }
+      instance_uuid: { get_resource: as47872 }
       mountpoint: /dev/vda
 
   as50129:
@@ -5285,8 +5285,8 @@ resources:
   as50129_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as50129_cinder_volume }
+      instance_uuid: { get_resource: as50129 }
       mountpoint: /dev/vda
 
   as50607:
@@ -5314,8 +5314,8 @@ resources:
   as50607_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as50607_cinder_volume }
+      instance_uuid: { get_resource: as50607 }
       mountpoint: /dev/vda
 
   as53237:
@@ -5344,8 +5344,8 @@ resources:
   as53237_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as53237_cinder_volume }
+      instance_uuid: { get_resource: as53237 }
       mountpoint: /dev/vda
 
   as53243:
@@ -5371,8 +5371,8 @@ resources:
   as53243_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as53243_cinder_volume }
+      instance_uuid: { get_resource: as53243 }
       mountpoint: /dev/vda
 
   as55947:
@@ -5396,8 +5396,8 @@ resources:
   as55947_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as55947_cinder_volume }
+      instance_uuid: { get_resource: as55947 }
       mountpoint: /dev/vda
 
   as59415:
@@ -5421,8 +5421,8 @@ resources:
   as59415_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as59415_cinder_volume }
+      instance_uuid: { get_resource: as59415 }
       mountpoint: /dev/vda
 
   as62081:
@@ -5453,8 +5453,8 @@ resources:
   as62081_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as62081_cinder_volume }
+      instance_uuid: { get_resource: as62081 }
       mountpoint: /dev/vda
 
   as62227:
@@ -5481,8 +5481,8 @@ resources:
   as62227_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as62227_cinder_volume }
+      instance_uuid: { get_resource: as62227 }
       mountpoint: /dev/vda
 
   as63511:
@@ -5505,8 +5505,8 @@ resources:
   as63511_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as63511_cinder_volume }
+      instance_uuid: { get_resource: as63511 }
       mountpoint: /dev/vda
 
   as64901:
@@ -5528,8 +5528,8 @@ resources:
   as64901_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as64901_cinder_volume }
+      instance_uuid: { get_resource: as64901 }
       mountpoint: /dev/vda
 
   as131158:
@@ -5552,8 +5552,8 @@ resources:
   as131158_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131158_cinder_volume }
+      instance_uuid: { get_resource: as131158 }
       mountpoint: /dev/vda
 
   as131735:
@@ -5577,8 +5577,8 @@ resources:
   as131735_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131735_cinder_volume }
+      instance_uuid: { get_resource: as131735 }
       mountpoint: /dev/vda
 
   as131907:
@@ -5600,8 +5600,8 @@ resources:
   as131907_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as131907_cinder_volume }
+      instance_uuid: { get_resource: as131907 }
       mountpoint: /dev/vda
 
   as134698:
@@ -5623,8 +5623,8 @@ resources:
   as134698_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as134698_cinder_volume }
+      instance_uuid: { get_resource: as134698 }
       mountpoint: /dev/vda
 
   as198389:
@@ -5647,8 +5647,8 @@ resources:
   as198389_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as198389_cinder_volume }
+      instance_uuid: { get_resource: as198389 }
       mountpoint: /dev/vda
 
   as198723:
@@ -5670,8 +5670,8 @@ resources:
   as198723_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as198723_cinder_volume }
+      instance_uuid: { get_resource: as198723 }
       mountpoint: /dev/vda
 
   as199846:
@@ -5695,8 +5695,8 @@ resources:
   as199846_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as199846_cinder_volume }
+      instance_uuid: { get_resource: as199846 }
       mountpoint: /dev/vda
 
   as262317:
@@ -5733,8 +5733,8 @@ resources:
   as262317_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262317_cinder_volume }
+      instance_uuid: { get_resource: as262317 }
       mountpoint: /dev/vda
 
   as262560:
@@ -5756,8 +5756,8 @@ resources:
   as262560_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262560_cinder_volume }
+      instance_uuid: { get_resource: as262560 }
       mountpoint: /dev/vda
 
   as262589:
@@ -5791,8 +5791,8 @@ resources:
   as262589_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262589_cinder_volume }
+      instance_uuid: { get_resource: as262589 }
       mountpoint: /dev/vda
 
   as262625:
@@ -5814,8 +5814,8 @@ resources:
   as262625_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262625_cinder_volume }
+      instance_uuid: { get_resource: as262625 }
       mountpoint: /dev/vda
 
   as262716:
@@ -5838,8 +5838,8 @@ resources:
   as262716_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262716_cinder_volume }
+      instance_uuid: { get_resource: as262716 }
       mountpoint: /dev/vda
 
   as262760:
@@ -5866,8 +5866,8 @@ resources:
   as262760_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as262760_cinder_volume }
+      instance_uuid: { get_resource: as262760 }
       mountpoint: /dev/vda
 
   as263415:
@@ -5893,8 +5893,8 @@ resources:
   as263415_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263415_cinder_volume }
+      instance_uuid: { get_resource: as263415 }
       mountpoint: /dev/vda
 
   as263566:
@@ -5917,8 +5917,8 @@ resources:
   as263566_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263566_cinder_volume }
+      instance_uuid: { get_resource: as263566 }
       mountpoint: /dev/vda
 
   as263661:
@@ -5945,8 +5945,8 @@ resources:
   as263661_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263661_cinder_volume }
+      instance_uuid: { get_resource: as263661 }
       mountpoint: /dev/vda
 
   as263665:
@@ -5974,8 +5974,8 @@ resources:
   as263665_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as263665_cinder_volume }
+      instance_uuid: { get_resource: as263665 }
       mountpoint: /dev/vda
 
   as264101:
@@ -6002,8 +6002,8 @@ resources:
   as264101_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as264101_cinder_volume }
+      instance_uuid: { get_resource: as264101 }
       mountpoint: /dev/vda
 
   as264268:
@@ -6039,8 +6039,8 @@ resources:
   as264268_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as264268_cinder_volume }
+      instance_uuid: { get_resource: as264268 }
       mountpoint: /dev/vda
 
   as266256:
@@ -6067,8 +6067,8 @@ resources:
   as266256_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as266256_cinder_volume }
+      instance_uuid: { get_resource: as266256 }
       mountpoint: /dev/vda
 
   as267576:
@@ -6091,8 +6091,8 @@ resources:
   as267576_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as267576_cinder_volume }
+      instance_uuid: { get_resource: as267576 }
       mountpoint: /dev/vda
 
   as394096:
@@ -6115,7 +6115,7 @@ resources:
   as394096_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: cinder_volume }
-      instance_uuid: { get_resource: nova_instance }
+      volume_id: { get_resource: as394096_cinder_volume }
+      instance_uuid: { get_resource: as394096 }
       mountpoint: /dev/vda
 
