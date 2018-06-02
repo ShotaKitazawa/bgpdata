@@ -5,25 +5,25 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as42
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-701
-        - network: 42-1916
-        - network: 42-2497
-        - network: 42-2905
-        - network: 42-2914
-        - network: 42-4436
-        - network: 42-6939
-        - network: 42-7922
-        - network: 42-8492
         - network: 42-11686
         - network: 42-12989
         - network: 42-16668
+        - network: 42-1916
         - network: 42-24482
         - network: 42-24516
+        - network: 42-2497
+        - network: 42-2905
+        - network: 42-2914
         - network: 42-37100
+        - network: 42-4436
         - network: 42-47872
+        - network: 42-6939
+        - network: 42-701
+        - network: 42-7922
+        - network: 42-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -43,27 +43,27 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as209
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-701
         - network: 209-1239
-        - network: 209-1299
-        - network: 209-2497
-        - network: 209-2914
-        - network: 209-4436
-        - network: 209-6939
-        - network: 209-7922
-        - network: 209-8674
-        - network: 209-9498
         - network: 209-12989
+        - network: 209-1299
         - network: 209-15169
         - network: 209-22822
         - network: 209-24482
         - network: 209-24516
+        - network: 209-2497
+        - network: 209-2914
         - network: 209-30519
         - network: 209-32590
+        - network: 209-4436
         - network: 209-46428
+        - network: 209-6939
+        - network: 209-701
+        - network: 209-7922
+        - network: 209-8674
+        - network: 209-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -83,28 +83,28 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as701
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-701
         - network: 209-701
+        - network: 42-701
         - network: 701-1239
-        - network: 701-1299
-        - network: 701-2497
-        - network: 701-2906
-        - network: 701-2914
-        - network: 701-3573
-        - network: 701-6939
-        - network: 701-7738
-        - network: 701-7922
         - network: 701-12989
+        - network: 701-1299
         - network: 701-15169
         - network: 701-18746
         - network: 701-22822
+        - network: 701-2497
+        - network: 701-2906
+        - network: 701-2914
         - network: 701-32590
+        - network: 701-3573
         - network: 701-36040
-        - network: 701-46428
         - network: 701-394096
+        - network: 701-46428
+        - network: 701-6939
+        - network: 701-7738
+        - network: 701-7922
       security_groups:
         - AllAllow
       key_name: default
@@ -124,23 +124,23 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1239
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-1239
-        - network: 701-1239
         - network: 1239-1299
+        - network: 1239-15169
+        - network: 1239-24482
         - network: 1239-2497
+        - network: 1239-262589
         - network: 1239-2914
         - network: 1239-4436
+        - network: 1239-46428
         - network: 1239-6939
         - network: 1239-7726
         - network: 1239-7738
         - network: 1239-7922
-        - network: 1239-15169
-        - network: 1239-24482
-        - network: 1239-46428
-        - network: 1239-262589
+        - network: 209-1239
+        - network: 701-1239
       security_groups:
         - AllAllow
       key_name: default
@@ -160,34 +160,34 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1299
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-1299
-        - network: 701-1299
         - network: 1239-1299
-        - network: 1299-2906
-        - network: 1299-2914
-        - network: 1299-3225
-        - network: 1299-4436
-        - network: 1299-4761
-        - network: 1299-6939
-        - network: 1299-7738
-        - network: 1299-7922
-        - network: 1299-8492
-        - network: 1299-9498
         - network: 1299-11758
         - network: 1299-12989
         - network: 1299-15169
         - network: 1299-22822
         - network: 1299-24516
+        - network: 1299-262589
+        - network: 1299-2906
         - network: 1299-29119
+        - network: 1299-2914
+        - network: 1299-3225
         - network: 1299-32590
         - network: 1299-36040
         - network: 1299-37100
         - network: 1299-37613
+        - network: 1299-4436
+        - network: 1299-4761
         - network: 1299-47872
-        - network: 1299-262589
+        - network: 1299-6939
+        - network: 1299-7738
+        - network: 1299-7922
+        - network: 1299-8492
+        - network: 1299-9498
+        - network: 209-1299
+        - network: 701-1299
       security_groups:
         - AllAllow
       key_name: default
@@ -207,22 +207,13 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1916
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-1916
-        - network: 1916-2906
-        - network: 1916-2914
-        - network: 1916-6939
-        - network: 1916-7738
-        - network: 1916-8674
         - network: 1916-11686
         - network: 1916-12989
         - network: 1916-15169
         - network: 1916-24482
-        - network: 1916-28329
-        - network: 1916-53237
-        - network: 1916-53243
         - network: 1916-262317
         - network: 1916-262589
         - network: 1916-262760
@@ -233,6 +224,15 @@ resources:
         - network: 1916-264268
         - network: 1916-266256
         - network: 1916-267576
+        - network: 1916-28329
+        - network: 1916-2906
+        - network: 1916-2914
+        - network: 1916-53237
+        - network: 1916-53243
+        - network: 1916-6939
+        - network: 1916-7738
+        - network: 1916-8674
+        - network: 42-1916
       security_groups:
         - AllAllow
       key_name: default
@@ -252,17 +252,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2497
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2497
-        - network: 209-2497
-        - network: 701-2497
         - network: 1239-2497
+        - network: 209-2497
+        - network: 2497-15169
+        - network: 2497-15290
+        - network: 2497-17691
+        - network: 2497-22822
+        - network: 2497-23947
         - network: 2497-2500
+        - network: 2497-262589
         - network: 2497-2906
         - network: 2497-2907
         - network: 2497-2914
+        - network: 2497-37100
         - network: 2497-4713
         - network: 2497-4761
         - network: 2497-6939
@@ -270,13 +275,8 @@ resources:
         - network: 2497-7738
         - network: 2497-8674
         - network: 2497-9498
-        - network: 2497-15169
-        - network: 2497-15290
-        - network: 2497-17691
-        - network: 2497-22822
-        - network: 2497-23947
-        - network: 2497-37100
-        - network: 2497-262589
+        - network: 42-2497
+        - network: 701-2497
       security_groups:
         - AllAllow
       key_name: default
@@ -296,14 +296,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2500
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-2500
+        - network: 2500-131158
         - network: 2500-2907
         - network: 2500-2914
         - network: 2500-4713
-        - network: 2500-131158
       security_groups:
         - AllAllow
       key_name: default
@@ -323,14 +323,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2905
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2905
-        - network: 2905-6939
-        - network: 2905-8674
         - network: 2905-15169
         - network: 2905-37100
+        - network: 2905-6939
+        - network: 2905-8674
+        - network: 42-2905
       security_groups:
         - AllAllow
       key_name: default
@@ -350,27 +350,27 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2906
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-2906
         - network: 1299-2906
         - network: 1916-2906
         - network: 2497-2906
-        - network: 2906-3269
-        - network: 2906-4713
-        - network: 2906-7738
-        - network: 2906-7922
-        - network: 2906-8492
         - network: 2906-11686
         - network: 2906-12989
         - network: 2906-24482
         - network: 2906-24516
-        - network: 2906-28329
-        - network: 2906-37100
-        - network: 2906-47872
         - network: 2906-262317
         - network: 2906-264268
+        - network: 2906-28329
+        - network: 2906-3269
+        - network: 2906-37100
+        - network: 2906-4713
+        - network: 2906-47872
+        - network: 2906-7738
+        - network: 2906-7922
+        - network: 2906-8492
+        - network: 701-2906
       security_groups:
         - AllAllow
       key_name: default
@@ -390,16 +390,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2907
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-2907
         - network: 2500-2907
+        - network: 2907-131158
+        - network: 2907-24482
         - network: 2907-2914
         - network: 2907-4713
         - network: 2907-6939
-        - network: 2907-24482
-        - network: 2907-131158
       security_groups:
         - AllAllow
       key_name: default
@@ -419,38 +419,38 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2914
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2914
-        - network: 209-2914
-        - network: 701-2914
         - network: 1239-2914
         - network: 1299-2914
         - network: 1916-2914
+        - network: 209-2914
         - network: 2497-2914
         - network: 2500-2914
         - network: 2907-2914
-        - network: 2914-3225
-        - network: 2914-3573
-        - network: 2914-3693
-        - network: 2914-4436
-        - network: 2914-4713
-        - network: 2914-4761
-        - network: 2914-7670
-        - network: 2914-7922
-        - network: 2914-8674
-        - network: 2914-9498
         - network: 2914-15169
         - network: 2914-17685
         - network: 2914-23829
         - network: 2914-23947
         - network: 2914-24482
+        - network: 2914-3225
         - network: 2914-32590
+        - network: 2914-3573
+        - network: 2914-3693
         - network: 2914-37100
         - network: 2914-41541
+        - network: 2914-4436
+        - network: 2914-4713
+        - network: 2914-4761
         - network: 2914-47872
         - network: 2914-62227
+        - network: 2914-7670
+        - network: 2914-7922
+        - network: 2914-8674
+        - network: 2914-9498
+        - network: 42-2914
+        - network: 701-2914
       security_groups:
         - AllAllow
       key_name: default
@@ -470,16 +470,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3225
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1299-3225
         - network: 2914-3225
-        - network: 3225-6939
-        - network: 3225-8492
         - network: 3225-24482
         - network: 3225-37100
         - network: 3225-47872
+        - network: 3225-6939
+        - network: 3225-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -499,8 +499,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3269
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2906-3269
         - network: 3269-3573
@@ -523,16 +523,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3573
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-3573
         - network: 2914-3573
         - network: 3269-3573
+        - network: 3573-12302
         - network: 3573-4755
         - network: 3573-7738
         - network: 3573-9498
-        - network: 3573-12302
+        - network: 701-3573
       security_groups:
         - AllAllow
       key_name: default
@@ -552,8 +552,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3613
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3613-4713
         - network: 3613-9930
@@ -576,8 +576,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3693
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2914-3693
         - network: 3693-4713
@@ -600,8 +600,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3944
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3944-16668
       security_groups:
@@ -623,18 +623,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4436
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-4436
-        - network: 209-4436
         - network: 1239-4436
         - network: 1299-4436
+        - network: 209-4436
         - network: 2914-4436
-        - network: 4436-6391
-        - network: 4436-7738
-        - network: 4436-7922
-        - network: 4436-9498
+        - network: 42-4436
         - network: 4436-16668
         - network: 4436-23947
         - network: 4436-29119
@@ -643,6 +639,10 @@ resources:
         - network: 4436-47872
         - network: 4436-50607
         - network: 4436-62081
+        - network: 4436-6391
+        - network: 4436-7738
+        - network: 4436-7922
+        - network: 4436-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -662,8 +662,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4713
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-4713
         - network: 2500-4713
@@ -695,12 +695,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4755
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3573-4755
-        - network: 4755-9498
         - network: 4755-55947
+        - network: 4755-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -720,22 +720,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4761
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1299-4761
         - network: 2497-4761
         - network: 2914-4761
-        - network: 4761-6777
-        - network: 4761-6939
-        - network: 4761-8492
         - network: 4761-12989
+        - network: 4761-131735
         - network: 4761-17922
         - network: 4761-24482
         - network: 4761-24516
         - network: 4761-37100
         - network: 4761-63511
-        - network: 4761-131735
+        - network: 4761-6777
+        - network: 4761-6939
+        - network: 4761-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -755,8 +755,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6391
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 4436-6391
         - network: 6391-6939
@@ -779,14 +779,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6777
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 4761-6777
-        - network: 6777-9498
         - network: 6777-13720
         - network: 6777-29119
         - network: 6777-32590
+        - network: 6777-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -806,27 +806,20 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6939
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-6939
-        - network: 209-6939
-        - network: 701-6939
         - network: 1239-6939
         - network: 1299-6939
         - network: 1916-6939
+        - network: 209-6939
         - network: 2497-6939
         - network: 2905-6939
         - network: 2907-6939
         - network: 3225-6939
+        - network: 42-6939
         - network: 4761-6939
         - network: 6391-6939
-        - network: 6939-7738
-        - network: 6939-7922
-        - network: 6939-8492
-        - network: 6939-8674
-        - network: 6939-9498
-        - network: 6939-9930
         - network: 6939-11686
         - network: 6939-11758
         - network: 6939-12302
@@ -836,11 +829,22 @@ resources:
         - network: 6939-15290
         - network: 6939-16668
         - network: 6939-17922
+        - network: 6939-198389
+        - network: 6939-199846
         - network: 6939-22822
         - network: 6939-23829
         - network: 6939-23947
         - network: 6939-24482
         - network: 6939-24516
+        - network: 6939-262317
+        - network: 6939-262589
+        - network: 6939-262760
+        - network: 6939-263415
+        - network: 6939-263661
+        - network: 6939-263665
+        - network: 6939-264101
+        - network: 6939-264268
+        - network: 6939-266256
         - network: 6939-28329
         - network: 6939-29119
         - network: 6939-29534
@@ -855,17 +859,13 @@ resources:
         - network: 6939-53243
         - network: 6939-59415
         - network: 6939-62227
-        - network: 6939-198389
-        - network: 6939-199846
-        - network: 6939-262317
-        - network: 6939-262589
-        - network: 6939-262760
-        - network: 6939-263415
-        - network: 6939-263661
-        - network: 6939-263665
-        - network: 6939-264101
-        - network: 6939-264268
-        - network: 6939-266256
+        - network: 6939-7738
+        - network: 6939-7922
+        - network: 6939-8492
+        - network: 6939-8674
+        - network: 6939-9498
+        - network: 6939-9930
+        - network: 701-6939
       security_groups:
         - AllAllow
       key_name: default
@@ -885,16 +885,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7670
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-7670
         - network: 2914-7670
+        - network: 7670-131907
         - network: 7670-17691
         - network: 7670-23775
         - network: 7670-23822
         - network: 7670-24482
-        - network: 7670-131907
       security_groups:
         - AllAllow
       key_name: default
@@ -914,8 +914,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7726
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1239-7726
         - network: 7726-7738
@@ -938,10 +938,9 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7738
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-7738
         - network: 1239-7738
         - network: 1299-7738
         - network: 1916-7738
@@ -950,6 +949,7 @@ resources:
         - network: 3573-7738
         - network: 4436-7738
         - network: 6939-7738
+        - network: 701-7738
         - network: 7726-7738
         - network: 7738-12989
         - network: 7738-262560
@@ -974,26 +974,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7922
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-7922
-        - network: 209-7922
-        - network: 701-7922
         - network: 1239-7922
         - network: 1299-7922
+        - network: 17922-131735
+        - network: 17922-24482
+        - network: 17922-63511
+        - network: 209-7922
         - network: 2906-7922
         - network: 2914-7922
+        - network: 42-7922
         - network: 4436-7922
         - network: 6939-7922
+        - network: 701-7922
         - network: 7922-22822
         - network: 7922-32590
         - network: 7922-33659
         - network: 7922-33660
         - network: 7922-36040
-        - network: 17922-24482
-        - network: 17922-63511
-        - network: 17922-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -1013,17 +1013,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as8492
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-8492
         - network: 1299-8492
         - network: 2906-8492
         - network: 3225-8492
+        - network: 42-8492
         - network: 4761-8492
         - network: 6939-8492
-        - network: 8492-8674
-        - network: 8492-9498
         - network: 8492-12989
         - network: 8492-13720
         - network: 8492-15169
@@ -1036,6 +1034,8 @@ resources:
         - network: 8492-47872
         - network: 8492-62081
         - network: 8492-62227
+        - network: 8492-8674
+        - network: 8492-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -1055,11 +1055,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as8674
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-8674
         - network: 1916-8674
+        - network: 209-8674
         - network: 2497-8674
         - network: 2905-8674
         - network: 2914-8674
@@ -1089,11 +1089,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as9498
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-9498
         - network: 1299-9498
+        - network: 209-9498
         - network: 2497-9498
         - network: 2914-9498
         - network: 3573-9498
@@ -1129,15 +1129,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as9930
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3613-9930
         - network: 6939-9930
-        - network: 9930-24482
-        - network: 9930-24516
         - network: 9930-134698
         - network: 9930-198723
+        - network: 9930-24482
+        - network: 9930-24516
       security_groups:
         - AllAllow
       key_name: default
@@ -1157,21 +1157,21 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as11686
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-11686
-        - network: 1916-11686
-        - network: 2906-11686
-        - network: 6939-11686
-        - network: 8674-11686
         - network: 11686-11758
         - network: 11686-12989
         - network: 11686-15169
         - network: 11686-22822
         - network: 11686-24482
-        - network: 11686-32590
         - network: 11686-262589
+        - network: 11686-32590
+        - network: 1916-11686
+        - network: 2906-11686
+        - network: 42-11686
+        - network: 6939-11686
+        - network: 8674-11686
       security_groups:
         - AllAllow
       key_name: default
@@ -1191,12 +1191,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as11758
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 11686-11758
         - network: 1299-11758
         - network: 6939-11758
-        - network: 11686-11758
       security_groups:
         - AllAllow
       key_name: default
@@ -1216,8 +1216,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as12302
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3573-12302
         - network: 6939-12302
@@ -1240,23 +1240,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as12989
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-12989
-        - network: 209-12989
-        - network: 701-12989
-        - network: 1299-12989
-        - network: 1916-12989
-        - network: 2906-12989
-        - network: 4761-12989
-        - network: 6939-12989
-        - network: 7738-12989
-        - network: 8492-12989
-        - network: 9498-12989
         - network: 11686-12989
         - network: 12989-24482
         - network: 12989-24516
+        - network: 12989-262317
+        - network: 12989-262589
         - network: 12989-28329
         - network: 12989-29119
         - network: 12989-32590
@@ -1264,8 +1255,17 @@ resources:
         - network: 12989-37613
         - network: 12989-53237
         - network: 12989-62227
-        - network: 12989-262317
-        - network: 12989-262589
+        - network: 1299-12989
+        - network: 1916-12989
+        - network: 209-12989
+        - network: 2906-12989
+        - network: 42-12989
+        - network: 4761-12989
+        - network: 6939-12989
+        - network: 701-12989
+        - network: 7738-12989
+        - network: 8492-12989
+        - network: 9498-12989
       security_groups:
         - AllAllow
       key_name: default
@@ -1285,15 +1285,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as13720
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6777-13720
-        - network: 6939-13720
-        - network: 8492-13720
         - network: 13720-22822
         - network: 13720-24482
         - network: 13720-37100
+        - network: 6777-13720
+        - network: 6939-13720
+        - network: 8492-13720
       security_groups:
         - AllAllow
       key_name: default
@@ -1313,29 +1313,29 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as15169
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-15169
-        - network: 701-15169
+        - network: 11686-15169
         - network: 1239-15169
         - network: 1299-15169
-        - network: 1916-15169
-        - network: 2497-15169
-        - network: 2905-15169
-        - network: 2914-15169
-        - network: 6939-15169
-        - network: 8492-15169
-        - network: 9498-15169
-        - network: 11686-15169
         - network: 15169-24482
         - network: 15169-24516
+        - network: 15169-262317
+        - network: 15169-264268
         - network: 15169-28329
         - network: 15169-36040
         - network: 15169-37100
         - network: 15169-47872
-        - network: 15169-262317
-        - network: 15169-264268
+        - network: 1916-15169
+        - network: 209-15169
+        - network: 2497-15169
+        - network: 2905-15169
+        - network: 2914-15169
+        - network: 6939-15169
+        - network: 701-15169
+        - network: 8492-15169
+        - network: 9498-15169
       security_groups:
         - AllAllow
       key_name: default
@@ -1355,12 +1355,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as15290
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 15290-24482
         - network: 2497-15290
         - network: 6939-15290
-        - network: 15290-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -1380,14 +1380,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as16668
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-16668
+        - network: 16668-22822
         - network: 3944-16668
+        - network: 42-16668
         - network: 4436-16668
         - network: 6939-16668
-        - network: 16668-22822
       security_groups:
         - AllAllow
       key_name: default
@@ -1407,12 +1407,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17685
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 17685-24482
         - network: 2914-17685
         - network: 4713-17685
-        - network: 17685-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -1432,8 +1432,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17691
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-17691
         - network: 4713-17691
@@ -1457,15 +1457,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17922
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 17922-131735
+        - network: 17922-24482
+        - network: 17922-63511
         - network: 4761-17922
         - network: 6939-17922
         - network: 9498-17922
-        - network: 17922-24482
-        - network: 17922-63511
-        - network: 17922-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -1485,8 +1485,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as18746
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 701-18746
       security_groups:
@@ -1508,26 +1508,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as22822
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-22822
-        - network: 701-22822
-        - network: 1299-22822
-        - network: 2497-22822
-        - network: 4713-22822
-        - network: 6939-22822
-        - network: 7922-22822
-        - network: 8492-22822
         - network: 11686-22822
+        - network: 1299-22822
         - network: 13720-22822
         - network: 16668-22822
+        - network: 209-22822
         - network: 22822-24482
         - network: 22822-24516
         - network: 22822-36324
         - network: 22822-37100
         - network: 22822-47872
         - network: 22822-64901
+        - network: 2497-22822
+        - network: 4713-22822
+        - network: 6939-22822
+        - network: 701-22822
+        - network: 7922-22822
+        - network: 8492-22822
       security_groups:
         - AllAllow
       key_name: default
@@ -1547,8 +1547,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23775
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7670-23775
       security_groups:
@@ -1570,11 +1570,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23822
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7670-23822
         - network: 23822-23829
+        - network: 7670-23822
       security_groups:
         - AllAllow
       key_name: default
@@ -1594,14 +1594,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23829
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 23822-23829
+        - network: 23829-24482
         - network: 2914-23829
         - network: 4713-23829
         - network: 6939-23829
-        - network: 23822-23829
-        - network: 23829-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -1621,16 +1621,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23947
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 23947-131735
+        - network: 23947-24482
+        - network: 23947-24516
         - network: 2497-23947
         - network: 2914-23947
         - network: 4436-23947
         - network: 6939-23947
-        - network: 23947-24482
-        - network: 23947-24516
-        - network: 23947-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -1650,35 +1650,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as24482
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-24482
-        - network: 209-24482
-        - network: 1239-24482
-        - network: 1916-24482
-        - network: 2906-24482
-        - network: 2907-24482
-        - network: 2914-24482
-        - network: 3225-24482
-        - network: 4761-24482
-        - network: 6939-24482
-        - network: 7670-24482
-        - network: 8492-24482
-        - network: 8674-24482
-        - network: 9498-24482
-        - network: 9930-24482
         - network: 11686-24482
+        - network: 1239-24482
         - network: 12989-24482
         - network: 13720-24482
         - network: 15169-24482
         - network: 15290-24482
         - network: 17685-24482
         - network: 17922-24482
+        - network: 1916-24482
+        - network: 209-24482
         - network: 22822-24482
         - network: 23829-24482
         - network: 23947-24482
         - network: 24482-24516
+        - network: 24482-262589
         - network: 24482-29119
         - network: 24482-32590
         - network: 24482-36040
@@ -1687,7 +1676,18 @@ resources:
         - network: 24482-47872
         - network: 24482-62081
         - network: 24482-62227
-        - network: 24482-262589
+        - network: 2906-24482
+        - network: 2907-24482
+        - network: 2914-24482
+        - network: 3225-24482
+        - network: 42-24482
+        - network: 4761-24482
+        - network: 6939-24482
+        - network: 7670-24482
+        - network: 8492-24482
+        - network: 8674-24482
+        - network: 9498-24482
+        - network: 9930-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -1707,24 +1707,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as24516
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-24516
-        - network: 209-24516
+        - network: 12989-24516
         - network: 1299-24516
+        - network: 15169-24516
+        - network: 209-24516
+        - network: 22822-24516
+        - network: 23947-24516
+        - network: 24482-24516
+        - network: 24516-32590
         - network: 2906-24516
+        - network: 42-24516
         - network: 4761-24516
         - network: 6939-24516
         - network: 8674-24516
         - network: 9498-24516
         - network: 9930-24516
-        - network: 12989-24516
-        - network: 15169-24516
-        - network: 22822-24516
-        - network: 23947-24516
-        - network: 24482-24516
-        - network: 24516-32590
       security_groups:
         - AllAllow
       key_name: default
@@ -1744,8 +1744,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as26218
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 26218-53237
       security_groups:
@@ -1767,16 +1767,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as28329
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-28329
-        - network: 2906-28329
-        - network: 6939-28329
         - network: 12989-28329
         - network: 15169-28329
-        - network: 28329-53237
-        - network: 28329-53243
+        - network: 1916-28329
         - network: 28329-262317
         - network: 28329-262589
         - network: 28329-262760
@@ -1787,6 +1783,10 @@ resources:
         - network: 28329-264101
         - network: 28329-264268
         - network: 28329-266256
+        - network: 28329-53237
+        - network: 28329-53243
+        - network: 2906-28329
+        - network: 6939-28329
       security_groups:
         - AllAllow
       key_name: default
@@ -1806,18 +1806,18 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as29119
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 12989-29119
         - network: 1299-29119
+        - network: 24482-29119
+        - network: 29119-37100
+        - network: 29119-50129
         - network: 4436-29119
         - network: 6777-29119
         - network: 6939-29119
         - network: 8492-29119
-        - network: 12989-29119
-        - network: 24482-29119
-        - network: 29119-37100
-        - network: 29119-50129
       security_groups:
         - AllAllow
       key_name: default
@@ -1837,11 +1837,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as29534
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-29534
         - network: 29534-47872
+        - network: 6939-29534
       security_groups:
         - AllAllow
       key_name: default
@@ -1861,8 +1861,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as30519
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 209-30519
         - network: 30519-33660
@@ -1885,24 +1885,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as32590
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-32590
-        - network: 701-32590
+        - network: 11686-32590
+        - network: 12989-32590
         - network: 1299-32590
+        - network: 209-32590
+        - network: 24482-32590
+        - network: 24516-32590
         - network: 2914-32590
+        - network: 32590-37100
+        - network: 32590-47872
         - network: 6777-32590
         - network: 6939-32590
+        - network: 701-32590
         - network: 7922-32590
         - network: 8492-32590
         - network: 9498-32590
-        - network: 11686-32590
-        - network: 12989-32590
-        - network: 24482-32590
-        - network: 24516-32590
-        - network: 32590-37100
-        - network: 32590-47872
       security_groups:
         - AllAllow
       key_name: default
@@ -1922,11 +1922,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as33659
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7922-33659
         - network: 33659-394096
+        - network: 7922-33659
       security_groups:
         - AllAllow
       key_name: default
@@ -1946,11 +1946,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as33660
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7922-33660
         - network: 30519-33660
+        - network: 7922-33660
       security_groups:
         - AllAllow
       key_name: default
@@ -1970,19 +1970,19 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as36040
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-36040
         - network: 1299-36040
-        - network: 4436-36040
-        - network: 6939-36040
-        - network: 7922-36040
         - network: 15169-36040
         - network: 24482-36040
         - network: 36040-50607
         - network: 36040-55947
         - network: 36040-62081
+        - network: 4436-36040
+        - network: 6939-36040
+        - network: 701-36040
+        - network: 7922-36040
       security_groups:
         - AllAllow
       key_name: default
@@ -2002,11 +2002,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as36324
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-36324
         - network: 22822-36324
+        - network: 6939-36324
       security_groups:
         - AllAllow
       key_name: default
@@ -2026,33 +2026,33 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37100
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-37100
+        - network: 12989-37100
         - network: 1299-37100
+        - network: 13720-37100
+        - network: 15169-37100
+        - network: 22822-37100
+        - network: 24482-37100
         - network: 2497-37100
         - network: 2905-37100
         - network: 2906-37100
+        - network: 29119-37100
         - network: 2914-37100
         - network: 3225-37100
+        - network: 32590-37100
+        - network: 37100-37613
+        - network: 37100-47872
+        - network: 37100-62081
+        - network: 37100-62227
+        - network: 42-37100
         - network: 4436-37100
         - network: 4761-37100
         - network: 6939-37100
         - network: 8492-37100
         - network: 8674-37100
         - network: 9498-37100
-        - network: 12989-37100
-        - network: 13720-37100
-        - network: 15169-37100
-        - network: 22822-37100
-        - network: 24482-37100
-        - network: 29119-37100
-        - network: 32590-37100
-        - network: 37100-37613
-        - network: 37100-47872
-        - network: 37100-62081
-        - network: 37100-62227
       security_groups:
         - AllAllow
       key_name: default
@@ -2072,16 +2072,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37613
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1299-37613
-        - network: 6939-37613
-        - network: 8492-37613
         - network: 12989-37613
+        - network: 1299-37613
         - network: 24482-37613
         - network: 37100-37613
         - network: 37613-37629
+        - network: 6939-37613
+        - network: 8492-37613
       security_groups:
         - AllAllow
       key_name: default
@@ -2101,8 +2101,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37629
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 37613-37629
       security_groups:
@@ -2124,8 +2124,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as41541
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2914-41541
       security_groups:
@@ -2147,12 +2147,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as46428
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 1239-46428
         - network: 209-46428
         - network: 701-46428
-        - network: 1239-46428
       security_groups:
         - AllAllow
       key_name: default
@@ -2172,26 +2172,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as47872
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-47872
         - network: 1299-47872
-        - network: 2906-47872
-        - network: 2914-47872
-        - network: 3225-47872
-        - network: 4436-47872
-        - network: 6939-47872
-        - network: 8492-47872
-        - network: 8674-47872
         - network: 15169-47872
         - network: 22822-47872
         - network: 24482-47872
+        - network: 2906-47872
+        - network: 2914-47872
         - network: 29534-47872
+        - network: 3225-47872
         - network: 32590-47872
         - network: 37100-47872
+        - network: 42-47872
+        - network: 4436-47872
         - network: 47872-50607
         - network: 47872-62081
+        - network: 6939-47872
+        - network: 8492-47872
+        - network: 8674-47872
       security_groups:
         - AllAllow
       key_name: default
@@ -2211,8 +2211,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as50129
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 29119-50129
       security_groups:
@@ -2234,16 +2234,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as50607
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4436-50607
-        - network: 6939-50607
         - network: 36040-50607
+        - network: 4436-50607
         - network: 47872-50607
+        - network: 50607-199846
         - network: 50607-59415
         - network: 50607-62081
-        - network: 50607-199846
+        - network: 6939-50607
       security_groups:
         - AllAllow
       key_name: default
@@ -2263,17 +2263,17 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as53237
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-53237
-        - network: 6939-53237
         - network: 12989-53237
+        - network: 1916-53237
         - network: 26218-53237
         - network: 28329-53237
         - network: 53237-262317
         - network: 53237-262716
         - network: 53237-264268
+        - network: 6939-53237
       security_groups:
         - AllAllow
       key_name: default
@@ -2293,14 +2293,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as53243
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-53243
-        - network: 6939-53243
         - network: 28329-53243
         - network: 53243-262317
         - network: 53243-264268
+        - network: 6939-53243
       security_groups:
         - AllAllow
       key_name: default
@@ -2320,12 +2320,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as55947
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 36040-55947
         - network: 4755-55947
         - network: 9498-55947
-        - network: 36040-55947
       security_groups:
         - AllAllow
       key_name: default
@@ -2345,12 +2345,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as59415
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-59415
         - network: 50607-59415
         - network: 59415-62081
+        - network: 6939-59415
       security_groups:
         - AllAllow
       key_name: default
@@ -2370,19 +2370,19 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as62081
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4436-62081
-        - network: 8492-62081
         - network: 24482-62081
         - network: 36040-62081
         - network: 37100-62081
+        - network: 4436-62081
         - network: 47872-62081
         - network: 50607-62081
         - network: 59415-62081
         - network: 62081-198389
         - network: 62081-199846
+        - network: 8492-62081
       security_groups:
         - AllAllow
       key_name: default
@@ -2402,15 +2402,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as62227
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 2914-62227
-        - network: 6939-62227
-        - network: 8492-62227
         - network: 12989-62227
         - network: 24482-62227
+        - network: 2914-62227
         - network: 37100-62227
+        - network: 6939-62227
+        - network: 8492-62227
       security_groups:
         - AllAllow
       key_name: default
@@ -2430,11 +2430,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as63511
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4761-63511
         - network: 17922-63511
+        - network: 4761-63511
       security_groups:
         - AllAllow
       key_name: default
@@ -2454,8 +2454,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as64901
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 22822-64901
       security_groups:
@@ -2477,8 +2477,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131158
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2500-131158
         - network: 2907-131158
@@ -2501,12 +2501,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131735
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4761-131735
         - network: 17922-131735
         - network: 23947-131735
+        - network: 4761-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -2526,8 +2526,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131907
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7670-131907
       security_groups:
@@ -2549,8 +2549,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as134698
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 9930-134698
       security_groups:
@@ -2572,11 +2572,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as198389
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-198389
         - network: 62081-198389
+        - network: 6939-198389
       security_groups:
         - AllAllow
       key_name: default
@@ -2596,8 +2596,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as198723
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 9930-198723
       security_groups:
@@ -2619,12 +2619,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as199846
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-199846
         - network: 50607-199846
         - network: 62081-199846
+        - network: 6939-199846
       security_groups:
         - AllAllow
       key_name: default
@@ -2644,17 +2644,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262317
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-262317
-        - network: 2906-262317
-        - network: 6939-262317
         - network: 12989-262317
         - network: 15169-262317
-        - network: 28329-262317
-        - network: 53237-262317
-        - network: 53243-262317
+        - network: 1916-262317
         - network: 262317-262589
         - network: 262317-262760
         - network: 262317-263415
@@ -2663,6 +2658,11 @@ resources:
         - network: 262317-264101
         - network: 262317-264268
         - network: 262317-266256
+        - network: 28329-262317
+        - network: 2906-262317
+        - network: 53237-262317
+        - network: 53243-262317
+        - network: 6939-262317
       security_groups:
         - AllAllow
       key_name: default
@@ -2682,8 +2682,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262560
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7738-262560
       security_groups:
@@ -2705,22 +2705,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262589
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 11686-262589
         - network: 1239-262589
+        - network: 12989-262589
         - network: 1299-262589
         - network: 1916-262589
-        - network: 2497-262589
-        - network: 6939-262589
-        - network: 7738-262589
-        - network: 11686-262589
-        - network: 12989-262589
         - network: 24482-262589
-        - network: 28329-262589
+        - network: 2497-262589
         - network: 262317-262589
         - network: 262589-262625
         - network: 262589-264268
+        - network: 28329-262589
+        - network: 6939-262589
+        - network: 7738-262589
       security_groups:
         - AllAllow
       key_name: default
@@ -2740,8 +2740,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262625
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 262589-262625
       security_groups:
@@ -2763,11 +2763,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262716
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 53237-262716
         - network: 262716-263665
+        - network: 53237-262716
       security_groups:
         - AllAllow
       key_name: default
@@ -2787,15 +2787,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262760
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-262760
-        - network: 6939-262760
-        - network: 28329-262760
         - network: 262317-262760
         - network: 262760-264101
         - network: 262760-264268
+        - network: 28329-262760
+        - network: 6939-262760
       security_groups:
         - AllAllow
       key_name: default
@@ -2815,14 +2815,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263415
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263415
-        - network: 6939-263415
-        - network: 28329-263415
         - network: 262317-263415
         - network: 263415-264268
+        - network: 28329-263415
+        - network: 6939-263415
       security_groups:
         - AllAllow
       key_name: default
@@ -2842,11 +2842,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263566
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 28329-263566
         - network: 263566-263661
+        - network: 28329-263566
       security_groups:
         - AllAllow
       key_name: default
@@ -2866,15 +2866,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263661
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263661
-        - network: 6939-263661
-        - network: 28329-263661
         - network: 262317-263661
         - network: 263566-263661
         - network: 263661-264268
+        - network: 28329-263661
+        - network: 6939-263661
       security_groups:
         - AllAllow
       key_name: default
@@ -2894,16 +2894,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263665
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263665
-        - network: 6939-263665
-        - network: 28329-263665
         - network: 262317-263665
         - network: 262716-263665
         - network: 263665-264268
         - network: 263665-267576
+        - network: 28329-263665
+        - network: 6939-263665
       security_groups:
         - AllAllow
       key_name: default
@@ -2923,15 +2923,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as264101
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-264101
-        - network: 6939-264101
-        - network: 28329-264101
         - network: 262317-264101
         - network: 262760-264101
         - network: 264101-264268
+        - network: 28329-264101
+        - network: 6939-264101
       security_groups:
         - AllAllow
       key_name: default
@@ -2951,16 +2951,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as264268
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-264268
-        - network: 2906-264268
-        - network: 6939-264268
         - network: 15169-264268
-        - network: 28329-264268
-        - network: 53237-264268
-        - network: 53243-264268
+        - network: 1916-264268
         - network: 262317-264268
         - network: 262589-264268
         - network: 262760-264268
@@ -2969,6 +2964,11 @@ resources:
         - network: 263665-264268
         - network: 264101-264268
         - network: 264268-266256
+        - network: 28329-264268
+        - network: 2906-264268
+        - network: 53237-264268
+        - network: 53243-264268
+        - network: 6939-264268
       security_groups:
         - AllAllow
       key_name: default
@@ -2988,15 +2988,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as266256
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-266256
-        - network: 6939-266256
-        - network: 7738-266256
-        - network: 28329-266256
         - network: 262317-266256
         - network: 264268-266256
+        - network: 28329-266256
+        - network: 6939-266256
+        - network: 7738-266256
       security_groups:
         - AllAllow
       key_name: default
@@ -3016,8 +3016,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as267576
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-267576
         - network: 263665-267576
@@ -3040,11 +3040,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as394096
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-394096
         - network: 33659-394096
+        - network: 701-394096
       security_groups:
         - AllAllow
       key_name: default
@@ -3064,25 +3064,25 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as42
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-701
-        - network: 42-1916
-        - network: 42-2497
-        - network: 42-2905
-        - network: 42-2914
-        - network: 42-4436
-        - network: 42-6939
-        - network: 42-7922
-        - network: 42-8492
         - network: 42-11686
         - network: 42-12989
         - network: 42-16668
+        - network: 42-1916
         - network: 42-24482
         - network: 42-24516
+        - network: 42-2497
+        - network: 42-2905
+        - network: 42-2914
         - network: 42-37100
+        - network: 42-4436
         - network: 42-47872
+        - network: 42-6939
+        - network: 42-701
+        - network: 42-7922
+        - network: 42-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -3102,27 +3102,27 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as209
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-701
         - network: 209-1239
-        - network: 209-1299
-        - network: 209-2497
-        - network: 209-2914
-        - network: 209-4436
-        - network: 209-6939
-        - network: 209-7922
-        - network: 209-8674
-        - network: 209-9498
         - network: 209-12989
+        - network: 209-1299
         - network: 209-15169
         - network: 209-22822
         - network: 209-24482
         - network: 209-24516
+        - network: 209-2497
+        - network: 209-2914
         - network: 209-30519
         - network: 209-32590
+        - network: 209-4436
         - network: 209-46428
+        - network: 209-6939
+        - network: 209-701
+        - network: 209-7922
+        - network: 209-8674
+        - network: 209-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -3142,28 +3142,28 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as701
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-701
         - network: 209-701
+        - network: 42-701
         - network: 701-1239
-        - network: 701-1299
-        - network: 701-2497
-        - network: 701-2906
-        - network: 701-2914
-        - network: 701-3573
-        - network: 701-6939
-        - network: 701-7738
-        - network: 701-7922
         - network: 701-12989
+        - network: 701-1299
         - network: 701-15169
         - network: 701-18746
         - network: 701-22822
+        - network: 701-2497
+        - network: 701-2906
+        - network: 701-2914
         - network: 701-32590
+        - network: 701-3573
         - network: 701-36040
-        - network: 701-46428
         - network: 701-394096
+        - network: 701-46428
+        - network: 701-6939
+        - network: 701-7738
+        - network: 701-7922
       security_groups:
         - AllAllow
       key_name: default
@@ -3183,23 +3183,23 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1239
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-1239
-        - network: 701-1239
         - network: 1239-1299
+        - network: 1239-15169
+        - network: 1239-24482
         - network: 1239-2497
+        - network: 1239-262589
         - network: 1239-2914
         - network: 1239-4436
+        - network: 1239-46428
         - network: 1239-6939
         - network: 1239-7726
         - network: 1239-7738
         - network: 1239-7922
-        - network: 1239-15169
-        - network: 1239-24482
-        - network: 1239-46428
-        - network: 1239-262589
+        - network: 209-1239
+        - network: 701-1239
       security_groups:
         - AllAllow
       key_name: default
@@ -3219,34 +3219,34 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1299
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-1299
-        - network: 701-1299
         - network: 1239-1299
-        - network: 1299-2906
-        - network: 1299-2914
-        - network: 1299-3225
-        - network: 1299-4436
-        - network: 1299-4761
-        - network: 1299-6939
-        - network: 1299-7738
-        - network: 1299-7922
-        - network: 1299-8492
-        - network: 1299-9498
         - network: 1299-11758
         - network: 1299-12989
         - network: 1299-15169
         - network: 1299-22822
         - network: 1299-24516
+        - network: 1299-262589
+        - network: 1299-2906
         - network: 1299-29119
+        - network: 1299-2914
+        - network: 1299-3225
         - network: 1299-32590
         - network: 1299-36040
         - network: 1299-37100
         - network: 1299-37613
+        - network: 1299-4436
+        - network: 1299-4761
         - network: 1299-47872
-        - network: 1299-262589
+        - network: 1299-6939
+        - network: 1299-7738
+        - network: 1299-7922
+        - network: 1299-8492
+        - network: 1299-9498
+        - network: 209-1299
+        - network: 701-1299
       security_groups:
         - AllAllow
       key_name: default
@@ -3266,22 +3266,13 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as1916
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-1916
-        - network: 1916-2906
-        - network: 1916-2914
-        - network: 1916-6939
-        - network: 1916-7738
-        - network: 1916-8674
         - network: 1916-11686
         - network: 1916-12989
         - network: 1916-15169
         - network: 1916-24482
-        - network: 1916-28329
-        - network: 1916-53237
-        - network: 1916-53243
         - network: 1916-262317
         - network: 1916-262589
         - network: 1916-262760
@@ -3292,6 +3283,15 @@ resources:
         - network: 1916-264268
         - network: 1916-266256
         - network: 1916-267576
+        - network: 1916-28329
+        - network: 1916-2906
+        - network: 1916-2914
+        - network: 1916-53237
+        - network: 1916-53243
+        - network: 1916-6939
+        - network: 1916-7738
+        - network: 1916-8674
+        - network: 42-1916
       security_groups:
         - AllAllow
       key_name: default
@@ -3311,17 +3311,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2497
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2497
-        - network: 209-2497
-        - network: 701-2497
         - network: 1239-2497
+        - network: 209-2497
+        - network: 2497-15169
+        - network: 2497-15290
+        - network: 2497-17691
+        - network: 2497-22822
+        - network: 2497-23947
         - network: 2497-2500
+        - network: 2497-262589
         - network: 2497-2906
         - network: 2497-2907
         - network: 2497-2914
+        - network: 2497-37100
         - network: 2497-4713
         - network: 2497-4761
         - network: 2497-6939
@@ -3329,13 +3334,8 @@ resources:
         - network: 2497-7738
         - network: 2497-8674
         - network: 2497-9498
-        - network: 2497-15169
-        - network: 2497-15290
-        - network: 2497-17691
-        - network: 2497-22822
-        - network: 2497-23947
-        - network: 2497-37100
-        - network: 2497-262589
+        - network: 42-2497
+        - network: 701-2497
       security_groups:
         - AllAllow
       key_name: default
@@ -3355,14 +3355,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2500
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-2500
+        - network: 2500-131158
         - network: 2500-2907
         - network: 2500-2914
         - network: 2500-4713
-        - network: 2500-131158
       security_groups:
         - AllAllow
       key_name: default
@@ -3382,14 +3382,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2905
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2905
-        - network: 2905-6939
-        - network: 2905-8674
         - network: 2905-15169
         - network: 2905-37100
+        - network: 2905-6939
+        - network: 2905-8674
+        - network: 42-2905
       security_groups:
         - AllAllow
       key_name: default
@@ -3409,27 +3409,27 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2906
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-2906
         - network: 1299-2906
         - network: 1916-2906
         - network: 2497-2906
-        - network: 2906-3269
-        - network: 2906-4713
-        - network: 2906-7738
-        - network: 2906-7922
-        - network: 2906-8492
         - network: 2906-11686
         - network: 2906-12989
         - network: 2906-24482
         - network: 2906-24516
-        - network: 2906-28329
-        - network: 2906-37100
-        - network: 2906-47872
         - network: 2906-262317
         - network: 2906-264268
+        - network: 2906-28329
+        - network: 2906-3269
+        - network: 2906-37100
+        - network: 2906-4713
+        - network: 2906-47872
+        - network: 2906-7738
+        - network: 2906-7922
+        - network: 2906-8492
+        - network: 701-2906
       security_groups:
         - AllAllow
       key_name: default
@@ -3449,16 +3449,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2907
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-2907
         - network: 2500-2907
+        - network: 2907-131158
+        - network: 2907-24482
         - network: 2907-2914
         - network: 2907-4713
         - network: 2907-6939
-        - network: 2907-24482
-        - network: 2907-131158
       security_groups:
         - AllAllow
       key_name: default
@@ -3478,38 +3478,38 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as2914
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-2914
-        - network: 209-2914
-        - network: 701-2914
         - network: 1239-2914
         - network: 1299-2914
         - network: 1916-2914
+        - network: 209-2914
         - network: 2497-2914
         - network: 2500-2914
         - network: 2907-2914
-        - network: 2914-3225
-        - network: 2914-3573
-        - network: 2914-3693
-        - network: 2914-4436
-        - network: 2914-4713
-        - network: 2914-4761
-        - network: 2914-7670
-        - network: 2914-7922
-        - network: 2914-8674
-        - network: 2914-9498
         - network: 2914-15169
         - network: 2914-17685
         - network: 2914-23829
         - network: 2914-23947
         - network: 2914-24482
+        - network: 2914-3225
         - network: 2914-32590
+        - network: 2914-3573
+        - network: 2914-3693
         - network: 2914-37100
         - network: 2914-41541
+        - network: 2914-4436
+        - network: 2914-4713
+        - network: 2914-4761
         - network: 2914-47872
         - network: 2914-62227
+        - network: 2914-7670
+        - network: 2914-7922
+        - network: 2914-8674
+        - network: 2914-9498
+        - network: 42-2914
+        - network: 701-2914
       security_groups:
         - AllAllow
       key_name: default
@@ -3529,16 +3529,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3225
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1299-3225
         - network: 2914-3225
-        - network: 3225-6939
-        - network: 3225-8492
         - network: 3225-24482
         - network: 3225-37100
         - network: 3225-47872
+        - network: 3225-6939
+        - network: 3225-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -3558,8 +3558,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3269
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2906-3269
         - network: 3269-3573
@@ -3582,16 +3582,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3573
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-3573
         - network: 2914-3573
         - network: 3269-3573
+        - network: 3573-12302
         - network: 3573-4755
         - network: 3573-7738
         - network: 3573-9498
-        - network: 3573-12302
+        - network: 701-3573
       security_groups:
         - AllAllow
       key_name: default
@@ -3611,8 +3611,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3613
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3613-4713
         - network: 3613-9930
@@ -3635,8 +3635,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3693
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2914-3693
         - network: 3693-4713
@@ -3659,8 +3659,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as3944
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3944-16668
       security_groups:
@@ -3682,18 +3682,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4436
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-4436
-        - network: 209-4436
         - network: 1239-4436
         - network: 1299-4436
+        - network: 209-4436
         - network: 2914-4436
-        - network: 4436-6391
-        - network: 4436-7738
-        - network: 4436-7922
-        - network: 4436-9498
+        - network: 42-4436
         - network: 4436-16668
         - network: 4436-23947
         - network: 4436-29119
@@ -3702,6 +3698,10 @@ resources:
         - network: 4436-47872
         - network: 4436-50607
         - network: 4436-62081
+        - network: 4436-6391
+        - network: 4436-7738
+        - network: 4436-7922
+        - network: 4436-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -3721,8 +3721,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4713
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-4713
         - network: 2500-4713
@@ -3754,12 +3754,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4755
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3573-4755
-        - network: 4755-9498
         - network: 4755-55947
+        - network: 4755-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -3779,22 +3779,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as4761
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1299-4761
         - network: 2497-4761
         - network: 2914-4761
-        - network: 4761-6777
-        - network: 4761-6939
-        - network: 4761-8492
         - network: 4761-12989
+        - network: 4761-131735
         - network: 4761-17922
         - network: 4761-24482
         - network: 4761-24516
         - network: 4761-37100
         - network: 4761-63511
-        - network: 4761-131735
+        - network: 4761-6777
+        - network: 4761-6939
+        - network: 4761-8492
       security_groups:
         - AllAllow
       key_name: default
@@ -3814,8 +3814,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6391
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 4436-6391
         - network: 6391-6939
@@ -3838,14 +3838,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6777
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 4761-6777
-        - network: 6777-9498
         - network: 6777-13720
         - network: 6777-29119
         - network: 6777-32590
+        - network: 6777-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -3865,27 +3865,20 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as6939
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-6939
-        - network: 209-6939
-        - network: 701-6939
         - network: 1239-6939
         - network: 1299-6939
         - network: 1916-6939
+        - network: 209-6939
         - network: 2497-6939
         - network: 2905-6939
         - network: 2907-6939
         - network: 3225-6939
+        - network: 42-6939
         - network: 4761-6939
         - network: 6391-6939
-        - network: 6939-7738
-        - network: 6939-7922
-        - network: 6939-8492
-        - network: 6939-8674
-        - network: 6939-9498
-        - network: 6939-9930
         - network: 6939-11686
         - network: 6939-11758
         - network: 6939-12302
@@ -3895,11 +3888,22 @@ resources:
         - network: 6939-15290
         - network: 6939-16668
         - network: 6939-17922
+        - network: 6939-198389
+        - network: 6939-199846
         - network: 6939-22822
         - network: 6939-23829
         - network: 6939-23947
         - network: 6939-24482
         - network: 6939-24516
+        - network: 6939-262317
+        - network: 6939-262589
+        - network: 6939-262760
+        - network: 6939-263415
+        - network: 6939-263661
+        - network: 6939-263665
+        - network: 6939-264101
+        - network: 6939-264268
+        - network: 6939-266256
         - network: 6939-28329
         - network: 6939-29119
         - network: 6939-29534
@@ -3914,17 +3918,13 @@ resources:
         - network: 6939-53243
         - network: 6939-59415
         - network: 6939-62227
-        - network: 6939-198389
-        - network: 6939-199846
-        - network: 6939-262317
-        - network: 6939-262589
-        - network: 6939-262760
-        - network: 6939-263415
-        - network: 6939-263661
-        - network: 6939-263665
-        - network: 6939-264101
-        - network: 6939-264268
-        - network: 6939-266256
+        - network: 6939-7738
+        - network: 6939-7922
+        - network: 6939-8492
+        - network: 6939-8674
+        - network: 6939-9498
+        - network: 6939-9930
+        - network: 701-6939
       security_groups:
         - AllAllow
       key_name: default
@@ -3944,16 +3944,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7670
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-7670
         - network: 2914-7670
+        - network: 7670-131907
         - network: 7670-17691
         - network: 7670-23775
         - network: 7670-23822
         - network: 7670-24482
-        - network: 7670-131907
       security_groups:
         - AllAllow
       key_name: default
@@ -3973,8 +3973,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7726
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1239-7726
         - network: 7726-7738
@@ -3997,10 +3997,9 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7738
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-7738
         - network: 1239-7738
         - network: 1299-7738
         - network: 1916-7738
@@ -4009,6 +4008,7 @@ resources:
         - network: 3573-7738
         - network: 4436-7738
         - network: 6939-7738
+        - network: 701-7738
         - network: 7726-7738
         - network: 7738-12989
         - network: 7738-262560
@@ -4033,26 +4033,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as7922
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-7922
-        - network: 209-7922
-        - network: 701-7922
         - network: 1239-7922
         - network: 1299-7922
+        - network: 17922-131735
+        - network: 17922-24482
+        - network: 17922-63511
+        - network: 209-7922
         - network: 2906-7922
         - network: 2914-7922
+        - network: 42-7922
         - network: 4436-7922
         - network: 6939-7922
+        - network: 701-7922
         - network: 7922-22822
         - network: 7922-32590
         - network: 7922-33659
         - network: 7922-33660
         - network: 7922-36040
-        - network: 17922-24482
-        - network: 17922-63511
-        - network: 17922-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -4072,17 +4072,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as8492
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-8492
         - network: 1299-8492
         - network: 2906-8492
         - network: 3225-8492
+        - network: 42-8492
         - network: 4761-8492
         - network: 6939-8492
-        - network: 8492-8674
-        - network: 8492-9498
         - network: 8492-12989
         - network: 8492-13720
         - network: 8492-15169
@@ -4095,6 +4093,8 @@ resources:
         - network: 8492-47872
         - network: 8492-62081
         - network: 8492-62227
+        - network: 8492-8674
+        - network: 8492-9498
       security_groups:
         - AllAllow
       key_name: default
@@ -4114,11 +4114,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as8674
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-8674
         - network: 1916-8674
+        - network: 209-8674
         - network: 2497-8674
         - network: 2905-8674
         - network: 2914-8674
@@ -4148,11 +4148,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as9498
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-9498
         - network: 1299-9498
+        - network: 209-9498
         - network: 2497-9498
         - network: 2914-9498
         - network: 3573-9498
@@ -4188,15 +4188,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as9930
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3613-9930
         - network: 6939-9930
-        - network: 9930-24482
-        - network: 9930-24516
         - network: 9930-134698
         - network: 9930-198723
+        - network: 9930-24482
+        - network: 9930-24516
       security_groups:
         - AllAllow
       key_name: default
@@ -4216,21 +4216,21 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as11686
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-11686
-        - network: 1916-11686
-        - network: 2906-11686
-        - network: 6939-11686
-        - network: 8674-11686
         - network: 11686-11758
         - network: 11686-12989
         - network: 11686-15169
         - network: 11686-22822
         - network: 11686-24482
-        - network: 11686-32590
         - network: 11686-262589
+        - network: 11686-32590
+        - network: 1916-11686
+        - network: 2906-11686
+        - network: 42-11686
+        - network: 6939-11686
+        - network: 8674-11686
       security_groups:
         - AllAllow
       key_name: default
@@ -4250,12 +4250,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as11758
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 11686-11758
         - network: 1299-11758
         - network: 6939-11758
-        - network: 11686-11758
       security_groups:
         - AllAllow
       key_name: default
@@ -4275,8 +4275,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as12302
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 3573-12302
         - network: 6939-12302
@@ -4299,23 +4299,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as12989
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-12989
-        - network: 209-12989
-        - network: 701-12989
-        - network: 1299-12989
-        - network: 1916-12989
-        - network: 2906-12989
-        - network: 4761-12989
-        - network: 6939-12989
-        - network: 7738-12989
-        - network: 8492-12989
-        - network: 9498-12989
         - network: 11686-12989
         - network: 12989-24482
         - network: 12989-24516
+        - network: 12989-262317
+        - network: 12989-262589
         - network: 12989-28329
         - network: 12989-29119
         - network: 12989-32590
@@ -4323,8 +4314,17 @@ resources:
         - network: 12989-37613
         - network: 12989-53237
         - network: 12989-62227
-        - network: 12989-262317
-        - network: 12989-262589
+        - network: 1299-12989
+        - network: 1916-12989
+        - network: 209-12989
+        - network: 2906-12989
+        - network: 42-12989
+        - network: 4761-12989
+        - network: 6939-12989
+        - network: 701-12989
+        - network: 7738-12989
+        - network: 8492-12989
+        - network: 9498-12989
       security_groups:
         - AllAllow
       key_name: default
@@ -4344,15 +4344,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as13720
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6777-13720
-        - network: 6939-13720
-        - network: 8492-13720
         - network: 13720-22822
         - network: 13720-24482
         - network: 13720-37100
+        - network: 6777-13720
+        - network: 6939-13720
+        - network: 8492-13720
       security_groups:
         - AllAllow
       key_name: default
@@ -4372,29 +4372,29 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as15169
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-15169
-        - network: 701-15169
+        - network: 11686-15169
         - network: 1239-15169
         - network: 1299-15169
-        - network: 1916-15169
-        - network: 2497-15169
-        - network: 2905-15169
-        - network: 2914-15169
-        - network: 6939-15169
-        - network: 8492-15169
-        - network: 9498-15169
-        - network: 11686-15169
         - network: 15169-24482
         - network: 15169-24516
+        - network: 15169-262317
+        - network: 15169-264268
         - network: 15169-28329
         - network: 15169-36040
         - network: 15169-37100
         - network: 15169-47872
-        - network: 15169-262317
-        - network: 15169-264268
+        - network: 1916-15169
+        - network: 209-15169
+        - network: 2497-15169
+        - network: 2905-15169
+        - network: 2914-15169
+        - network: 6939-15169
+        - network: 701-15169
+        - network: 8492-15169
+        - network: 9498-15169
       security_groups:
         - AllAllow
       key_name: default
@@ -4414,12 +4414,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as15290
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 15290-24482
         - network: 2497-15290
         - network: 6939-15290
-        - network: 15290-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -4439,14 +4439,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as16668
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-16668
+        - network: 16668-22822
         - network: 3944-16668
+        - network: 42-16668
         - network: 4436-16668
         - network: 6939-16668
-        - network: 16668-22822
       security_groups:
         - AllAllow
       key_name: default
@@ -4466,12 +4466,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17685
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 17685-24482
         - network: 2914-17685
         - network: 4713-17685
-        - network: 17685-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -4491,8 +4491,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17691
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2497-17691
         - network: 4713-17691
@@ -4516,15 +4516,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as17922
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 17922-131735
+        - network: 17922-24482
+        - network: 17922-63511
         - network: 4761-17922
         - network: 6939-17922
         - network: 9498-17922
-        - network: 17922-24482
-        - network: 17922-63511
-        - network: 17922-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -4544,8 +4544,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as18746
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 701-18746
       security_groups:
@@ -4567,26 +4567,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as22822
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-22822
-        - network: 701-22822
-        - network: 1299-22822
-        - network: 2497-22822
-        - network: 4713-22822
-        - network: 6939-22822
-        - network: 7922-22822
-        - network: 8492-22822
         - network: 11686-22822
+        - network: 1299-22822
         - network: 13720-22822
         - network: 16668-22822
+        - network: 209-22822
         - network: 22822-24482
         - network: 22822-24516
         - network: 22822-36324
         - network: 22822-37100
         - network: 22822-47872
         - network: 22822-64901
+        - network: 2497-22822
+        - network: 4713-22822
+        - network: 6939-22822
+        - network: 701-22822
+        - network: 7922-22822
+        - network: 8492-22822
       security_groups:
         - AllAllow
       key_name: default
@@ -4606,8 +4606,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23775
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7670-23775
       security_groups:
@@ -4629,11 +4629,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23822
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7670-23822
         - network: 23822-23829
+        - network: 7670-23822
       security_groups:
         - AllAllow
       key_name: default
@@ -4653,14 +4653,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23829
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 23822-23829
+        - network: 23829-24482
         - network: 2914-23829
         - network: 4713-23829
         - network: 6939-23829
-        - network: 23822-23829
-        - network: 23829-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -4680,16 +4680,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as23947
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 23947-131735
+        - network: 23947-24482
+        - network: 23947-24516
         - network: 2497-23947
         - network: 2914-23947
         - network: 4436-23947
         - network: 6939-23947
-        - network: 23947-24482
-        - network: 23947-24516
-        - network: 23947-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -4709,35 +4709,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as24482
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-24482
-        - network: 209-24482
-        - network: 1239-24482
-        - network: 1916-24482
-        - network: 2906-24482
-        - network: 2907-24482
-        - network: 2914-24482
-        - network: 3225-24482
-        - network: 4761-24482
-        - network: 6939-24482
-        - network: 7670-24482
-        - network: 8492-24482
-        - network: 8674-24482
-        - network: 9498-24482
-        - network: 9930-24482
         - network: 11686-24482
+        - network: 1239-24482
         - network: 12989-24482
         - network: 13720-24482
         - network: 15169-24482
         - network: 15290-24482
         - network: 17685-24482
         - network: 17922-24482
+        - network: 1916-24482
+        - network: 209-24482
         - network: 22822-24482
         - network: 23829-24482
         - network: 23947-24482
         - network: 24482-24516
+        - network: 24482-262589
         - network: 24482-29119
         - network: 24482-32590
         - network: 24482-36040
@@ -4746,7 +4735,18 @@ resources:
         - network: 24482-47872
         - network: 24482-62081
         - network: 24482-62227
-        - network: 24482-262589
+        - network: 2906-24482
+        - network: 2907-24482
+        - network: 2914-24482
+        - network: 3225-24482
+        - network: 42-24482
+        - network: 4761-24482
+        - network: 6939-24482
+        - network: 7670-24482
+        - network: 8492-24482
+        - network: 8674-24482
+        - network: 9498-24482
+        - network: 9930-24482
       security_groups:
         - AllAllow
       key_name: default
@@ -4766,24 +4766,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as24516
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-24516
-        - network: 209-24516
+        - network: 12989-24516
         - network: 1299-24516
+        - network: 15169-24516
+        - network: 209-24516
+        - network: 22822-24516
+        - network: 23947-24516
+        - network: 24482-24516
+        - network: 24516-32590
         - network: 2906-24516
+        - network: 42-24516
         - network: 4761-24516
         - network: 6939-24516
         - network: 8674-24516
         - network: 9498-24516
         - network: 9930-24516
-        - network: 12989-24516
-        - network: 15169-24516
-        - network: 22822-24516
-        - network: 23947-24516
-        - network: 24482-24516
-        - network: 24516-32590
       security_groups:
         - AllAllow
       key_name: default
@@ -4803,8 +4803,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as26218
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 26218-53237
       security_groups:
@@ -4826,16 +4826,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as28329
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-28329
-        - network: 2906-28329
-        - network: 6939-28329
         - network: 12989-28329
         - network: 15169-28329
-        - network: 28329-53237
-        - network: 28329-53243
+        - network: 1916-28329
         - network: 28329-262317
         - network: 28329-262589
         - network: 28329-262760
@@ -4846,6 +4842,10 @@ resources:
         - network: 28329-264101
         - network: 28329-264268
         - network: 28329-266256
+        - network: 28329-53237
+        - network: 28329-53243
+        - network: 2906-28329
+        - network: 6939-28329
       security_groups:
         - AllAllow
       key_name: default
@@ -4865,18 +4865,18 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as29119
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 12989-29119
         - network: 1299-29119
+        - network: 24482-29119
+        - network: 29119-37100
+        - network: 29119-50129
         - network: 4436-29119
         - network: 6777-29119
         - network: 6939-29119
         - network: 8492-29119
-        - network: 12989-29119
-        - network: 24482-29119
-        - network: 29119-37100
-        - network: 29119-50129
       security_groups:
         - AllAllow
       key_name: default
@@ -4896,11 +4896,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as29534
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-29534
         - network: 29534-47872
+        - network: 6939-29534
       security_groups:
         - AllAllow
       key_name: default
@@ -4920,8 +4920,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as30519
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 209-30519
         - network: 30519-33660
@@ -4944,24 +4944,24 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as32590
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 209-32590
-        - network: 701-32590
+        - network: 11686-32590
+        - network: 12989-32590
         - network: 1299-32590
+        - network: 209-32590
+        - network: 24482-32590
+        - network: 24516-32590
         - network: 2914-32590
+        - network: 32590-37100
+        - network: 32590-47872
         - network: 6777-32590
         - network: 6939-32590
+        - network: 701-32590
         - network: 7922-32590
         - network: 8492-32590
         - network: 9498-32590
-        - network: 11686-32590
-        - network: 12989-32590
-        - network: 24482-32590
-        - network: 24516-32590
-        - network: 32590-37100
-        - network: 32590-47872
       security_groups:
         - AllAllow
       key_name: default
@@ -4981,11 +4981,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as33659
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7922-33659
         - network: 33659-394096
+        - network: 7922-33659
       security_groups:
         - AllAllow
       key_name: default
@@ -5005,11 +5005,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as33660
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 7922-33660
         - network: 30519-33660
+        - network: 7922-33660
       security_groups:
         - AllAllow
       key_name: default
@@ -5029,19 +5029,19 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as36040
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-36040
         - network: 1299-36040
-        - network: 4436-36040
-        - network: 6939-36040
-        - network: 7922-36040
         - network: 15169-36040
         - network: 24482-36040
         - network: 36040-50607
         - network: 36040-55947
         - network: 36040-62081
+        - network: 4436-36040
+        - network: 6939-36040
+        - network: 701-36040
+        - network: 7922-36040
       security_groups:
         - AllAllow
       key_name: default
@@ -5061,11 +5061,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as36324
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-36324
         - network: 22822-36324
+        - network: 6939-36324
       security_groups:
         - AllAllow
       key_name: default
@@ -5085,33 +5085,33 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37100
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-37100
+        - network: 12989-37100
         - network: 1299-37100
+        - network: 13720-37100
+        - network: 15169-37100
+        - network: 22822-37100
+        - network: 24482-37100
         - network: 2497-37100
         - network: 2905-37100
         - network: 2906-37100
+        - network: 29119-37100
         - network: 2914-37100
         - network: 3225-37100
+        - network: 32590-37100
+        - network: 37100-37613
+        - network: 37100-47872
+        - network: 37100-62081
+        - network: 37100-62227
+        - network: 42-37100
         - network: 4436-37100
         - network: 4761-37100
         - network: 6939-37100
         - network: 8492-37100
         - network: 8674-37100
         - network: 9498-37100
-        - network: 12989-37100
-        - network: 13720-37100
-        - network: 15169-37100
-        - network: 22822-37100
-        - network: 24482-37100
-        - network: 29119-37100
-        - network: 32590-37100
-        - network: 37100-37613
-        - network: 37100-47872
-        - network: 37100-62081
-        - network: 37100-62227
       security_groups:
         - AllAllow
       key_name: default
@@ -5131,16 +5131,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37613
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1299-37613
-        - network: 6939-37613
-        - network: 8492-37613
         - network: 12989-37613
+        - network: 1299-37613
         - network: 24482-37613
         - network: 37100-37613
         - network: 37613-37629
+        - network: 6939-37613
+        - network: 8492-37613
       security_groups:
         - AllAllow
       key_name: default
@@ -5160,8 +5160,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as37629
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 37613-37629
       security_groups:
@@ -5183,8 +5183,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as41541
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2914-41541
       security_groups:
@@ -5206,12 +5206,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as46428
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 1239-46428
         - network: 209-46428
         - network: 701-46428
-        - network: 1239-46428
       security_groups:
         - AllAllow
       key_name: default
@@ -5231,26 +5231,26 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as47872
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 42-47872
         - network: 1299-47872
-        - network: 2906-47872
-        - network: 2914-47872
-        - network: 3225-47872
-        - network: 4436-47872
-        - network: 6939-47872
-        - network: 8492-47872
-        - network: 8674-47872
         - network: 15169-47872
         - network: 22822-47872
         - network: 24482-47872
+        - network: 2906-47872
+        - network: 2914-47872
         - network: 29534-47872
+        - network: 3225-47872
         - network: 32590-47872
         - network: 37100-47872
+        - network: 42-47872
+        - network: 4436-47872
         - network: 47872-50607
         - network: 47872-62081
+        - network: 6939-47872
+        - network: 8492-47872
+        - network: 8674-47872
       security_groups:
         - AllAllow
       key_name: default
@@ -5270,8 +5270,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as50129
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 29119-50129
       security_groups:
@@ -5293,16 +5293,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as50607
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4436-50607
-        - network: 6939-50607
         - network: 36040-50607
+        - network: 4436-50607
         - network: 47872-50607
+        - network: 50607-199846
         - network: 50607-59415
         - network: 50607-62081
-        - network: 50607-199846
+        - network: 6939-50607
       security_groups:
         - AllAllow
       key_name: default
@@ -5322,17 +5322,17 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as53237
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-53237
-        - network: 6939-53237
         - network: 12989-53237
+        - network: 1916-53237
         - network: 26218-53237
         - network: 28329-53237
         - network: 53237-262317
         - network: 53237-262716
         - network: 53237-264268
+        - network: 6939-53237
       security_groups:
         - AllAllow
       key_name: default
@@ -5352,14 +5352,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as53243
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-53243
-        - network: 6939-53243
         - network: 28329-53243
         - network: 53243-262317
         - network: 53243-264268
+        - network: 6939-53243
       security_groups:
         - AllAllow
       key_name: default
@@ -5379,12 +5379,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as55947
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 36040-55947
         - network: 4755-55947
         - network: 9498-55947
-        - network: 36040-55947
       security_groups:
         - AllAllow
       key_name: default
@@ -5404,12 +5404,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as59415
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-59415
         - network: 50607-59415
         - network: 59415-62081
+        - network: 6939-59415
       security_groups:
         - AllAllow
       key_name: default
@@ -5429,19 +5429,19 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as62081
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4436-62081
-        - network: 8492-62081
         - network: 24482-62081
         - network: 36040-62081
         - network: 37100-62081
+        - network: 4436-62081
         - network: 47872-62081
         - network: 50607-62081
         - network: 59415-62081
         - network: 62081-198389
         - network: 62081-199846
+        - network: 8492-62081
       security_groups:
         - AllAllow
       key_name: default
@@ -5461,15 +5461,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as62227
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 2914-62227
-        - network: 6939-62227
-        - network: 8492-62227
         - network: 12989-62227
         - network: 24482-62227
+        - network: 2914-62227
         - network: 37100-62227
+        - network: 6939-62227
+        - network: 8492-62227
       security_groups:
         - AllAllow
       key_name: default
@@ -5489,11 +5489,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as63511
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4761-63511
         - network: 17922-63511
+        - network: 4761-63511
       security_groups:
         - AllAllow
       key_name: default
@@ -5513,8 +5513,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as64901
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 22822-64901
       security_groups:
@@ -5536,8 +5536,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131158
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 2500-131158
         - network: 2907-131158
@@ -5560,12 +5560,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131735
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 4761-131735
         - network: 17922-131735
         - network: 23947-131735
+        - network: 4761-131735
       security_groups:
         - AllAllow
       key_name: default
@@ -5585,8 +5585,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as131907
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7670-131907
       security_groups:
@@ -5608,8 +5608,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as134698
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 9930-134698
       security_groups:
@@ -5631,11 +5631,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as198389
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-198389
         - network: 62081-198389
+        - network: 6939-198389
       security_groups:
         - AllAllow
       key_name: default
@@ -5655,8 +5655,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as198723
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 9930-198723
       security_groups:
@@ -5678,12 +5678,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as199846
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 6939-199846
         - network: 50607-199846
         - network: 62081-199846
+        - network: 6939-199846
       security_groups:
         - AllAllow
       key_name: default
@@ -5703,17 +5703,12 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262317
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-262317
-        - network: 2906-262317
-        - network: 6939-262317
         - network: 12989-262317
         - network: 15169-262317
-        - network: 28329-262317
-        - network: 53237-262317
-        - network: 53243-262317
+        - network: 1916-262317
         - network: 262317-262589
         - network: 262317-262760
         - network: 262317-263415
@@ -5722,6 +5717,11 @@ resources:
         - network: 262317-264101
         - network: 262317-264268
         - network: 262317-266256
+        - network: 28329-262317
+        - network: 2906-262317
+        - network: 53237-262317
+        - network: 53243-262317
+        - network: 6939-262317
       security_groups:
         - AllAllow
       key_name: default
@@ -5741,8 +5741,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262560
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 7738-262560
       security_groups:
@@ -5764,22 +5764,22 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262589
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
+        - network: 11686-262589
         - network: 1239-262589
+        - network: 12989-262589
         - network: 1299-262589
         - network: 1916-262589
-        - network: 2497-262589
-        - network: 6939-262589
-        - network: 7738-262589
-        - network: 11686-262589
-        - network: 12989-262589
         - network: 24482-262589
-        - network: 28329-262589
+        - network: 2497-262589
         - network: 262317-262589
         - network: 262589-262625
         - network: 262589-264268
+        - network: 28329-262589
+        - network: 6939-262589
+        - network: 7738-262589
       security_groups:
         - AllAllow
       key_name: default
@@ -5799,8 +5799,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262625
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 262589-262625
       security_groups:
@@ -5822,11 +5822,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262716
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 53237-262716
         - network: 262716-263665
+        - network: 53237-262716
       security_groups:
         - AllAllow
       key_name: default
@@ -5846,15 +5846,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as262760
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-262760
-        - network: 6939-262760
-        - network: 28329-262760
         - network: 262317-262760
         - network: 262760-264101
         - network: 262760-264268
+        - network: 28329-262760
+        - network: 6939-262760
       security_groups:
         - AllAllow
       key_name: default
@@ -5874,14 +5874,14 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263415
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263415
-        - network: 6939-263415
-        - network: 28329-263415
         - network: 262317-263415
         - network: 263415-264268
+        - network: 28329-263415
+        - network: 6939-263415
       security_groups:
         - AllAllow
       key_name: default
@@ -5901,11 +5901,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263566
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 28329-263566
         - network: 263566-263661
+        - network: 28329-263566
       security_groups:
         - AllAllow
       key_name: default
@@ -5925,15 +5925,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263661
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263661
-        - network: 6939-263661
-        - network: 28329-263661
         - network: 262317-263661
         - network: 263566-263661
         - network: 263661-264268
+        - network: 28329-263661
+        - network: 6939-263661
       security_groups:
         - AllAllow
       key_name: default
@@ -5953,16 +5953,16 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as263665
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-263665
-        - network: 6939-263665
-        - network: 28329-263665
         - network: 262317-263665
         - network: 262716-263665
         - network: 263665-264268
         - network: 263665-267576
+        - network: 28329-263665
+        - network: 6939-263665
       security_groups:
         - AllAllow
       key_name: default
@@ -5982,15 +5982,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as264101
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-264101
-        - network: 6939-264101
-        - network: 28329-264101
         - network: 262317-264101
         - network: 262760-264101
         - network: 264101-264268
+        - network: 28329-264101
+        - network: 6939-264101
       security_groups:
         - AllAllow
       key_name: default
@@ -6010,16 +6010,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as264268
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 1916-264268
-        - network: 2906-264268
-        - network: 6939-264268
         - network: 15169-264268
-        - network: 28329-264268
-        - network: 53237-264268
-        - network: 53243-264268
+        - network: 1916-264268
         - network: 262317-264268
         - network: 262589-264268
         - network: 262760-264268
@@ -6028,6 +6023,11 @@ resources:
         - network: 263665-264268
         - network: 264101-264268
         - network: 264268-266256
+        - network: 28329-264268
+        - network: 2906-264268
+        - network: 53237-264268
+        - network: 53243-264268
+        - network: 6939-264268
       security_groups:
         - AllAllow
       key_name: default
@@ -6047,15 +6047,15 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as266256
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-266256
-        - network: 6939-266256
-        - network: 7738-266256
-        - network: 28329-266256
         - network: 262317-266256
         - network: 264268-266256
+        - network: 28329-266256
+        - network: 6939-266256
+        - network: 7738-266256
       security_groups:
         - AllAllow
       key_name: default
@@ -6075,8 +6075,8 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as267576
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
         - network: 1916-267576
         - network: 263665-267576
@@ -6099,11 +6099,11 @@ resources:
     type: OS::Nova::Server
     properties:
       name: as394096
-      image: Ubuntu
-      flavor: m1.small
+      image: Ubuntu-Router
+      flavor: router
       networks:
-        - network: 701-394096
         - network: 33659-394096
+        - network: 701-394096
       security_groups:
         - AllAllow
       key_name: default

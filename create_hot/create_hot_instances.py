@@ -35,8 +35,8 @@ for line in f:
         g.write("    type: OS::Nova::Server\n")
         g.write("    properties:\n")
         g.write("      name: as{}\n".format(str(AS)))
-        g.write("      image: Ubuntu\n")
-        g.write("      flavor: m1.small\n")
+        g.write("      image: Ubuntu-Router\n")
+        g.write("      flavor: router\n")
         g.write("      networks:\n")
         for file in files:
             if "-" + AS in file or AS + "-" in file:

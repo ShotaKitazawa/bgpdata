@@ -16,7 +16,7 @@
 実行方法
 
 ```
-bash analyze/analyze.sh
+bash analyze/analyze.bash
 ```
 
 結果
@@ -37,7 +37,7 @@ analyzedファイルから、以下の AS を中心として n 個 AS を取り�
 実行方法
 
 ```
-python sampling_analyzedfile/sampling.py 100
+python sampling_analyzedfile/sampling.py sampling_analyzedfile/neighbors_100.txt 100
 ```
 
 結果
@@ -53,7 +53,7 @@ analyzedファイルの ADDRESSES において、同ネットワークに属す�
 実行方法
 
 ```
-python integration_analyzedfile/integration_address.py neighbors_100.txt
+python integration_analyzedfile/integration_address.py sampling_analyzedfile/neighbors_100.txt
 ```
 
 結果
