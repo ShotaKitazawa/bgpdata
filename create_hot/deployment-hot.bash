@@ -9,7 +9,7 @@ if [ "$SUB_COMMAND" = "create" ]; then
   for i in *; do
     openstack stack create -t $SCRIPT_DIR/hot-network.yaml --parameter "network-name=$i" --parameter-file "cidr=$SCRIPT_DIR/network/$i" as-$i
   done
-  openstack stack create -t $(dirname $0)/hot-instances.yaml instances
+  openstack stack create -t $SCRIPT_DIR/hot-instances.yaml instances
 elif [ "$SUB_COMMAND" = "delete" ]; then
   cd $SCRIPT_DIR/network
   for i in *; do
