@@ -95,12 +95,7 @@ for line in f:
         g.write("        - network: monitor\n")
         for filename in files:
             if "-" + asn in filename or asn + "-" in filename:
-                # connect to google
-                if "-15169" in filename or "15169-" in filename:
-                    g.write("        - network: to_catalyst\n")
-                # other
-                else:
-                    g.write("        - network: {0}\n".format(filename))
+                g.write("        - network: {0}\n".format(filename))
         g.write("      security_groups:\n")
         g.write("        - { get_resource: security_group_allallow }\n")
         g.write("\n")

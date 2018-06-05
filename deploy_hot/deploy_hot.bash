@@ -2,7 +2,7 @@
 # Author: ShotaKitazawa
 
 SUB_COMMAND=${1:-"create/delete"}
-HOT_DIR=$(cd $(dirname $0) && pwd)/create_hot/
+HOT_DIR=$(cd $(dirname $0) && pwd)/../create_hot/
 
 if [ "$SUB_COMMAND" = "create" ]; then
   openstack stack create -t $HOT_DIR/hot-networks.yaml networks

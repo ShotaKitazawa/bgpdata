@@ -122,11 +122,11 @@ OpenStack に HOT をデプロイします。`openstack` コマンドを使用�
 * HOT を OpenStack 上にデプロイ
 
 ```
-bash ./deployment-hot.bash create
+bash deploy_hot/deploy_hot.bash create
 ```
 
 * HOT を OpenStack 上から削除
 
 ```
-bash ./deployment-hot.bash delete
+bash deploy_hot/deploy_hot.bash delete
 ```
