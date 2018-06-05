@@ -46,7 +46,7 @@ analyzedファイルから、以下の AS を中心として n 個 AS を取り�
 実行方法
 
 ```
-python sampling_analyzedfile/sampling.py sampling_analyzedfile/neighbors_100.txt 100
+python sampling_analyzedfile/sampling.py analyze/result.all 100
 ```
 
 結果
@@ -94,7 +94,7 @@ less create_hot/hot_networks.yaml
 
 ## Deploy Heat Template
 
-`openstack` コマンドを使用するため、事前に rc ファイルを読み込んでください。
+OpenStack に HOT をデプロイします。`openstack` コマンドを使用するため、事前に rc ファイルを読み込んでください。
 
 * HOT を OpenStack 上にデプロイ
 
