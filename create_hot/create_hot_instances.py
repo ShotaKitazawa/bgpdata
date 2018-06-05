@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 # Author: Takehiko Momma
+# Author: Shota Kitazawa
 
 import os
 import sys
