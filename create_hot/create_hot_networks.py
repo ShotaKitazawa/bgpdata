@@ -27,10 +27,10 @@ for netname in files:
     f.write("    type: OS::Neutron::Subnet\n")
     f.write("    properties:\n")
     f.write("      name: {}\n".format(netname))
-    f.write("      network_id: {{ get_param: net_{} }}\n".format(netname))
+    f.write("      network_id: {{ get_resource: net_{} }}\n".format(netname))
     f.write("      ip_version: 4\n")
     with open(DIR + "/network/" + netname, "r") as g:
-        f.write("      cidr: {{ get_param: {} }}\n".format(g.readline()))
+        f.write("      cidr: {{ get_resource: {} }}\n".format(g.readline()))
     f.write("      dns_nameservers:\n")
     f.write("        - 8.8.8.8\n")
     f.write("      enable_dhcp: false\n")
