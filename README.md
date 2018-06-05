@@ -3,8 +3,17 @@
 * CentOS7.x
     * 3.10.0-693.5.2.el7.x86_64
 * Python 3.6.x
+* OpenStack Pike
 
 # About
+
+## Preparation
+
+* 必要なライブラリのインストール
+
+```
+pip install -r requirement.txt
+```
 
 ## Analyze
 
@@ -25,7 +34,7 @@ bash analyze/analyze.bash
 less analyze/result.all
 ```
 
-##  Sampling
+## Sampling
 
 analyzedファイルから、以下の AS を中心として n 個 AS を取り出します。
 
@@ -68,20 +77,33 @@ analyzedファイルを元に OpenStack Heat Template を作成します。
 
 実行方法
 
-* Network を作成するための HOT に必要なValuesファイル、Instance を作成するための HOT を生成
+* Network, Instance を作成するための HOT を生成
 
 ```
 bash create_hot/create_hot.bash integration_analyzedfile/addCombined.txt
 ```
 
+結果
+
+```
+less create_hot/hot_instances.yaml
+```
+```
+less create_hot/hot_networks.yaml
+```
+
+## Deploy Heat Template
+
+`openstack` コマンドを使用するため、事前に rc ファイルを読み込んでください。
+
 * HOT を OpenStack 上にデプロイ
 
 ```
-bash create_hot/deployment-hot.bash create
+bash ./deployment-hot.bash create
 ```
 
 * HOT を OpenStack 上から削除
 
 ```
-bash create_hot/deployment-hot.bash delete
+bash ./deployment-hot.bash delete
 ```
