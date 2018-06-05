@@ -9,33 +9,15 @@ resources:
       rules:
         - direction: ingress
           ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
+          remote_ip_prefix: 0.0.0.0/0
           protocol: tcp
         - direction: ingress
           ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
+          remote_ip_prefix: 0.0.0.0/0
           protocol: udp
         - direction: ingress
           ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
-          protocol: icmp
-        - direction: egress
-          ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
-          protocol: tcp
-        - direction: egress
-          ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
-          protocol: udp
-        - direction: egress
-          ethertype: IPv4
-          port_range_min: 0
-          port_range_max: 65535
+          remote_ip_prefix: 0.0.0.0/0
           protocol: icmp
   monitoring_network:
     type: OS::Neutron::Net
