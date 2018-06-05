@@ -40,55 +40,67 @@ g.write("        - direction: ingress\n")
 g.write("          ethertype: IPv4\n")
 g.write("          remote_ip_prefix: 0.0.0.0/0\n")
 g.write("          protocol: icmp\n")
-
-# create Monitoring network
-g.write("  monitoring_network:\n")
-g.write("    type: OS::Neutron::Net\n")
-g.write("    properties:\n")
-g.write("      name: monitoring\n")
-g.write("  monitoring_subnet:\n")
-g.write("    type: OS::Neutron::Subnet\n")
-g.write("    properties:\n")
-g.write("      name: monitoring\n")
-g.write("      network_id: { get_resource: monitoring_network }\n")
-g.write("      ip_version: 4\n")
-g.write("      cidr: 172.16.0.0/16\n")
 g.write("\n")
+
+# create monitor instance
+g.write("  monitor_volume:\n")
+g.write("    type: OS::Cinder::Volume\n")
+g.write("    properties:\n")
+g.write("      name: monitor\n")
+g.write("      image: Ubuntu-Monitor\n")
+g.write("      size: 10\n")
+g.write("      availability_zone: nova\n")
+g.write("  monitor_server:\n")
+g.write("    type: OS::Nova::Server\n")
+g.write("    properties:\n")
+g.write("      name: monitor\n")
+g.write("      key_name: default\n")
+g.write("      flavor: monitor\n")
+g.write("      block_device_mapping_v2:\n")
+g.write("        - volume_id: { get_resource: monitor_volume }\n")
+g.write("      networks:\n")
+g.write("        - network: monitor\n")
+g.write("      security_groups:\n")
+g.write("        - { get_resource: security_group_allallow }\n")
+g.write("\n")
+
 
 s = 0
 
 for line in f:
     l = line[:-1].split(" ")
     if s == 0:
-        AS = l[1]
+        asn = l[1]
         s = 1
     elif s == 1:
         s = 2
     elif s == 2:
 
-        # create volume
-        g.write("  as{}_cinder_volume:\n".format(AS))
-        g.write("    type: OS::Cinder::Volume\n")
-        g.write("    properties:\n")
-        g.write("      name: as{}\n".format(AS))
-        g.write("      image: Ubuntu-Router\n")
-        g.write("      size: 10\n")
-        g.write("      availability_zone: nova\n")
+        # exclude google (google is Catalyst 4500)
+        if asn == "15169":
+            s = 0
+            continue
 
         # create instance
-        g.write("  as{0}:\n".format(AS))
+        g.write("  asn{0}:\n".format(asn))
         g.write("    type: OS::Nova::Server\n")
         g.write("    properties:\n")
-        g.write("      name: as{}\n".format(str(AS)))
+        g.write("      name: asn{}\n".format(asn))
         g.write("      key_name: default\n")
         g.write("      flavor: router\n")
         g.write("      block_device_mapping_v2:\n")
-        g.write("        - volume_id: {{ get_resource: as{}_cinder_volume }}\n".format(AS))
+        g.write("        - image: Ubuntu-Router\n")
+        g.write("          volume_size: 10\n")
         g.write("      networks:\n")
-        g.write("        - network: { get_resource: monitoring_network }\n")
-        for file in files:
-            if "-" + AS in file or AS + "-" in file:
-                g.write("        - network: {0}\n".format(str(file)))
+        g.write("        - network: monitor\n")
+        for filename in files:
+            if "-" + asn in filename or asn + "-" in filename:
+                # connect to google
+                if "-15169" in filename or "15169-" in filename:
+                    g.write("        - network: to_catalyst\n")
+                # other
+                else:
+                    g.write("        - network: {0}\n".format(filename))
         g.write("      security_groups:\n")
         g.write("        - { get_resource: security_group_allallow }\n")
         g.write("\n")

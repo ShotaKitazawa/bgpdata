@@ -4,6 +4,7 @@
 EACH_RIB=false
 
 RIB="rib.20180101.0000"
+RIB="rib.20180101.0000"
 PREFIX="
 http://archive.routeviews.org/route-views.eqix/
 http://archive.routeviews.org/route-views.isc/

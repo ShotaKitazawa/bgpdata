@@ -9,11 +9,34 @@
 
 ## Preparation
 
+* bgpdump のインストール
+
+```
+wget http://www.ris.ripe.net/source/bgpdump/libbgpdump-1.5.0.tgz
+tar xvfz libbgpdump-1.5.0.tgz
+cd libbgpdump-1.5.0
+./configure
+make
+sudo cp bgpdump /usr/local/bin
+```
+
 * 必要なライブラリのインストール
 
 ```
 pip install -r requirement.txt
 ```
+
+* 事前に必要な OpenStack リソース
+    * `to_catalyst` network
+        * [*] [外部ネットワーク]
+        * Catalyst 4500 と接続するためのネットワーク
+    * `Ubuntu-Router` image
+        * packer にて作成
+    * `Ubuntu-Monitor` image
+        * packer にて作成
+    * `default` key-pair
+    * `router` flavor
+    * `monitor` flavor
 
 ## Analyze
 
@@ -46,7 +69,7 @@ analyzedファイルから、以下の AS を中心として n 個 AS を取り�
 実行方法
 
 ```
-python sampling_analyzedfile/sampling.py analyze/result.all 100
+python sampling_analyzedfile/sampling_AS.py analyze/result.all 100
 ```
 
 結果

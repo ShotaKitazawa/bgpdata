@@ -14,6 +14,20 @@ f.write("\n")
 f.write("resources:\n")
 f.write("\n")
 
+# create Monitor network
+f.write("  monitor_network:\n")
+f.write("    type: OS::Neutron::Net\n")
+f.write("    properties:\n")
+f.write("      name: monitor\n")
+f.write("  monitor_subnet:\n")
+f.write("    type: OS::Neutron::Subnet\n")
+f.write("    properties:\n")
+f.write("      name: monitor\n")
+f.write("      network_id: { get_resource: monitor_network }\n")
+f.write("      ip_version: 4\n")
+f.write("      cidr: 172.16.0.0/16\n")
+f.write("\n")
+
 for netname in files:
 
     # create network
