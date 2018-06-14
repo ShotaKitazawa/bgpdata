@@ -44,6 +44,7 @@ for netname in files:
         f.write("      physical_network: provider\n")
         f.write("      network_type: vlan\n")
         f.write("      segmentation_id: {}\n".format(vlan_id))
+        f.write("      router_external: true\n")
 
         # create subnet
         f.write("  subnet_{0}:\n".format(netname))

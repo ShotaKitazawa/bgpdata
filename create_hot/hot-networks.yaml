@@ -372,6 +372,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 101
+      router_external: true
   subnet_209-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -596,6 +597,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 102
+      router_external: true
   subnet_701-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -794,6 +796,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 103
+      router_external: true
   subnet_1239-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -1005,6 +1008,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 104
+      router_external: true
   subnet_1299-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -1229,6 +1233,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 105
+      router_external: true
   subnet_1916-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -1570,6 +1575,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 106
+      router_external: true
   subnet_2497-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -1742,6 +1748,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 107
+      router_external: true
   subnet_2905-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -2148,6 +2155,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 108
+      router_external: true
   subnet_2914-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -3035,6 +3043,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 109
+      router_external: true
   subnet_6939-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -3727,6 +3736,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 110
+      router_external: true
   subnet_8492-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -3938,6 +3948,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 111
+      router_external: true
   subnet_9498-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -4110,6 +4121,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 112
+      router_external: true
   subnet_11686-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -4360,6 +4372,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 113
+      router_external: true
   subnet_15169-24482:
     type: OS::Neutron::Subnet
     properties:
@@ -4376,6 +4389,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 114
+      router_external: true
   subnet_15169-24516:
     type: OS::Neutron::Subnet
     properties:
@@ -4392,6 +4406,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 115
+      router_external: true
   subnet_15169-28329:
     type: OS::Neutron::Subnet
     properties:
@@ -4408,6 +4423,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 116
+      router_external: true
   subnet_15169-36040:
     type: OS::Neutron::Subnet
     properties:
@@ -4424,6 +4440,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 117
+      router_external: true
   subnet_15169-37100:
     type: OS::Neutron::Subnet
     properties:
@@ -4440,6 +4457,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 118
+      router_external: true
   subnet_15169-47872:
     type: OS::Neutron::Subnet
     properties:
@@ -4456,6 +4474,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 119
+      router_external: true
   subnet_15169-262317:
     type: OS::Neutron::Subnet
     properties:
@@ -4472,6 +4491,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 120
+      router_external: true
   subnet_15169-264268:
     type: OS::Neutron::Subnet
     properties:
@@ -6230,6 +6250,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 121
+      router_external: true
   subnet_1267-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -6506,6 +6527,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 122
+      router_external: true
   subnet_1273-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -6782,6 +6804,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 123
+      router_external: true
   subnet_2152-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -7240,6 +7263,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 124
+      router_external: true
   subnet_2516-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -7516,6 +7540,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 125
+      router_external: true
   subnet_2518-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -8403,6 +8428,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 126
+      router_external: true
   subnet_3356-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -8978,6 +9004,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 127
+      router_external: true
   subnet_4739-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -9293,6 +9320,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 128
+      router_external: true
   subnet_5769-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -10167,6 +10195,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 129
+      router_external: true
   subnet_8468-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -10391,6 +10420,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 130
+      router_external: true
   subnet_9957-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -10446,6 +10476,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 131
+      router_external: true
   subnet_10026-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -10683,6 +10714,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 132
+      router_external: true
   subnet_15169-23673:
     type: OS::Neutron::Subnet
     properties:
@@ -10699,6 +10731,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 133
+      router_external: true
   subnet_15169-36351:
     type: OS::Neutron::Subnet
     properties:
@@ -10715,6 +10748,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 134
+      router_external: true
   subnet_15169-42541:
     type: OS::Neutron::Subnet
     properties:
@@ -10731,6 +10765,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 135
+      router_external: true
   subnet_15169-43515:
     type: OS::Neutron::Subnet
     properties:
@@ -10747,6 +10782,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 136
+      router_external: true
   subnet_15169-58682:
     type: OS::Neutron::Subnet
     properties:
@@ -10763,6 +10799,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 137
+      router_external: true
   subnet_15169-202109:
     type: OS::Neutron::Subnet
     properties:
@@ -10779,6 +10816,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 138
+      router_external: true
   subnet_15169-262354:
     type: OS::Neutron::Subnet
     properties:
@@ -10795,6 +10833,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 139
+      router_external: true
   subnet_15169-262757:
     type: OS::Neutron::Subnet
     properties:
@@ -12059,6 +12098,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 140
+      router_external: true
   subnet_1221-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -12413,6 +12453,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 141
+      router_external: true
   subnet_1798-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -14379,6 +14420,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 142
+      router_external: true
   subnet_6423-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -14616,6 +14658,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 143
+      router_external: true
   subnet_6830-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -14710,6 +14753,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 144
+      router_external: true
   subnet_7018-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -14986,6 +15030,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 145
+      router_external: true
   subnet_7660-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -15080,6 +15125,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 146
+      router_external: true
   subnet_9266-15169:
     type: OS::Neutron::Subnet
     properties:
@@ -15330,6 +15376,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 147
+      router_external: true
   subnet_15169-15301:
     type: OS::Neutron::Subnet
     properties:
@@ -15346,6 +15393,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 148
+      router_external: true
   subnet_15169-19653:
     type: OS::Neutron::Subnet
     properties:
@@ -15362,6 +15410,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 149
+      router_external: true
   subnet_15169-24441:
     type: OS::Neutron::Subnet
     properties:
@@ -15378,6 +15427,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 150
+      router_external: true
   subnet_15169-30844:
     type: OS::Neutron::Subnet
     properties:
@@ -15394,6 +15444,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 151
+      router_external: true
   subnet_15169-32614:
     type: OS::Neutron::Subnet
     properties:
@@ -15410,6 +15461,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 152
+      router_external: true
   subnet_15169-36236:
     type: OS::Neutron::Subnet
     properties:
@@ -15426,6 +15478,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 153
+      router_external: true
   subnet_15169-36492:
     type: OS::Neutron::Subnet
     properties:
@@ -15442,6 +15495,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 154
+      router_external: true
   subnet_15169-37474:
     type: OS::Neutron::Subnet
     properties:
@@ -15458,6 +15512,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 155
+      router_external: true
   subnet_15169-37497:
     type: OS::Neutron::Subnet
     properties:
@@ -15474,6 +15529,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 156
+      router_external: true
   subnet_15169-52863:
     type: OS::Neutron::Subnet
     properties:
@@ -15490,6 +15546,7 @@ resources:
       physical_network: provider
       network_type: vlan
       segmentation_id: 157
+      router_external: true
   subnet_15169-263075:
     type: OS::Neutron::Subnet
     properties:
