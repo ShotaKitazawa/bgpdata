@@ -41,3 +41,5 @@ done)
       route-disposition = "accept-route"
 _EOF_
 
+systemctl enable gobgpd
+systemctl restart gobgpd
