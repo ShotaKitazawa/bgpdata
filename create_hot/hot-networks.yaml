@@ -369,6 +369,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 209-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 101
   subnet_209-15169:
@@ -592,6 +593,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 701-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 102
   subnet_701-15169:
@@ -789,6 +791,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1239-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 103
   subnet_1239-15169:
@@ -999,6 +1002,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1299-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 104
   subnet_1299-15169:
@@ -1222,6 +1226,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1916-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 105
   subnet_1916-15169:
@@ -1562,6 +1567,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2497-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 106
   subnet_2497-15169:
@@ -1733,6 +1739,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2905-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 107
   subnet_2905-15169:
@@ -2138,6 +2145,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2914-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 108
   subnet_2914-15169:
@@ -3024,6 +3032,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 6939-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 109
   subnet_6939-15169:
@@ -3715,6 +3724,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 8492-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 110
   subnet_8492-15169:
@@ -3925,6 +3935,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 9498-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 111
   subnet_9498-15169:
@@ -4096,6 +4107,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 11686-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 112
   subnet_11686-15169:
@@ -4345,6 +4357,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-24482
+      physical_network: provider
       network_type: vlan
       segmentation_id: 113
   subnet_15169-24482:
@@ -4360,6 +4373,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-24516
+      physical_network: provider
       network_type: vlan
       segmentation_id: 114
   subnet_15169-24516:
@@ -4375,6 +4389,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-28329
+      physical_network: provider
       network_type: vlan
       segmentation_id: 115
   subnet_15169-28329:
@@ -4390,6 +4405,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-36040
+      physical_network: provider
       network_type: vlan
       segmentation_id: 116
   subnet_15169-36040:
@@ -4405,6 +4421,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-37100
+      physical_network: provider
       network_type: vlan
       segmentation_id: 117
   subnet_15169-37100:
@@ -4420,6 +4437,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-47872
+      physical_network: provider
       network_type: vlan
       segmentation_id: 118
   subnet_15169-47872:
@@ -4435,6 +4453,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-262317
+      physical_network: provider
       network_type: vlan
       segmentation_id: 119
   subnet_15169-262317:
@@ -4450,6 +4469,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-264268
+      physical_network: provider
       network_type: vlan
       segmentation_id: 120
   subnet_15169-264268:
@@ -6207,6 +6227,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1267-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 121
   subnet_1267-15169:
@@ -6482,6 +6503,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1273-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 122
   subnet_1273-15169:
@@ -6757,6 +6779,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2152-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 123
   subnet_2152-15169:
@@ -7214,6 +7237,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2516-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 124
   subnet_2516-15169:
@@ -7489,6 +7513,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 2518-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 125
   subnet_2518-15169:
@@ -8375,6 +8400,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 3356-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 126
   subnet_3356-15169:
@@ -8949,6 +8975,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 4739-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 127
   subnet_4739-15169:
@@ -9263,6 +9290,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 5769-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 128
   subnet_5769-15169:
@@ -10136,6 +10164,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 8468-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 129
   subnet_8468-15169:
@@ -10359,6 +10388,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 9957-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 130
   subnet_9957-15169:
@@ -10413,6 +10443,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 10026-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 131
   subnet_10026-15169:
@@ -10649,6 +10680,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-23673
+      physical_network: provider
       network_type: vlan
       segmentation_id: 132
   subnet_15169-23673:
@@ -10664,6 +10696,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-36351
+      physical_network: provider
       network_type: vlan
       segmentation_id: 133
   subnet_15169-36351:
@@ -10679,6 +10712,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-42541
+      physical_network: provider
       network_type: vlan
       segmentation_id: 134
   subnet_15169-42541:
@@ -10694,6 +10728,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-43515
+      physical_network: provider
       network_type: vlan
       segmentation_id: 135
   subnet_15169-43515:
@@ -10709,6 +10744,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-58682
+      physical_network: provider
       network_type: vlan
       segmentation_id: 136
   subnet_15169-58682:
@@ -10724,6 +10760,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-202109
+      physical_network: provider
       network_type: vlan
       segmentation_id: 137
   subnet_15169-202109:
@@ -10739,6 +10776,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-262354
+      physical_network: provider
       network_type: vlan
       segmentation_id: 138
   subnet_15169-262354:
@@ -10754,6 +10792,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-262757
+      physical_network: provider
       network_type: vlan
       segmentation_id: 139
   subnet_15169-262757:
@@ -12017,6 +12056,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1221-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 140
   subnet_1221-15169:
@@ -12370,6 +12410,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 1798-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 141
   subnet_1798-15169:
@@ -14335,6 +14376,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 6423-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 142
   subnet_6423-15169:
@@ -14571,6 +14613,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 6830-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 143
   subnet_6830-15169:
@@ -14664,6 +14707,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 7018-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 144
   subnet_7018-15169:
@@ -14939,6 +14983,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 7660-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 145
   subnet_7660-15169:
@@ -15032,6 +15077,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 9266-15169
+      physical_network: provider
       network_type: vlan
       segmentation_id: 146
   subnet_9266-15169:
@@ -15281,6 +15327,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-15301
+      physical_network: provider
       network_type: vlan
       segmentation_id: 147
   subnet_15169-15301:
@@ -15296,6 +15343,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-19653
+      physical_network: provider
       network_type: vlan
       segmentation_id: 148
   subnet_15169-19653:
@@ -15311,6 +15359,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-24441
+      physical_network: provider
       network_type: vlan
       segmentation_id: 149
   subnet_15169-24441:
@@ -15326,6 +15375,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-30844
+      physical_network: provider
       network_type: vlan
       segmentation_id: 150
   subnet_15169-30844:
@@ -15341,6 +15391,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-32614
+      physical_network: provider
       network_type: vlan
       segmentation_id: 151
   subnet_15169-32614:
@@ -15356,6 +15407,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-36236
+      physical_network: provider
       network_type: vlan
       segmentation_id: 152
   subnet_15169-36236:
@@ -15371,6 +15423,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-36492
+      physical_network: provider
       network_type: vlan
       segmentation_id: 153
   subnet_15169-36492:
@@ -15386,6 +15439,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-37474
+      physical_network: provider
       network_type: vlan
       segmentation_id: 154
   subnet_15169-37474:
@@ -15401,6 +15455,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-37497
+      physical_network: provider
       network_type: vlan
       segmentation_id: 155
   subnet_15169-37497:
@@ -15416,6 +15471,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-52863
+      physical_network: provider
       network_type: vlan
       segmentation_id: 156
   subnet_15169-52863:
@@ -15431,6 +15487,7 @@ resources:
     type: OS::Neutron::ProviderNet
     properties:
       name: 15169-263075
+      physical_network: provider
       network_type: vlan
       segmentation_id: 157
   subnet_15169-263075:

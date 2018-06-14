@@ -41,6 +41,7 @@ for netname in files:
         f.write("    type: OS::Neutron::ProviderNet\n")
         f.write("    properties:\n")
         f.write("      name: {}\n".format(netname))
+        f.write("      physical_network: provider\n")
         f.write("      network_type: vlan\n")
         f.write("      segmentation_id: {}\n".format(vlan_id))
 
