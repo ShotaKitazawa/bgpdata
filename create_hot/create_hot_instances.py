@@ -4,6 +4,8 @@
 
 import os
 import sys
+import ipaddress
+from collections import OrderedDict
 
 if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
     print("err: invalid command: python", sys.argv[0], "analyzed_file")
@@ -13,8 +15,7 @@ f = open(sys.argv[1], "r", encoding='utf-8')
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 files = os.listdir(DIR + "/network")
-filename = DIR + "/hot-instances.yaml"
-g = open(filename, "w")
+g = open(DIR + "/hot-instances.yaml", "w")
 
 # template
 g.write("heat_template_version: pike\n")
@@ -68,6 +69,13 @@ g.write("\n")
 s = 0
 
 for line in f:
+    # networks["network_name"] = "network_address/mask"
+    networks = OrderedDict()
+    # my_addresses["interface"] = "my_address"
+    my_addresses = OrderedDict()
+    # neighbor_addresses["neighbor_as_number"] = "neighbor_address"
+    neighbor_addresses = OrderedDict()
+
     l = line[:-1].split(" ")
     if s == 0:
         asn = l[1]
@@ -81,23 +89,84 @@ for line in f:
             s = 0
             continue
 
+        # store own network
+        ## for monitor
+        networks["monitor"] = "172.16.0.0/16"
+        my_addresses["eth0"] = "dhcp"
+        ## for between-as
+        cnt = 1
+        for filename in files:
+            if asn + "-" in filename[:len(asn + "-")]:
+                with open(DIR + "/network/" + filename, "r") as h:
+                    address = h.readline()
+                    networks[filename] = str(address)
+                    my_addresses["eth" + str(cnt)] = str(list(ipaddress.ip_network(address).hosts())[0])
+                    cnt += 1
+                    neighbor_addresses[filename[len(asn + "-"):]] = str(list(ipaddress.ip_network(address).hosts())[1])
+            elif "-" + asn in filename[len(-1 * ("-" + asn)):]:
+                with open(DIR + "/network/" + filename, "r") as h:
+                    networks[filename] = str(address)
+                    address = h.readline()
+                    my_addresses["eth" + str(cnt)] = str(list(ipaddress.ip_network(address).hosts())[1])
+                    cnt += 1
+                    neighbor_addresses[filename[:-1 * len("-" + asn)]] = str(list(ipaddress.ip_network(address).hosts())[0])
+
+        # create software config
+        g.write("  script_asn{0}_1:\n".format(asn))
+        g.write("      type: OS::Heat::SoftwareConfig\n")
+        g.write("      properties:\n")
+        g.write("        group: ungrouped\n")
+        g.write("        config:\n")
+        g.write("          str_replace:\n")
+        g.write("            template:\n")
+        g.write("              get_file: netconf.sh\n")
+        g.write("            params:\n")
+        g.write("              '$$interfaces': '{0}'\n".format(' '.join(my_addresses.keys())))
+        g.write("              '$$addresses': '{0}'\n".format(' '.join(my_addresses.values())))
+        g.write("              '$$networks': '{0}'\n".format(' '.join(networks.values())))
+        g.write("  script_asn{0}_2:\n".format(asn))
+        g.write("      type: OS::Heat::SoftwareConfig\n")
+        g.write("      properties:\n")
+        g.write("        group: ungrouped\n")
+        g.write("        config:\n")
+        g.write("          str_replace:\n")
+        g.write("            template:\n")
+        g.write("              get_file: gobgp.sh\n")
+        g.write("            params:\n")
+        g.write("              '$$my_as': '{0}'\n".format(asn))
+        g.write("              '$$neighbor_ases': '{0}'\n".format(' '.join(neighbor_addresses.keys())))
+        g.write("              '$$neighbor_addresses': '{0}'\n".format(' '.join(neighbor_addresses.values())))
+        g.write("  scripts_asn{0}:\n".format(asn))
+        g.write("    scripts:\n")
+        g.write("      type: OS::Heat::MultipartMime\n")
+        g.write("      properties:\n")
+        g.write("        parts:\n")
+        g.write("          - config: {{ get_resource: script_asn{0}_1 }}\n".format(asn))
+        g.write("          - config: {{ get_resource: script_asn{0}_2 }}\n".format(asn))
+
         # create instance
-        g.write("  asn{0}:\n".format(asn))
+        g.write("  volume_asn{0}:\n".format(asn))
+        g.write("    type: OS::Cinder::Volume\n")
+        g.write("    properties:\n")
+        g.write("      name: asn{0}\n".format(asn))
+        g.write("      image: Ubuntu-Router\n")
+        g.write("      size: 10\n")
+        g.write("      availability_zone: nova\n")
+        g.write("  server_asn{0}:\n".format(asn))
         g.write("    type: OS::Nova::Server\n")
         g.write("    properties:\n")
-        g.write("      name: asn{}\n".format(asn))
+        g.write("      name: asn{0}\n".format(asn))
         g.write("      key_name: default\n")
         g.write("      flavor: router\n")
         g.write("      block_device_mapping_v2:\n")
-        g.write("        - image: Ubuntu-Router\n")
-        g.write("          volume_size: 10\n")
+        g.write("        - volume_id: {{ volume_asn{0} }}\n".format(asn))
         g.write("      networks:\n")
         g.write("        - network: monitor\n")
-        for filename in files:
-            if "-" + asn in filename or asn + "-" in filename:
-                g.write("        - network: {0}\n".format(filename))
+        for network in networks.keys():
+            g.write("        - network: {0}\n".format(network))
         g.write("      security_groups:\n")
         g.write("        - { get_resource: security_group_allallow }\n")
+        g.write("      user_data: {{ get_resource: scripts_asn{0} }}\n".format(asn))
         g.write("\n")
 
         s = 0
