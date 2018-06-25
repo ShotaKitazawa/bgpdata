@@ -158,7 +158,7 @@ for line in f:
         g.write("      key_name: default\n")
         g.write("      flavor: router\n")
         g.write("      block_device_mapping_v2:\n")
-        g.write("        - volume_id: {{ volume_asn{0} }}\n".format(asn))
+        g.write("        - volume_id: {{ get_resource: volume_asn{0} }}\n".format(asn))
         g.write("      networks:\n")
         g.write("        - network: monitor\n")
         for network in networks.keys():

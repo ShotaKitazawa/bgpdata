@@ -84,7 +84,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn42 }
+        - volume_id: { get_resource: volume_asn42 }
       networks:
         - network: monitor
         - network: monitor
@@ -173,7 +173,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn209 }
+        - volume_id: { get_resource: volume_asn209 }
       networks:
         - network: monitor
         - network: monitor
@@ -243,7 +243,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn701 }
+        - volume_id: { get_resource: volume_asn701 }
       networks:
         - network: monitor
         - network: monitor
@@ -344,7 +344,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1239 }
+        - volume_id: { get_resource: volume_asn1239 }
       networks:
         - network: monitor
         - network: monitor
@@ -410,7 +410,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1299 }
+        - volume_id: { get_resource: volume_asn1299 }
       networks:
         - network: monitor
         - network: monitor
@@ -503,7 +503,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1916 }
+        - volume_id: { get_resource: volume_asn1916 }
       networks:
         - network: monitor
         - network: monitor
@@ -578,7 +578,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2497 }
+        - volume_id: { get_resource: volume_asn2497 }
       networks:
         - network: monitor
         - network: monitor
@@ -682,7 +682,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2500 }
+        - volume_id: { get_resource: volume_asn2500 }
       networks:
         - network: monitor
         - network: monitor
@@ -739,7 +739,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2905 }
+        - volume_id: { get_resource: volume_asn2905 }
       networks:
         - network: monitor
         - network: monitor
@@ -796,7 +796,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2906 }
+        - volume_id: { get_resource: volume_asn2906 }
       networks:
         - network: monitor
         - network: monitor
@@ -901,7 +901,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2907 }
+        - volume_id: { get_resource: volume_asn2907 }
       networks:
         - network: monitor
         - network: monitor
@@ -969,7 +969,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2914 }
+        - volume_id: { get_resource: volume_asn2914 }
       networks:
         - network: monitor
         - network: monitor
@@ -1102,7 +1102,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3225 }
+        - volume_id: { get_resource: volume_asn3225 }
       networks:
         - network: monitor
         - network: monitor
@@ -1161,7 +1161,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3269 }
+        - volume_id: { get_resource: volume_asn3269 }
       networks:
         - network: monitor
         - network: monitor
@@ -1215,7 +1215,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3573 }
+        - volume_id: { get_resource: volume_asn3573 }
       networks:
         - network: monitor
         - network: monitor
@@ -1274,7 +1274,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3613 }
+        - volume_id: { get_resource: volume_asn3613 }
       networks:
         - network: monitor
         - network: monitor
@@ -1328,7 +1328,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3693 }
+        - volume_id: { get_resource: volume_asn3693 }
       networks:
         - network: monitor
         - network: monitor
@@ -1382,7 +1382,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3944 }
+        - volume_id: { get_resource: volume_asn3944 }
       networks:
         - network: monitor
         - network: monitor
@@ -1435,7 +1435,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4436 }
+        - volume_id: { get_resource: volume_asn4436 }
       networks:
         - network: monitor
         - network: monitor
@@ -1504,7 +1504,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4713 }
+        - volume_id: { get_resource: volume_asn4713 }
       networks:
         - network: monitor
         - network: monitor
@@ -1584,7 +1584,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4755 }
+        - volume_id: { get_resource: volume_asn4755 }
       networks:
         - network: monitor
         - network: monitor
@@ -1639,7 +1639,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4761 }
+        - volume_id: { get_resource: volume_asn4761 }
       networks:
         - network: monitor
         - network: monitor
@@ -1704,7 +1704,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6391 }
+        - volume_id: { get_resource: volume_asn6391 }
       networks:
         - network: monitor
         - network: monitor
@@ -1758,7 +1758,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6777 }
+        - volume_id: { get_resource: volume_asn6777 }
       networks:
         - network: monitor
         - network: monitor
@@ -1815,7 +1815,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6939 }
+        - volume_id: { get_resource: volume_asn6939 }
       networks:
         - network: monitor
         - network: monitor
@@ -1970,7 +1970,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7670 }
+        - volume_id: { get_resource: volume_asn7670 }
       networks:
         - network: monitor
         - network: monitor
@@ -2032,7 +2032,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7726 }
+        - volume_id: { get_resource: volume_asn7726 }
       networks:
         - network: monitor
         - network: monitor
@@ -2086,7 +2086,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7738 }
+        - volume_id: { get_resource: volume_asn7738 }
       networks:
         - network: monitor
         - network: monitor
@@ -2152,7 +2152,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7922 }
+        - volume_id: { get_resource: volume_asn7922 }
       networks:
         - network: monitor
         - network: monitor
@@ -2218,7 +2218,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8492 }
+        - volume_id: { get_resource: volume_asn8492 }
       networks:
         - network: monitor
         - network: monitor
@@ -2290,7 +2290,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8674 }
+        - volume_id: { get_resource: volume_asn8674 }
       networks:
         - network: monitor
         - network: monitor
@@ -2354,7 +2354,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9498 }
+        - volume_id: { get_resource: volume_asn9498 }
       networks:
         - network: monitor
         - network: monitor
@@ -2424,7 +2424,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9930 }
+        - volume_id: { get_resource: volume_asn9930 }
       networks:
         - network: monitor
         - network: monitor
@@ -2482,7 +2482,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn11686 }
+        - volume_id: { get_resource: volume_asn11686 }
       networks:
         - network: monitor
         - network: monitor
@@ -2546,7 +2546,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn11758 }
+        - volume_id: { get_resource: volume_asn11758 }
       networks:
         - network: monitor
         - network: monitor
@@ -2601,7 +2601,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn12302 }
+        - volume_id: { get_resource: volume_asn12302 }
       networks:
         - network: monitor
         - network: monitor
@@ -2655,7 +2655,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn12989 }
+        - volume_id: { get_resource: volume_asn12989 }
       networks:
         - network: monitor
         - network: monitor
@@ -2730,7 +2730,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn13720 }
+        - volume_id: { get_resource: volume_asn13720 }
       networks:
         - network: monitor
         - network: monitor
@@ -2788,7 +2788,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn15290 }
+        - volume_id: { get_resource: volume_asn15290 }
       networks:
         - network: monitor
         - network: monitor
@@ -2843,7 +2843,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn16668 }
+        - volume_id: { get_resource: volume_asn16668 }
       networks:
         - network: monitor
         - network: monitor
@@ -2900,7 +2900,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17685 }
+        - volume_id: { get_resource: volume_asn17685 }
       networks:
         - network: monitor
         - network: monitor
@@ -2955,7 +2955,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17691 }
+        - volume_id: { get_resource: volume_asn17691 }
       networks:
         - network: monitor
         - network: monitor
@@ -3010,7 +3010,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17922 }
+        - volume_id: { get_resource: volume_asn17922 }
       networks:
         - network: monitor
         - network: monitor
@@ -3068,7 +3068,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn18746 }
+        - volume_id: { get_resource: volume_asn18746 }
       networks:
         - network: monitor
         - network: monitor
@@ -3121,7 +3121,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22822 }
+        - volume_id: { get_resource: volume_asn22822 }
       networks:
         - network: monitor
         - network: monitor
@@ -3214,7 +3214,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23775 }
+        - volume_id: { get_resource: volume_asn23775 }
       networks:
         - network: monitor
         - network: monitor
@@ -3267,7 +3267,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23822 }
+        - volume_id: { get_resource: volume_asn23822 }
       networks:
         - network: monitor
         - network: monitor
@@ -3321,7 +3321,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23829 }
+        - volume_id: { get_resource: volume_asn23829 }
       networks:
         - network: monitor
         - network: monitor
@@ -3378,7 +3378,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23947 }
+        - volume_id: { get_resource: volume_asn23947 }
       networks:
         - network: monitor
         - network: monitor
@@ -3437,7 +3437,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24482 }
+        - volume_id: { get_resource: volume_asn24482 }
       networks:
         - network: monitor
         - network: monitor
@@ -3557,7 +3557,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24516 }
+        - volume_id: { get_resource: volume_asn24516 }
       networks:
         - network: monitor
         - network: monitor
@@ -3624,7 +3624,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26218 }
+        - volume_id: { get_resource: volume_asn26218 }
       networks:
         - network: monitor
         - network: monitor
@@ -3677,7 +3677,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn28329 }
+        - volume_id: { get_resource: volume_asn28329 }
       networks:
         - network: monitor
         - network: monitor
@@ -3746,7 +3746,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn29119 }
+        - volume_id: { get_resource: volume_asn29119 }
       networks:
         - network: monitor
         - network: monitor
@@ -3807,7 +3807,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn29534 }
+        - volume_id: { get_resource: volume_asn29534 }
       networks:
         - network: monitor
         - network: monitor
@@ -3861,7 +3861,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn30519 }
+        - volume_id: { get_resource: volume_asn30519 }
       networks:
         - network: monitor
         - network: monitor
@@ -3915,7 +3915,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn32590 }
+        - volume_id: { get_resource: volume_asn32590 }
       networks:
         - network: monitor
         - network: monitor
@@ -3982,7 +3982,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33659 }
+        - volume_id: { get_resource: volume_asn33659 }
       networks:
         - network: monitor
         - network: monitor
@@ -4036,7 +4036,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33660 }
+        - volume_id: { get_resource: volume_asn33660 }
       networks:
         - network: monitor
         - network: monitor
@@ -4090,7 +4090,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36040 }
+        - volume_id: { get_resource: volume_asn36040 }
       networks:
         - network: monitor
         - network: monitor
@@ -4152,7 +4152,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36324 }
+        - volume_id: { get_resource: volume_asn36324 }
       networks:
         - network: monitor
         - network: monitor
@@ -4206,7 +4206,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37100 }
+        - volume_id: { get_resource: volume_asn37100 }
       networks:
         - network: monitor
         - network: monitor
@@ -4282,7 +4282,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37613 }
+        - volume_id: { get_resource: volume_asn37613 }
       networks:
         - network: monitor
         - network: monitor
@@ -4341,7 +4341,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37629 }
+        - volume_id: { get_resource: volume_asn37629 }
       networks:
         - network: monitor
         - network: monitor
@@ -4394,7 +4394,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn41541 }
+        - volume_id: { get_resource: volume_asn41541 }
       networks:
         - network: monitor
         - network: monitor
@@ -4447,7 +4447,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn46428 }
+        - volume_id: { get_resource: volume_asn46428 }
       networks:
         - network: monitor
         - network: monitor
@@ -4502,7 +4502,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn47872 }
+        - volume_id: { get_resource: volume_asn47872 }
       networks:
         - network: monitor
         - network: monitor
@@ -4576,7 +4576,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn50129 }
+        - volume_id: { get_resource: volume_asn50129 }
       networks:
         - network: monitor
         - network: monitor
@@ -4629,7 +4629,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn50607 }
+        - volume_id: { get_resource: volume_asn50607 }
       networks:
         - network: monitor
         - network: monitor
@@ -4688,7 +4688,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53237 }
+        - volume_id: { get_resource: volume_asn53237 }
       networks:
         - network: monitor
         - network: monitor
@@ -4748,7 +4748,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53243 }
+        - volume_id: { get_resource: volume_asn53243 }
       networks:
         - network: monitor
         - network: monitor
@@ -4805,7 +4805,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55947 }
+        - volume_id: { get_resource: volume_asn55947 }
       networks:
         - network: monitor
         - network: monitor
@@ -4860,7 +4860,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn59415 }
+        - volume_id: { get_resource: volume_asn59415 }
       networks:
         - network: monitor
         - network: monitor
@@ -4915,7 +4915,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn62081 }
+        - volume_id: { get_resource: volume_asn62081 }
       networks:
         - network: monitor
         - network: monitor
@@ -4977,7 +4977,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn62227 }
+        - volume_id: { get_resource: volume_asn62227 }
       networks:
         - network: monitor
         - network: monitor
@@ -5035,7 +5035,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn63511 }
+        - volume_id: { get_resource: volume_asn63511 }
       networks:
         - network: monitor
         - network: monitor
@@ -5089,7 +5089,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn64901 }
+        - volume_id: { get_resource: volume_asn64901 }
       networks:
         - network: monitor
         - network: monitor
@@ -5142,7 +5142,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131158 }
+        - volume_id: { get_resource: volume_asn131158 }
       networks:
         - network: monitor
         - network: monitor
@@ -5196,7 +5196,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131735 }
+        - volume_id: { get_resource: volume_asn131735 }
       networks:
         - network: monitor
         - network: monitor
@@ -5251,7 +5251,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131907 }
+        - volume_id: { get_resource: volume_asn131907 }
       networks:
         - network: monitor
         - network: monitor
@@ -5304,7 +5304,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn134698 }
+        - volume_id: { get_resource: volume_asn134698 }
       networks:
         - network: monitor
         - network: monitor
@@ -5357,7 +5357,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn198389 }
+        - volume_id: { get_resource: volume_asn198389 }
       networks:
         - network: monitor
         - network: monitor
@@ -5411,7 +5411,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn198723 }
+        - volume_id: { get_resource: volume_asn198723 }
       networks:
         - network: monitor
         - network: monitor
@@ -5464,7 +5464,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn199846 }
+        - volume_id: { get_resource: volume_asn199846 }
       networks:
         - network: monitor
         - network: monitor
@@ -5519,7 +5519,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262317 }
+        - volume_id: { get_resource: volume_asn262317 }
       networks:
         - network: monitor
         - network: monitor
@@ -5594,7 +5594,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262560 }
+        - volume_id: { get_resource: volume_asn262560 }
       networks:
         - network: monitor
         - network: monitor
@@ -5647,7 +5647,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262589 }
+        - volume_id: { get_resource: volume_asn262589 }
       networks:
         - network: monitor
         - network: monitor
@@ -5712,7 +5712,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262625 }
+        - volume_id: { get_resource: volume_asn262625 }
       networks:
         - network: monitor
         - network: monitor
@@ -5765,7 +5765,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262716 }
+        - volume_id: { get_resource: volume_asn262716 }
       networks:
         - network: monitor
         - network: monitor
@@ -5819,7 +5819,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262760 }
+        - volume_id: { get_resource: volume_asn262760 }
       networks:
         - network: monitor
         - network: monitor
@@ -5877,7 +5877,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263415 }
+        - volume_id: { get_resource: volume_asn263415 }
       networks:
         - network: monitor
         - network: monitor
@@ -5934,7 +5934,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263566 }
+        - volume_id: { get_resource: volume_asn263566 }
       networks:
         - network: monitor
         - network: monitor
@@ -5988,7 +5988,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263661 }
+        - volume_id: { get_resource: volume_asn263661 }
       networks:
         - network: monitor
         - network: monitor
@@ -6046,7 +6046,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263665 }
+        - volume_id: { get_resource: volume_asn263665 }
       networks:
         - network: monitor
         - network: monitor
@@ -6105,7 +6105,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264101 }
+        - volume_id: { get_resource: volume_asn264101 }
       networks:
         - network: monitor
         - network: monitor
@@ -6163,7 +6163,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264268 }
+        - volume_id: { get_resource: volume_asn264268 }
       networks:
         - network: monitor
         - network: monitor
@@ -6230,7 +6230,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn266256 }
+        - volume_id: { get_resource: volume_asn266256 }
       networks:
         - network: monitor
         - network: monitor
@@ -6288,7 +6288,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn267576 }
+        - volume_id: { get_resource: volume_asn267576 }
       networks:
         - network: monitor
         - network: monitor
@@ -6342,7 +6342,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn394096 }
+        - volume_id: { get_resource: volume_asn394096 }
       networks:
         - network: monitor
         - network: monitor
@@ -6396,7 +6396,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn42 }
+        - volume_id: { get_resource: volume_asn42 }
       networks:
         - network: monitor
         - network: monitor
@@ -6485,7 +6485,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn209 }
+        - volume_id: { get_resource: volume_asn209 }
       networks:
         - network: monitor
         - network: monitor
@@ -6555,7 +6555,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn701 }
+        - volume_id: { get_resource: volume_asn701 }
       networks:
         - network: monitor
         - network: monitor
@@ -6656,7 +6656,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1239 }
+        - volume_id: { get_resource: volume_asn1239 }
       networks:
         - network: monitor
         - network: monitor
@@ -6722,7 +6722,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1299 }
+        - volume_id: { get_resource: volume_asn1299 }
       networks:
         - network: monitor
         - network: monitor
@@ -6815,7 +6815,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1916 }
+        - volume_id: { get_resource: volume_asn1916 }
       networks:
         - network: monitor
         - network: monitor
@@ -6890,7 +6890,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2497 }
+        - volume_id: { get_resource: volume_asn2497 }
       networks:
         - network: monitor
         - network: monitor
@@ -6994,7 +6994,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2500 }
+        - volume_id: { get_resource: volume_asn2500 }
       networks:
         - network: monitor
         - network: monitor
@@ -7051,7 +7051,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2905 }
+        - volume_id: { get_resource: volume_asn2905 }
       networks:
         - network: monitor
         - network: monitor
@@ -7108,7 +7108,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2906 }
+        - volume_id: { get_resource: volume_asn2906 }
       networks:
         - network: monitor
         - network: monitor
@@ -7213,7 +7213,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2907 }
+        - volume_id: { get_resource: volume_asn2907 }
       networks:
         - network: monitor
         - network: monitor
@@ -7281,7 +7281,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2914 }
+        - volume_id: { get_resource: volume_asn2914 }
       networks:
         - network: monitor
         - network: monitor
@@ -7414,7 +7414,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3225 }
+        - volume_id: { get_resource: volume_asn3225 }
       networks:
         - network: monitor
         - network: monitor
@@ -7473,7 +7473,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3269 }
+        - volume_id: { get_resource: volume_asn3269 }
       networks:
         - network: monitor
         - network: monitor
@@ -7527,7 +7527,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3573 }
+        - volume_id: { get_resource: volume_asn3573 }
       networks:
         - network: monitor
         - network: monitor
@@ -7586,7 +7586,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3613 }
+        - volume_id: { get_resource: volume_asn3613 }
       networks:
         - network: monitor
         - network: monitor
@@ -7640,7 +7640,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3693 }
+        - volume_id: { get_resource: volume_asn3693 }
       networks:
         - network: monitor
         - network: monitor
@@ -7694,7 +7694,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3944 }
+        - volume_id: { get_resource: volume_asn3944 }
       networks:
         - network: monitor
         - network: monitor
@@ -7747,7 +7747,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4436 }
+        - volume_id: { get_resource: volume_asn4436 }
       networks:
         - network: monitor
         - network: monitor
@@ -7816,7 +7816,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4713 }
+        - volume_id: { get_resource: volume_asn4713 }
       networks:
         - network: monitor
         - network: monitor
@@ -7896,7 +7896,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4755 }
+        - volume_id: { get_resource: volume_asn4755 }
       networks:
         - network: monitor
         - network: monitor
@@ -7951,7 +7951,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4761 }
+        - volume_id: { get_resource: volume_asn4761 }
       networks:
         - network: monitor
         - network: monitor
@@ -8016,7 +8016,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6391 }
+        - volume_id: { get_resource: volume_asn6391 }
       networks:
         - network: monitor
         - network: monitor
@@ -8070,7 +8070,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6777 }
+        - volume_id: { get_resource: volume_asn6777 }
       networks:
         - network: monitor
         - network: monitor
@@ -8127,7 +8127,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6939 }
+        - volume_id: { get_resource: volume_asn6939 }
       networks:
         - network: monitor
         - network: monitor
@@ -8282,7 +8282,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7670 }
+        - volume_id: { get_resource: volume_asn7670 }
       networks:
         - network: monitor
         - network: monitor
@@ -8344,7 +8344,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7726 }
+        - volume_id: { get_resource: volume_asn7726 }
       networks:
         - network: monitor
         - network: monitor
@@ -8398,7 +8398,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7738 }
+        - volume_id: { get_resource: volume_asn7738 }
       networks:
         - network: monitor
         - network: monitor
@@ -8464,7 +8464,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7922 }
+        - volume_id: { get_resource: volume_asn7922 }
       networks:
         - network: monitor
         - network: monitor
@@ -8530,7 +8530,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8492 }
+        - volume_id: { get_resource: volume_asn8492 }
       networks:
         - network: monitor
         - network: monitor
@@ -8602,7 +8602,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8674 }
+        - volume_id: { get_resource: volume_asn8674 }
       networks:
         - network: monitor
         - network: monitor
@@ -8666,7 +8666,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9498 }
+        - volume_id: { get_resource: volume_asn9498 }
       networks:
         - network: monitor
         - network: monitor
@@ -8736,7 +8736,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9930 }
+        - volume_id: { get_resource: volume_asn9930 }
       networks:
         - network: monitor
         - network: monitor
@@ -8794,7 +8794,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn11686 }
+        - volume_id: { get_resource: volume_asn11686 }
       networks:
         - network: monitor
         - network: monitor
@@ -8858,7 +8858,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn11758 }
+        - volume_id: { get_resource: volume_asn11758 }
       networks:
         - network: monitor
         - network: monitor
@@ -8913,7 +8913,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn12302 }
+        - volume_id: { get_resource: volume_asn12302 }
       networks:
         - network: monitor
         - network: monitor
@@ -8967,7 +8967,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn12989 }
+        - volume_id: { get_resource: volume_asn12989 }
       networks:
         - network: monitor
         - network: monitor
@@ -9042,7 +9042,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn13720 }
+        - volume_id: { get_resource: volume_asn13720 }
       networks:
         - network: monitor
         - network: monitor
@@ -9100,7 +9100,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn15290 }
+        - volume_id: { get_resource: volume_asn15290 }
       networks:
         - network: monitor
         - network: monitor
@@ -9155,7 +9155,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn16668 }
+        - volume_id: { get_resource: volume_asn16668 }
       networks:
         - network: monitor
         - network: monitor
@@ -9212,7 +9212,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17685 }
+        - volume_id: { get_resource: volume_asn17685 }
       networks:
         - network: monitor
         - network: monitor
@@ -9267,7 +9267,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17691 }
+        - volume_id: { get_resource: volume_asn17691 }
       networks:
         - network: monitor
         - network: monitor
@@ -9322,7 +9322,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17922 }
+        - volume_id: { get_resource: volume_asn17922 }
       networks:
         - network: monitor
         - network: monitor
@@ -9380,7 +9380,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn18746 }
+        - volume_id: { get_resource: volume_asn18746 }
       networks:
         - network: monitor
         - network: monitor
@@ -9433,7 +9433,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22822 }
+        - volume_id: { get_resource: volume_asn22822 }
       networks:
         - network: monitor
         - network: monitor
@@ -9526,7 +9526,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23775 }
+        - volume_id: { get_resource: volume_asn23775 }
       networks:
         - network: monitor
         - network: monitor
@@ -9579,7 +9579,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23822 }
+        - volume_id: { get_resource: volume_asn23822 }
       networks:
         - network: monitor
         - network: monitor
@@ -9633,7 +9633,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23829 }
+        - volume_id: { get_resource: volume_asn23829 }
       networks:
         - network: monitor
         - network: monitor
@@ -9690,7 +9690,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23947 }
+        - volume_id: { get_resource: volume_asn23947 }
       networks:
         - network: monitor
         - network: monitor
@@ -9749,7 +9749,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24482 }
+        - volume_id: { get_resource: volume_asn24482 }
       networks:
         - network: monitor
         - network: monitor
@@ -9869,7 +9869,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24516 }
+        - volume_id: { get_resource: volume_asn24516 }
       networks:
         - network: monitor
         - network: monitor
@@ -9936,7 +9936,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26218 }
+        - volume_id: { get_resource: volume_asn26218 }
       networks:
         - network: monitor
         - network: monitor
@@ -9989,7 +9989,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn28329 }
+        - volume_id: { get_resource: volume_asn28329 }
       networks:
         - network: monitor
         - network: monitor
@@ -10058,7 +10058,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn29119 }
+        - volume_id: { get_resource: volume_asn29119 }
       networks:
         - network: monitor
         - network: monitor
@@ -10119,7 +10119,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn29534 }
+        - volume_id: { get_resource: volume_asn29534 }
       networks:
         - network: monitor
         - network: monitor
@@ -10173,7 +10173,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn30519 }
+        - volume_id: { get_resource: volume_asn30519 }
       networks:
         - network: monitor
         - network: monitor
@@ -10227,7 +10227,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn32590 }
+        - volume_id: { get_resource: volume_asn32590 }
       networks:
         - network: monitor
         - network: monitor
@@ -10294,7 +10294,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33659 }
+        - volume_id: { get_resource: volume_asn33659 }
       networks:
         - network: monitor
         - network: monitor
@@ -10348,7 +10348,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33660 }
+        - volume_id: { get_resource: volume_asn33660 }
       networks:
         - network: monitor
         - network: monitor
@@ -10402,7 +10402,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36040 }
+        - volume_id: { get_resource: volume_asn36040 }
       networks:
         - network: monitor
         - network: monitor
@@ -10464,7 +10464,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36324 }
+        - volume_id: { get_resource: volume_asn36324 }
       networks:
         - network: monitor
         - network: monitor
@@ -10518,7 +10518,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37100 }
+        - volume_id: { get_resource: volume_asn37100 }
       networks:
         - network: monitor
         - network: monitor
@@ -10594,7 +10594,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37613 }
+        - volume_id: { get_resource: volume_asn37613 }
       networks:
         - network: monitor
         - network: monitor
@@ -10653,7 +10653,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37629 }
+        - volume_id: { get_resource: volume_asn37629 }
       networks:
         - network: monitor
         - network: monitor
@@ -10706,7 +10706,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn41541 }
+        - volume_id: { get_resource: volume_asn41541 }
       networks:
         - network: monitor
         - network: monitor
@@ -10759,7 +10759,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn46428 }
+        - volume_id: { get_resource: volume_asn46428 }
       networks:
         - network: monitor
         - network: monitor
@@ -10814,7 +10814,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn47872 }
+        - volume_id: { get_resource: volume_asn47872 }
       networks:
         - network: monitor
         - network: monitor
@@ -10888,7 +10888,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn50129 }
+        - volume_id: { get_resource: volume_asn50129 }
       networks:
         - network: monitor
         - network: monitor
@@ -10941,7 +10941,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn50607 }
+        - volume_id: { get_resource: volume_asn50607 }
       networks:
         - network: monitor
         - network: monitor
@@ -11000,7 +11000,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53237 }
+        - volume_id: { get_resource: volume_asn53237 }
       networks:
         - network: monitor
         - network: monitor
@@ -11060,7 +11060,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53243 }
+        - volume_id: { get_resource: volume_asn53243 }
       networks:
         - network: monitor
         - network: monitor
@@ -11117,7 +11117,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55947 }
+        - volume_id: { get_resource: volume_asn55947 }
       networks:
         - network: monitor
         - network: monitor
@@ -11172,7 +11172,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn59415 }
+        - volume_id: { get_resource: volume_asn59415 }
       networks:
         - network: monitor
         - network: monitor
@@ -11227,7 +11227,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn62081 }
+        - volume_id: { get_resource: volume_asn62081 }
       networks:
         - network: monitor
         - network: monitor
@@ -11289,7 +11289,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn62227 }
+        - volume_id: { get_resource: volume_asn62227 }
       networks:
         - network: monitor
         - network: monitor
@@ -11347,7 +11347,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn63511 }
+        - volume_id: { get_resource: volume_asn63511 }
       networks:
         - network: monitor
         - network: monitor
@@ -11401,7 +11401,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn64901 }
+        - volume_id: { get_resource: volume_asn64901 }
       networks:
         - network: monitor
         - network: monitor
@@ -11454,7 +11454,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131158 }
+        - volume_id: { get_resource: volume_asn131158 }
       networks:
         - network: monitor
         - network: monitor
@@ -11508,7 +11508,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131735 }
+        - volume_id: { get_resource: volume_asn131735 }
       networks:
         - network: monitor
         - network: monitor
@@ -11563,7 +11563,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131907 }
+        - volume_id: { get_resource: volume_asn131907 }
       networks:
         - network: monitor
         - network: monitor
@@ -11616,7 +11616,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn134698 }
+        - volume_id: { get_resource: volume_asn134698 }
       networks:
         - network: monitor
         - network: monitor
@@ -11669,7 +11669,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn198389 }
+        - volume_id: { get_resource: volume_asn198389 }
       networks:
         - network: monitor
         - network: monitor
@@ -11723,7 +11723,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn198723 }
+        - volume_id: { get_resource: volume_asn198723 }
       networks:
         - network: monitor
         - network: monitor
@@ -11776,7 +11776,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn199846 }
+        - volume_id: { get_resource: volume_asn199846 }
       networks:
         - network: monitor
         - network: monitor
@@ -11831,7 +11831,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262317 }
+        - volume_id: { get_resource: volume_asn262317 }
       networks:
         - network: monitor
         - network: monitor
@@ -11906,7 +11906,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262560 }
+        - volume_id: { get_resource: volume_asn262560 }
       networks:
         - network: monitor
         - network: monitor
@@ -11959,7 +11959,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262589 }
+        - volume_id: { get_resource: volume_asn262589 }
       networks:
         - network: monitor
         - network: monitor
@@ -12024,7 +12024,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262625 }
+        - volume_id: { get_resource: volume_asn262625 }
       networks:
         - network: monitor
         - network: monitor
@@ -12077,7 +12077,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262716 }
+        - volume_id: { get_resource: volume_asn262716 }
       networks:
         - network: monitor
         - network: monitor
@@ -12131,7 +12131,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262760 }
+        - volume_id: { get_resource: volume_asn262760 }
       networks:
         - network: monitor
         - network: monitor
@@ -12189,7 +12189,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263415 }
+        - volume_id: { get_resource: volume_asn263415 }
       networks:
         - network: monitor
         - network: monitor
@@ -12246,7 +12246,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263566 }
+        - volume_id: { get_resource: volume_asn263566 }
       networks:
         - network: monitor
         - network: monitor
@@ -12300,7 +12300,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263661 }
+        - volume_id: { get_resource: volume_asn263661 }
       networks:
         - network: monitor
         - network: monitor
@@ -12358,7 +12358,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263665 }
+        - volume_id: { get_resource: volume_asn263665 }
       networks:
         - network: monitor
         - network: monitor
@@ -12417,7 +12417,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264101 }
+        - volume_id: { get_resource: volume_asn264101 }
       networks:
         - network: monitor
         - network: monitor
@@ -12475,7 +12475,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264268 }
+        - volume_id: { get_resource: volume_asn264268 }
       networks:
         - network: monitor
         - network: monitor
@@ -12542,7 +12542,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn266256 }
+        - volume_id: { get_resource: volume_asn266256 }
       networks:
         - network: monitor
         - network: monitor
@@ -12600,7 +12600,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn267576 }
+        - volume_id: { get_resource: volume_asn267576 }
       networks:
         - network: monitor
         - network: monitor
@@ -12654,7 +12654,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn394096 }
+        - volume_id: { get_resource: volume_asn394096 }
       networks:
         - network: monitor
         - network: monitor
@@ -12708,7 +12708,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn174 }
+        - volume_id: { get_resource: volume_asn174 }
       networks:
         - network: monitor
         - network: monitor
@@ -12786,7 +12786,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn701 }
+        - volume_id: { get_resource: volume_asn701 }
       networks:
         - network: monitor
         - network: monitor
@@ -12887,7 +12887,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1237 }
+        - volume_id: { get_resource: volume_asn1237 }
       networks:
         - network: monitor
         - network: monitor
@@ -12940,7 +12940,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1267 }
+        - volume_id: { get_resource: volume_asn1267 }
       networks:
         - network: monitor
         - network: monitor
@@ -13009,7 +13009,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1273 }
+        - volume_id: { get_resource: volume_asn1273 }
       networks:
         - network: monitor
         - network: monitor
@@ -13084,7 +13084,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1680 }
+        - volume_id: { get_resource: volume_asn1680 }
       networks:
         - network: monitor
         - network: monitor
@@ -13145,7 +13145,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2152 }
+        - volume_id: { get_resource: volume_asn2152 }
       networks:
         - network: monitor
         - network: monitor
@@ -13207,7 +13207,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2497 }
+        - volume_id: { get_resource: volume_asn2497 }
       networks:
         - network: monitor
         - network: monitor
@@ -13311,7 +13311,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2516 }
+        - volume_id: { get_resource: volume_asn2516 }
       networks:
         - network: monitor
         - network: monitor
@@ -13389,7 +13389,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2518 }
+        - volume_id: { get_resource: volume_asn2518 }
       networks:
         - network: monitor
         - network: monitor
@@ -13474,7 +13474,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2527 }
+        - volume_id: { get_resource: volume_asn2527 }
       networks:
         - network: monitor
         - network: monitor
@@ -13533,7 +13533,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2906 }
+        - volume_id: { get_resource: volume_asn2906 }
       networks:
         - network: monitor
         - network: monitor
@@ -13638,7 +13638,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2907 }
+        - volume_id: { get_resource: volume_asn2907 }
       networks:
         - network: monitor
         - network: monitor
@@ -13706,7 +13706,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2914 }
+        - volume_id: { get_resource: volume_asn2914 }
       networks:
         - network: monitor
         - network: monitor
@@ -13839,7 +13839,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3356 }
+        - volume_id: { get_resource: volume_asn3356 }
       networks:
         - network: monitor
         - network: monitor
@@ -13953,7 +13953,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4323 }
+        - volume_id: { get_resource: volume_asn4323 }
       networks:
         - network: monitor
         - network: monitor
@@ -14007,7 +14007,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4637 }
+        - volume_id: { get_resource: volume_asn4637 }
       networks:
         - network: monitor
         - network: monitor
@@ -14084,7 +14084,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4713 }
+        - volume_id: { get_resource: volume_asn4713 }
       networks:
         - network: monitor
         - network: monitor
@@ -14164,7 +14164,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4739 }
+        - volume_id: { get_resource: volume_asn4739 }
       networks:
         - network: monitor
         - network: monitor
@@ -14234,7 +14234,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn5388 }
+        - volume_id: { get_resource: volume_asn5388 }
       networks:
         - network: monitor
         - network: monitor
@@ -14287,7 +14287,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn5645 }
+        - volume_id: { get_resource: volume_asn5645 }
       networks:
         - network: monitor
         - network: monitor
@@ -14350,7 +14350,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn5690 }
+        - volume_id: { get_resource: volume_asn5690 }
       networks:
         - network: monitor
         - network: monitor
@@ -14408,7 +14408,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn5769 }
+        - volume_id: { get_resource: volume_asn5769 }
       networks:
         - network: monitor
         - network: monitor
@@ -14473,7 +14473,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6461 }
+        - volume_id: { get_resource: volume_asn6461 }
       networks:
         - network: monitor
         - network: monitor
@@ -14559,7 +14559,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6619 }
+        - volume_id: { get_resource: volume_asn6619 }
       networks:
         - network: monitor
         - network: monitor
@@ -14622,7 +14622,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6645 }
+        - volume_id: { get_resource: volume_asn6645 }
       networks:
         - network: monitor
         - network: monitor
@@ -14676,7 +14676,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6939 }
+        - volume_id: { get_resource: volume_asn6939 }
       networks:
         - network: monitor
         - network: monitor
@@ -14831,7 +14831,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7015 }
+        - volume_id: { get_resource: volume_asn7015 }
       networks:
         - network: monitor
         - network: monitor
@@ -14885,7 +14885,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7502 }
+        - volume_id: { get_resource: volume_asn7502 }
       networks:
         - network: monitor
         - network: monitor
@@ -14939,7 +14939,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7521 }
+        - volume_id: { get_resource: volume_asn7521 }
       networks:
         - network: monitor
         - network: monitor
@@ -14995,7 +14995,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7529 }
+        - volume_id: { get_resource: volume_asn7529 }
       networks:
         - network: monitor
         - network: monitor
@@ -15061,7 +15061,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7670 }
+        - volume_id: { get_resource: volume_asn7670 }
       networks:
         - network: monitor
         - network: monitor
@@ -15123,7 +15123,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8468 }
+        - volume_id: { get_resource: volume_asn8468 }
       networks:
         - network: monitor
         - network: monitor
@@ -15193,7 +15193,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8760 }
+        - volume_id: { get_resource: volume_asn8760 }
       networks:
         - network: monitor
         - network: monitor
@@ -15246,7 +15246,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8859 }
+        - volume_id: { get_resource: volume_asn8859 }
       networks:
         - network: monitor
         - network: monitor
@@ -15303,7 +15303,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9601 }
+        - volume_id: { get_resource: volume_asn9601 }
       networks:
         - network: monitor
         - network: monitor
@@ -15363,7 +15363,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9957 }
+        - volume_id: { get_resource: volume_asn9957 }
       networks:
         - network: monitor
         - network: monitor
@@ -15424,7 +15424,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn10026 }
+        - volume_id: { get_resource: volume_asn10026 }
       networks:
         - network: monitor
         - network: monitor
@@ -15535,7 +15535,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn10558 }
+        - volume_id: { get_resource: volume_asn10558 }
       networks:
         - network: monitor
         - network: monitor
@@ -15588,7 +15588,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn11351 }
+        - volume_id: { get_resource: volume_asn11351 }
       networks:
         - network: monitor
         - network: monitor
@@ -15644,7 +15644,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn15412 }
+        - volume_id: { get_resource: volume_asn15412 }
       networks:
         - network: monitor
         - network: monitor
@@ -15721,7 +15721,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn15766 }
+        - volume_id: { get_resource: volume_asn15766 }
       networks:
         - network: monitor
         - network: monitor
@@ -15780,7 +15780,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn16638 }
+        - volume_id: { get_resource: volume_asn16638 }
       networks:
         - network: monitor
         - network: monitor
@@ -15835,7 +15835,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17506 }
+        - volume_id: { get_resource: volume_asn17506 }
       networks:
         - network: monitor
         - network: monitor
@@ -15894,7 +15894,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17673 }
+        - volume_id: { get_resource: volume_asn17673 }
       networks:
         - network: monitor
         - network: monitor
@@ -15952,7 +15952,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17676 }
+        - volume_id: { get_resource: volume_asn17676 }
       networks:
         - network: monitor
         - network: monitor
@@ -16018,7 +16018,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn17678 }
+        - volume_id: { get_resource: volume_asn17678 }
       networks:
         - network: monitor
         - network: monitor
@@ -16073,7 +16073,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn19328 }
+        - volume_id: { get_resource: volume_asn19328 }
       networks:
         - network: monitor
         - network: monitor
@@ -16127,7 +16127,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22363 }
+        - volume_id: { get_resource: volume_asn22363 }
       networks:
         - network: monitor
         - network: monitor
@@ -16191,7 +16191,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22663 }
+        - volume_id: { get_resource: volume_asn22663 }
       networks:
         - network: monitor
         - network: monitor
@@ -16244,7 +16244,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22822 }
+        - volume_id: { get_resource: volume_asn22822 }
       networks:
         - network: monitor
         - network: monitor
@@ -16337,7 +16337,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22935 }
+        - volume_id: { get_resource: volume_asn22935 }
       networks:
         - network: monitor
         - network: monitor
@@ -16390,7 +16390,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23673 }
+        - volume_id: { get_resource: volume_asn23673 }
       networks:
         - network: monitor
         - network: monitor
@@ -16454,7 +16454,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23774 }
+        - volume_id: { get_resource: volume_asn23774 }
       networks:
         - network: monitor
         - network: monitor
@@ -16510,7 +16510,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23822 }
+        - volume_id: { get_resource: volume_asn23822 }
       networks:
         - network: monitor
         - network: monitor
@@ -16564,7 +16564,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23829 }
+        - volume_id: { get_resource: volume_asn23829 }
       networks:
         - network: monitor
         - network: monitor
@@ -16621,7 +16621,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24277 }
+        - volume_id: { get_resource: volume_asn24277 }
       networks:
         - network: monitor
         - network: monitor
@@ -16676,7 +16676,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24278 }
+        - volume_id: { get_resource: volume_asn24278 }
       networks:
         - network: monitor
         - network: monitor
@@ -16733,7 +16733,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24482 }
+        - volume_id: { get_resource: volume_asn24482 }
       networks:
         - network: monitor
         - network: monitor
@@ -16853,7 +16853,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26089 }
+        - volume_id: { get_resource: volume_asn26089 }
       networks:
         - network: monitor
         - network: monitor
@@ -16906,7 +16906,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26198 }
+        - volume_id: { get_resource: volume_asn26198 }
       networks:
         - network: monitor
         - network: monitor
@@ -16962,7 +16962,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26738 }
+        - volume_id: { get_resource: volume_asn26738 }
       networks:
         - network: monitor
         - network: monitor
@@ -17016,7 +17016,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26801 }
+        - volume_id: { get_resource: volume_asn26801 }
       networks:
         - network: monitor
         - network: monitor
@@ -17072,7 +17072,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn28166 }
+        - volume_id: { get_resource: volume_asn28166 }
       networks:
         - network: monitor
         - network: monitor
@@ -17129,7 +17129,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn30207 }
+        - volume_id: { get_resource: volume_asn30207 }
       networks:
         - network: monitor
         - network: monitor
@@ -17182,7 +17182,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn32934 }
+        - volume_id: { get_resource: volume_asn32934 }
       networks:
         - network: monitor
         - network: monitor
@@ -17264,7 +17264,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36351 }
+        - volume_id: { get_resource: volume_asn36351 }
       networks:
         - network: monitor
         - network: monitor
@@ -17359,7 +17359,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37914 }
+        - volume_id: { get_resource: volume_asn37914 }
       networks:
         - network: monitor
         - network: monitor
@@ -17413,7 +17413,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn38634 }
+        - volume_id: { get_resource: volume_asn38634 }
       networks:
         - network: monitor
         - network: monitor
@@ -17471,7 +17471,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn38652 }
+        - volume_id: { get_resource: volume_asn38652 }
       networks:
         - network: monitor
         - network: monitor
@@ -17525,7 +17525,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn38895 }
+        - volume_id: { get_resource: volume_asn38895 }
       networks:
         - network: monitor
         - network: monitor
@@ -17585,7 +17585,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn42541 }
+        - volume_id: { get_resource: volume_asn42541 }
       networks:
         - network: monitor
         - network: monitor
@@ -17651,7 +17651,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn43515 }
+        - volume_id: { get_resource: volume_asn43515 }
       networks:
         - network: monitor
         - network: monitor
@@ -17708,7 +17708,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn43625 }
+        - volume_id: { get_resource: volume_asn43625 }
       networks:
         - network: monitor
         - network: monitor
@@ -17762,7 +17762,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn45396 }
+        - volume_id: { get_resource: volume_asn45396 }
       networks:
         - network: monitor
         - network: monitor
@@ -17818,7 +17818,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn45430 }
+        - volume_id: { get_resource: volume_asn45430 }
       networks:
         - network: monitor
         - network: monitor
@@ -17882,7 +17882,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn47872 }
+        - volume_id: { get_resource: volume_asn47872 }
       networks:
         - network: monitor
         - network: monitor
@@ -17956,7 +17956,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn52821 }
+        - volume_id: { get_resource: volume_asn52821 }
       networks:
         - network: monitor
         - network: monitor
@@ -18010,7 +18010,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53414 }
+        - volume_id: { get_resource: volume_asn53414 }
       networks:
         - network: monitor
         - network: monitor
@@ -18065,7 +18065,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn54127 }
+        - volume_id: { get_resource: volume_asn54127 }
       networks:
         - network: monitor
         - network: monitor
@@ -18119,7 +18119,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn54233 }
+        - volume_id: { get_resource: volume_asn54233 }
       networks:
         - network: monitor
         - network: monitor
@@ -18172,7 +18172,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55895 }
+        - volume_id: { get_resource: volume_asn55895 }
       networks:
         - network: monitor
         - network: monitor
@@ -18225,7 +18225,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55900 }
+        - volume_id: { get_resource: volume_asn55900 }
       networks:
         - network: monitor
         - network: monitor
@@ -18283,7 +18283,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn58682 }
+        - volume_id: { get_resource: volume_asn58682 }
       networks:
         - network: monitor
         - network: monitor
@@ -18346,7 +18346,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn59109 }
+        - volume_id: { get_resource: volume_asn59109 }
       networks:
         - network: monitor
         - network: monitor
@@ -18400,7 +18400,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn131913 }
+        - volume_id: { get_resource: volume_asn131913 }
       networks:
         - network: monitor
         - network: monitor
@@ -18453,7 +18453,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn132095 }
+        - volume_id: { get_resource: volume_asn132095 }
       networks:
         - network: monitor
         - network: monitor
@@ -18507,7 +18507,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn132267 }
+        - volume_id: { get_resource: volume_asn132267 }
       networks:
         - network: monitor
         - network: monitor
@@ -18564,7 +18564,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn133188 }
+        - volume_id: { get_resource: volume_asn133188 }
       networks:
         - network: monitor
         - network: monitor
@@ -18617,7 +18617,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn133443 }
+        - volume_id: { get_resource: volume_asn133443 }
       networks:
         - network: monitor
         - network: monitor
@@ -18670,7 +18670,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn133848 }
+        - volume_id: { get_resource: volume_asn133848 }
       networks:
         - network: monitor
         - network: monitor
@@ -18723,7 +18723,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn201568 }
+        - volume_id: { get_resource: volume_asn201568 }
       networks:
         - network: monitor
         - network: monitor
@@ -18776,7 +18776,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn202109 }
+        - volume_id: { get_resource: volume_asn202109 }
       networks:
         - network: monitor
         - network: monitor
@@ -18845,7 +18845,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262286 }
+        - volume_id: { get_resource: volume_asn262286 }
       networks:
         - network: monitor
         - network: monitor
@@ -18899,7 +18899,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262317 }
+        - volume_id: { get_resource: volume_asn262317 }
       networks:
         - network: monitor
         - network: monitor
@@ -18974,7 +18974,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262354 }
+        - volume_id: { get_resource: volume_asn262354 }
       networks:
         - network: monitor
         - network: monitor
@@ -19038,7 +19038,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn262757 }
+        - volume_id: { get_resource: volume_asn262757 }
       networks:
         - network: monitor
         - network: monitor
@@ -19100,7 +19100,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264496 }
+        - volume_id: { get_resource: volume_asn264496 }
       networks:
         - network: monitor
         - network: monitor
@@ -19157,7 +19157,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn265021 }
+        - volume_id: { get_resource: volume_asn265021 }
       networks:
         - network: monitor
         - network: monitor
@@ -19214,7 +19214,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn701 }
+        - volume_id: { get_resource: volume_asn701 }
       networks:
         - network: monitor
         - network: monitor
@@ -19315,7 +19315,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1221 }
+        - volume_id: { get_resource: volume_asn1221 }
       networks:
         - network: monitor
         - network: monitor
@@ -19376,7 +19376,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1299 }
+        - volume_id: { get_resource: volume_asn1299 }
       networks:
         - network: monitor
         - network: monitor
@@ -19469,7 +19469,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn1798 }
+        - volume_id: { get_resource: volume_asn1798 }
       networks:
         - network: monitor
         - network: monitor
@@ -19538,7 +19538,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2497 }
+        - volume_id: { get_resource: volume_asn2497 }
       networks:
         - network: monitor
         - network: monitor
@@ -19642,7 +19642,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2518 }
+        - volume_id: { get_resource: volume_asn2518 }
       networks:
         - network: monitor
         - network: monitor
@@ -19727,7 +19727,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2906 }
+        - volume_id: { get_resource: volume_asn2906 }
       networks:
         - network: monitor
         - network: monitor
@@ -19832,7 +19832,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2907 }
+        - volume_id: { get_resource: volume_asn2907 }
       networks:
         - network: monitor
         - network: monitor
@@ -19900,7 +19900,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn2914 }
+        - volume_id: { get_resource: volume_asn2914 }
       networks:
         - network: monitor
         - network: monitor
@@ -20033,7 +20033,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3356 }
+        - volume_id: { get_resource: volume_asn3356 }
       networks:
         - network: monitor
         - network: monitor
@@ -20147,7 +20147,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3549 }
+        - volume_id: { get_resource: volume_asn3549 }
       networks:
         - network: monitor
         - network: monitor
@@ -20216,7 +20216,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn3786 }
+        - volume_id: { get_resource: volume_asn3786 }
       networks:
         - network: monitor
         - network: monitor
@@ -20277,7 +20277,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4134 }
+        - volume_id: { get_resource: volume_asn4134 }
       networks:
         - network: monitor
         - network: monitor
@@ -20342,7 +20342,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4258 }
+        - volume_id: { get_resource: volume_asn4258 }
       networks:
         - network: monitor
         - network: monitor
@@ -20402,7 +20402,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4635 }
+        - volume_id: { get_resource: volume_asn4635 }
       networks:
         - network: monitor
         - network: monitor
@@ -20468,7 +20468,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4713 }
+        - volume_id: { get_resource: volume_asn4713 }
       networks:
         - network: monitor
         - network: monitor
@@ -20548,7 +20548,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4774 }
+        - volume_id: { get_resource: volume_asn4774 }
       networks:
         - network: monitor
         - network: monitor
@@ -20601,7 +20601,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn4808 }
+        - volume_id: { get_resource: volume_asn4808 }
       networks:
         - network: monitor
         - network: monitor
@@ -20654,7 +20654,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn5459 }
+        - volume_id: { get_resource: volume_asn5459 }
       networks:
         - network: monitor
         - network: monitor
@@ -20709,7 +20709,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6423 }
+        - volume_id: { get_resource: volume_asn6423 }
       networks:
         - network: monitor
         - network: monitor
@@ -20770,7 +20770,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6461 }
+        - volume_id: { get_resource: volume_asn6461 }
       networks:
         - network: monitor
         - network: monitor
@@ -20856,7 +20856,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6830 }
+        - volume_id: { get_resource: volume_asn6830 }
       networks:
         - network: monitor
         - network: monitor
@@ -20923,7 +20923,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn6968 }
+        - volume_id: { get_resource: volume_asn6968 }
       networks:
         - network: monitor
         - network: monitor
@@ -20978,7 +20978,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7018 }
+        - volume_id: { get_resource: volume_asn7018 }
       networks:
         - network: monitor
         - network: monitor
@@ -21046,7 +21046,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7160 }
+        - volume_id: { get_resource: volume_asn7160 }
       networks:
         - network: monitor
         - network: monitor
@@ -21109,7 +21109,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7474 }
+        - volume_id: { get_resource: volume_asn7474 }
       networks:
         - network: monitor
         - network: monitor
@@ -21169,7 +21169,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7497 }
+        - volume_id: { get_resource: volume_asn7497 }
       networks:
         - network: monitor
         - network: monitor
@@ -21227,7 +21227,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7660 }
+        - volume_id: { get_resource: volume_asn7660 }
       networks:
         - network: monitor
         - network: monitor
@@ -21285,7 +21285,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn7690 }
+        - volume_id: { get_resource: volume_asn7690 }
       networks:
         - network: monitor
         - network: monitor
@@ -21340,7 +21340,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn8708 }
+        - volume_id: { get_resource: volume_asn8708 }
       networks:
         - network: monitor
         - network: monitor
@@ -21400,7 +21400,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9266 }
+        - volume_id: { get_resource: volume_asn9266 }
       networks:
         - network: monitor
         - network: monitor
@@ -21456,7 +21456,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9299 }
+        - volume_id: { get_resource: volume_asn9299 }
       networks:
         - network: monitor
         - network: monitor
@@ -21514,7 +21514,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn9367 }
+        - volume_id: { get_resource: volume_asn9367 }
       networks:
         - network: monitor
         - network: monitor
@@ -21568,7 +21568,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn10026 }
+        - volume_id: { get_resource: volume_asn10026 }
       networks:
         - network: monitor
         - network: monitor
@@ -21679,7 +21679,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn10973 }
+        - volume_id: { get_resource: volume_asn10973 }
       networks:
         - network: monitor
         - network: monitor
@@ -21735,7 +21735,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn14107 }
+        - volume_id: { get_resource: volume_asn14107 }
       networks:
         - network: monitor
         - network: monitor
@@ -21788,7 +21788,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn15301 }
+        - volume_id: { get_resource: volume_asn15301 }
       networks:
         - network: monitor
         - network: monitor
@@ -21848,7 +21848,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn16638 }
+        - volume_id: { get_resource: volume_asn16638 }
       networks:
         - network: monitor
         - network: monitor
@@ -21903,7 +21903,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn16669 }
+        - volume_id: { get_resource: volume_asn16669 }
       networks:
         - network: monitor
         - network: monitor
@@ -21958,7 +21958,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn18125 }
+        - volume_id: { get_resource: volume_asn18125 }
       networks:
         - network: monitor
         - network: monitor
@@ -22013,7 +22013,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn18541 }
+        - volume_id: { get_resource: volume_asn18541 }
       networks:
         - network: monitor
         - network: monitor
@@ -22069,7 +22069,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn19528 }
+        - volume_id: { get_resource: volume_asn19528 }
       networks:
         - network: monitor
         - network: monitor
@@ -22127,7 +22127,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn19551 }
+        - volume_id: { get_resource: volume_asn19551 }
       networks:
         - network: monitor
         - network: monitor
@@ -22195,7 +22195,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn19653 }
+        - volume_id: { get_resource: volume_asn19653 }
       networks:
         - network: monitor
         - network: monitor
@@ -22263,7 +22263,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn19679 }
+        - volume_id: { get_resource: volume_asn19679 }
       networks:
         - network: monitor
         - network: monitor
@@ -22327,7 +22327,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn21737 }
+        - volume_id: { get_resource: volume_asn21737 }
       networks:
         - network: monitor
         - network: monitor
@@ -22382,7 +22382,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22317 }
+        - volume_id: { get_resource: volume_asn22317 }
       networks:
         - network: monitor
         - network: monitor
@@ -22439,7 +22439,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn22822 }
+        - volume_id: { get_resource: volume_asn22822 }
       networks:
         - network: monitor
         - network: monitor
@@ -22532,7 +22532,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23763 }
+        - volume_id: { get_resource: volume_asn23763 }
       networks:
         - network: monitor
         - network: monitor
@@ -22588,7 +22588,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23801 }
+        - volume_id: { get_resource: volume_asn23801 }
       networks:
         - network: monitor
         - network: monitor
@@ -22642,7 +22642,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn23844 }
+        - volume_id: { get_resource: volume_asn23844 }
       networks:
         - network: monitor
         - network: monitor
@@ -22696,7 +22696,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24291 }
+        - volume_id: { get_resource: volume_asn24291 }
       networks:
         - network: monitor
         - network: monitor
@@ -22750,7 +22750,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn24441 }
+        - volume_id: { get_resource: volume_asn24441 }
       networks:
         - network: monitor
         - network: monitor
@@ -22807,7 +22807,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn25899 }
+        - volume_id: { get_resource: volume_asn25899 }
       networks:
         - network: monitor
         - network: monitor
@@ -22867,7 +22867,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn25961 }
+        - volume_id: { get_resource: volume_asn25961 }
       networks:
         - network: monitor
         - network: monitor
@@ -22924,7 +22924,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn26156 }
+        - volume_id: { get_resource: volume_asn26156 }
       networks:
         - network: monitor
         - network: monitor
@@ -22979,7 +22979,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn28580 }
+        - volume_id: { get_resource: volume_asn28580 }
       networks:
         - network: monitor
         - network: monitor
@@ -23035,7 +23035,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn28997 }
+        - volume_id: { get_resource: volume_asn28997 }
       networks:
         - network: monitor
         - network: monitor
@@ -23088,7 +23088,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn30844 }
+        - volume_id: { get_resource: volume_asn30844 }
       networks:
         - network: monitor
         - network: monitor
@@ -23159,7 +23159,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn32614 }
+        - volume_id: { get_resource: volume_asn32614 }
       networks:
         - network: monitor
         - network: monitor
@@ -23221,7 +23221,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn32869 }
+        - volume_id: { get_resource: volume_asn32869 }
       networks:
         - network: monitor
         - network: monitor
@@ -23279,7 +23279,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33252 }
+        - volume_id: { get_resource: volume_asn33252 }
       networks:
         - network: monitor
         - network: monitor
@@ -23334,7 +23334,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn33478 }
+        - volume_id: { get_resource: volume_asn33478 }
       networks:
         - network: monitor
         - network: monitor
@@ -23388,7 +23388,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36236 }
+        - volume_id: { get_resource: volume_asn36236 }
       networks:
         - network: monitor
         - network: monitor
@@ -23463,7 +23463,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn36492 }
+        - volume_id: { get_resource: volume_asn36492 }
       networks:
         - network: monitor
         - network: monitor
@@ -23519,7 +23519,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37474 }
+        - volume_id: { get_resource: volume_asn37474 }
       networks:
         - network: monitor
         - network: monitor
@@ -23577,7 +23577,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn37497 }
+        - volume_id: { get_resource: volume_asn37497 }
       networks:
         - network: monitor
         - network: monitor
@@ -23645,7 +23645,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn38859 }
+        - volume_id: { get_resource: volume_asn38859 }
       networks:
         - network: monitor
         - network: monitor
@@ -23698,7 +23698,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn39966 }
+        - volume_id: { get_resource: volume_asn39966 }
       networks:
         - network: monitor
         - network: monitor
@@ -23751,7 +23751,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn42708 }
+        - volume_id: { get_resource: volume_asn42708 }
       networks:
         - network: monitor
         - network: monitor
@@ -23809,7 +23809,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn43948 }
+        - volume_id: { get_resource: volume_asn43948 }
       networks:
         - network: monitor
         - network: monitor
@@ -23862,7 +23862,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn44444 }
+        - volume_id: { get_resource: volume_asn44444 }
       networks:
         - network: monitor
         - network: monitor
@@ -23928,7 +23928,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn46844 }
+        - volume_id: { get_resource: volume_asn46844 }
       networks:
         - network: monitor
         - network: monitor
@@ -23983,7 +23983,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn47621 }
+        - volume_id: { get_resource: volume_asn47621 }
       networks:
         - network: monitor
         - network: monitor
@@ -24037,7 +24037,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn49544 }
+        - volume_id: { get_resource: volume_asn49544 }
       networks:
         - network: monitor
         - network: monitor
@@ -24104,7 +24104,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn52863 }
+        - volume_id: { get_resource: volume_asn52863 }
       networks:
         - network: monitor
         - network: monitor
@@ -24165,7 +24165,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn53650 }
+        - volume_id: { get_resource: volume_asn53650 }
       networks:
         - network: monitor
         - network: monitor
@@ -24219,7 +24219,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55482 }
+        - volume_id: { get_resource: volume_asn55482 }
       networks:
         - network: monitor
         - network: monitor
@@ -24272,7 +24272,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn55720 }
+        - volume_id: { get_resource: volume_asn55720 }
       networks:
         - network: monitor
         - network: monitor
@@ -24331,7 +24331,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn56403 }
+        - volume_id: { get_resource: volume_asn56403 }
       networks:
         - network: monitor
         - network: monitor
@@ -24384,7 +24384,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn58209 }
+        - volume_id: { get_resource: volume_asn58209 }
       networks:
         - network: monitor
         - network: monitor
@@ -24438,7 +24438,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn58424 }
+        - volume_id: { get_resource: volume_asn58424 }
       networks:
         - network: monitor
         - network: monitor
@@ -24491,7 +24491,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn58879 }
+        - volume_id: { get_resource: volume_asn58879 }
       networks:
         - network: monitor
         - network: monitor
@@ -24549,7 +24549,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn64050 }
+        - volume_id: { get_resource: volume_asn64050 }
       networks:
         - network: monitor
         - network: monitor
@@ -24606,7 +24606,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn64555 }
+        - volume_id: { get_resource: volume_asn64555 }
       networks:
         - network: monitor
         - network: monitor
@@ -24661,7 +24661,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn65106 }
+        - volume_id: { get_resource: volume_asn65106 }
       networks:
         - network: monitor
         - network: monitor
@@ -24714,7 +24714,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn132901 }
+        - volume_id: { get_resource: volume_asn132901 }
       networks:
         - network: monitor
         - network: monitor
@@ -24769,7 +24769,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn134176 }
+        - volume_id: { get_resource: volume_asn134176 }
       networks:
         - network: monitor
         - network: monitor
@@ -24823,7 +24823,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn134809 }
+        - volume_id: { get_resource: volume_asn134809 }
       networks:
         - network: monitor
         - network: monitor
@@ -24877,7 +24877,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn135880 }
+        - volume_id: { get_resource: volume_asn135880 }
       networks:
         - network: monitor
         - network: monitor
@@ -24930,7 +24930,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn136407 }
+        - volume_id: { get_resource: volume_asn136407 }
       networks:
         - network: monitor
         - network: monitor
@@ -24984,7 +24984,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn136988 }
+        - volume_id: { get_resource: volume_asn136988 }
       networks:
         - network: monitor
         - network: monitor
@@ -25039,7 +25039,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn199949 }
+        - volume_id: { get_resource: volume_asn199949 }
       networks:
         - network: monitor
         - network: monitor
@@ -25092,7 +25092,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn263075 }
+        - volume_id: { get_resource: volume_asn263075 }
       networks:
         - network: monitor
         - network: monitor
@@ -25153,7 +25153,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn264182 }
+        - volume_id: { get_resource: volume_asn264182 }
       networks:
         - network: monitor
         - network: monitor
@@ -25207,7 +25207,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn327962 }
+        - volume_id: { get_resource: volume_asn327962 }
       networks:
         - network: monitor
         - network: monitor
@@ -25262,7 +25262,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn393977 }
+        - volume_id: { get_resource: volume_asn393977 }
       networks:
         - network: monitor
         - network: monitor
@@ -25316,7 +25316,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn395017 }
+        - volume_id: { get_resource: volume_asn395017 }
       networks:
         - network: monitor
         - network: monitor
@@ -25370,7 +25370,7 @@ resources:
       key_name: default
       flavor: router
       block_device_mapping_v2:
-        - volume_id: { volume_asn395447 }
+        - volume_id: { get_resource: volume_asn395447 }
       networks:
         - network: monitor
         - network: monitor
