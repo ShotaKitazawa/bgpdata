@@ -160,7 +160,6 @@ for line in f:
         g.write("      block_device_mapping_v2:\n")
         g.write("        - volume_id: {{ get_resource: volume_asn{0} }}\n".format(asn))
         g.write("      networks:\n")
-        g.write("        - network: monitor\n")
         for network in networks.keys():
             g.write("        - network: {0}\n".format(network))
         g.write("      security_groups:\n")
