@@ -27,9 +27,8 @@ pip install -r requirement.txt
 ```
 
 * 事前に必要な OpenStack リソース
-    * `to_catalyst` network
-        * [*] [外部ネットワーク]
-        * Catalyst 4500 と接続するためのネットワーク
+    * `external` network
+        * 外部ネットワーク
     * `Ubuntu-Router` image
         * packer にて作成
     * `Ubuntu-Monitor` image
