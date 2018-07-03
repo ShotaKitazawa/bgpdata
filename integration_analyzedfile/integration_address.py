@@ -4,25 +4,25 @@ import sys
 import os
 import ipaddress
 
-'''if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
+if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
     print("err: invalid command: python", sys.argv[0], "analyzed_file")
-    sys.exit(1)'''
+    sys.exit(1)
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 
 output = open(DIR + "/addCombined.txt", 'a')
 
-#with open(sys.argv[1],'r') as datas:
+with open(sys.argv[1],'r') as datas:
 #下はファイルパス指定ver
-with open(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir))+"/sampling_analyzedfile/neighbors_100.txt" ,'r') as datas:
+#with open(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir))+"/sampling_analyzedfile/neighbors_100.txt" ,'r') as datas:
     
-    #for data in datas:
-        #line = data
+    for data in datas:
+        line = data
     #下は数行テスト
-    for X in range(0,0):
-        datas.readline()
-    for X in range(0,3):
-        line = datas.readline()
+    #for X in range(0,0):
+        #datas.readline()
+    #for X in range(0,3):
+        #line = datas.readline()
         #print(line)
         
         if "ADDRESSES" in line:
@@ -55,7 +55,7 @@ with open(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir))+"/s
                             oldNets.append(A[0])
                             newNets.append(SNet)
                 
-                #Nets更新(元のip順にソートされてない!)
+                #Nets更新(重複消してるだけで元のip順にソートされてない!)
                 oldNets = sorted(set(oldNets),key=oldNets.index)
                 newNets = sorted(set(newNets),key=newNets.index)
                 #print(oldNets)
@@ -64,7 +64,7 @@ with open(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir))+"/s
                     Nets.remove(old)
                 for new in newNets:
                     Nets.append(new)
-                print(len(Nets))
+                #print(len(Nets))
             for net in Nets:
                 output.write(" " + str(net))
 
