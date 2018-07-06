@@ -7,6 +7,8 @@ import sys
 import ipaddress
 from collections import OrderedDict
 
+import tqdm
+
 if len(sys.argv) < 1 and not os.path.isfile(sys.argv[1]):
     print("err: invalid command: python", sys.argv[0], "analyzed_file")
     sys.exit(1)
@@ -65,10 +67,9 @@ g.write("      security_groups:\n")
 g.write("        - { get_resource: security_group_allallow }\n")
 g.write("\n")
 
-
 s = 0
-
 for line in f:
+
     # networks["network_name"] = "network_address/mask"
     networks = OrderedDict()
     # my_addresses["interface"] = "my_address"
@@ -81,6 +82,14 @@ for line in f:
         asn = l[1]
         s = 1
     elif s == 1:
+        # print(str(list(ipaddress.ip_network(l[3:-1][0]).hosts())[0]))
+        as_addresses = []
+        for network_address in l[3:-1]:
+            prefixlen = ipaddress.ip_network(network_address).prefixlen
+            if (prefixlen != 32):
+                as_addresses.append(str(list(ipaddress.ip_network(network_address).hosts())[0]) + "/" + str(prefixlen))
+            else:
+                as_addresses.append(network_address)
         s = 2
     elif s == 2:
 
@@ -90,10 +99,10 @@ for line in f:
             continue
 
         # store own network
-        ## for monitor
+        # for monitor
         networks["monitor"] = "172.16.0.0/16"
         my_addresses["eth0"] = "dhcp"
-        ## for between-as
+        # for between-as
         cnt = 1
         for filename in files:
             if asn + "-" in filename[:len(asn + "-")]:
@@ -124,6 +133,7 @@ for line in f:
         g.write("            '$$interfaces': '{0}'\n".format(' '.join(my_addresses.keys())))
         g.write("            '$$addresses': '{0}'\n".format(' '.join(my_addresses.values())))
         g.write("            '$$networks': '{0}'\n".format(' '.join(networks.values())))
+        g.write("            '$$asaddresses': '{0}'\n".format(' '.join(as_addresses)))
         g.write("  script_asn{0}_2:\n".format(asn))
         g.write("    type: OS::Heat::SoftwareConfig\n")
         g.write("    properties:\n")
