@@ -3,6 +3,7 @@
 IFACES='$$interfaces'
 ADDRS='$$addresses'
 NETWORKS='$$networks'
+ADVERTISE_ADDRS='$$asaddresses'
 
 # backup /etc/network/interfaces
 yes no | mv -i /etc/network/interfaces{,.default}

@@ -77,22 +77,6 @@ python sampling_analyzedfile/sampling_AS.py analyze/result.all 100
 less sampling_analyzedfile/neighbors_100.txt
 ```
 
-## Integration
-
-analyzedファイルの ADDRESSES において、同ネットワークに属するアドレスを統合します。
-
-実行方法
-
-```
-python integration_analyzedfile/integration_address.py sampling_analyzedfile/neighbors_100.txt
-```
-
-結果
-
-```
-less integration_analyzedfile/addCombined.txt
-```
-
 ## Create Heat Template
 
 analyzedファイルを元に OpenStack Heat Template を作成します。
@@ -102,7 +86,7 @@ analyzedファイルを元に OpenStack Heat Template を作成します。
 * Network, Instance を作成するための HOT を生成
 
 ```
-bash create_hot/create_hot.bash integration_analyzedfile/addCombined.txt
+bash create_hot/create_hot.bash sampling_analyzedfile/neighbors_100.txt
 ```
 
 結果
