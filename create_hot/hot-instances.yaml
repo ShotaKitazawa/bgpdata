@@ -96,6 +96,7 @@ resources:
         - network: 701-54825
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn701 }
 
   script_asn2497_1:
@@ -153,6 +154,7 @@ resources:
         - network: 2497-22822
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn2497 }
 
   script_asn2906_1:
@@ -209,6 +211,7 @@ resources:
         - network: 2906-14061
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn2906 }
 
   script_asn4713_1:
@@ -265,6 +268,7 @@ resources:
         - network: 4713-22822
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn4713 }
 
   script_asn14061_1:
@@ -320,6 +324,7 @@ resources:
         - network: 14061-22822
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn14061 }
 
   script_asn18142_1:
@@ -373,6 +378,7 @@ resources:
         - network: 4713-18142
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn18142 }
 
   script_asn22438_1:
@@ -426,6 +432,7 @@ resources:
         - network: 701-22438
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn22438 }
 
   script_asn22822_1:
@@ -483,6 +490,7 @@ resources:
         - network: 22822-54825
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn22822 }
 
   script_asn54825_1:
@@ -537,5 +545,6 @@ resources:
         - network: 22822-54825
       security_groups:
         - { get_resource: security_group_allallow }
+      user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn54825 }
 

@@ -174,6 +174,7 @@ for line in f:
             g.write("        - network: {0}\n".format(network))
         g.write("      security_groups:\n")
         g.write("        - { get_resource: security_group_allallow }\n")
+        g.write("      user_data_format: SOFTWARE_CONFIG\n")
         g.write("      user_data: {{ get_resource: scripts_asn{0} }}\n".format(asn))
         g.write("\n")
 
