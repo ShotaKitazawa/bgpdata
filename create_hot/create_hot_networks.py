@@ -3,6 +3,7 @@
 
 import os
 import sys
+import ipaddress
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 files = os.listdir(DIR + "/network/")
@@ -65,6 +66,10 @@ for netname in files:
 
     # other
     else:
+        g = open(DIR + "/network/" + netname, "r")
+        netaddr = g.readline()
+        hosts = [str(list(ipaddress.ip_network(netaddr).hosts())[0]), str(list(ipaddress.ip_network(netaddr).hosts())[1])]
+        g.close()
 
         # create network
         f.write("  net_{}:\n".format(netname))
@@ -79,14 +84,27 @@ for netname in files:
         f.write("      name: {}\n".format(netname))
         f.write("      network_id: {{ get_resource: net_{} }}\n".format(netname))
         f.write("      ip_version: 4\n")
-        with open(DIR + "/network/" + netname, "r") as g:
-            f.write("      cidr: {}\n".format(g.readline()))
+        f.write("      cidr: {}\n".format(netaddr))
         f.write("      enable_dhcp: false\n")
+
+#        # create port
+#        f.write("  port_{}_1:\n".format(netname))
+#        f.write("    type: OS::Neutron::Port\n")
+#        f.write("    properties:\n")
+#        f.write("      fixed_ips:\n")
+#        f.write("        - subnet: {{ get_resource: subnet_{} }}\n".format(netname))
+#        f.write("          ip_address: {}\n".format(hosts[0]))
+#        f.write("  port_{}_2:\n".format(netname))
+#        f.write("    type: OS::Neutron::Port\n")
+#        f.write("    properties:\n")
+#        f.write("      fixed_ips:\n")
+#        f.write("        - subnet: {{ get_resource: subnet_{} }}\n".format(netname))
+#        f.write("          ip_address: {}\n".format(hosts[1]))
+
         f.write("\n")
 
 f.close()
 
-import ipaddress
 with open(DIR + "/catalyst.conf", "w") as f:
     for vlan_id, netname in vlan_dict.items():
 
@@ -124,5 +142,4 @@ with open(DIR + "/catalyst.conf", "w") as f:
 
     f.write("!\n")
 
-    #TODO: RouteAdvertize: (config-router)# network network mask mask
-
+    # TODO: RouteAdvertize: (config-router)# network network mask mask

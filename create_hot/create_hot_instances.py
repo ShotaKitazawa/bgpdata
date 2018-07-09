@@ -170,8 +170,10 @@ for line in f:
         g.write("      block_device_mapping_v2:\n")
         g.write("        - volume_id: {{ get_resource: volume_asn{0} }}\n".format(asn))
         g.write("      networks:\n")
-        for network in networks.keys():
+        for i, network in enumerate(networks.keys()):
             g.write("        - network: {0}\n".format(network))
+            if my_addresses["eth" + str(i)] != "dhcp":
+                g.write("          fixed_ip: {0}\n".format(my_addresses["eth" + str(i)]))
         g.write("      security_groups:\n")
         g.write("        - { get_resource: security_group_allallow }\n")
         g.write("      user_data_format: SOFTWARE_CONFIG\n")

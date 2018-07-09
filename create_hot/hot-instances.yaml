@@ -89,11 +89,17 @@ resources:
       networks:
         - network: monitor
         - network: 701-2497
+          fixed_ip: 192.168.0.1
         - network: 701-2906
+          fixed_ip: 192.168.0.9
         - network: 701-15169
+          fixed_ip: 192.168.0.17
         - network: 701-22438
+          fixed_ip: 192.168.0.25
         - network: 701-22822
+          fixed_ip: 192.168.0.33
         - network: 701-54825
+          fixed_ip: 192.168.0.41
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -148,10 +154,15 @@ resources:
       networks:
         - network: monitor
         - network: 701-2497
+          fixed_ip: 192.168.0.2
         - network: 2497-2906
+          fixed_ip: 192.168.0.49
         - network: 2497-4713
+          fixed_ip: 192.168.0.57
         - network: 2497-15169
+          fixed_ip: 192.168.0.65
         - network: 2497-22822
+          fixed_ip: 192.168.0.73
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -206,9 +217,13 @@ resources:
       networks:
         - network: monitor
         - network: 701-2906
+          fixed_ip: 192.168.0.10
         - network: 2497-2906
+          fixed_ip: 192.168.0.50
         - network: 2906-4713
+          fixed_ip: 192.168.0.81
         - network: 2906-14061
+          fixed_ip: 192.168.0.89
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -263,9 +278,13 @@ resources:
       networks:
         - network: monitor
         - network: 2497-4713
+          fixed_ip: 192.168.0.58
         - network: 2906-4713
+          fixed_ip: 192.168.0.82
         - network: 4713-18142
+          fixed_ip: 192.168.0.97
         - network: 4713-22822
+          fixed_ip: 192.168.0.105
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -320,8 +339,11 @@ resources:
       networks:
         - network: monitor
         - network: 2906-14061
+          fixed_ip: 192.168.0.90
         - network: 14061-15169
+          fixed_ip: 192.168.0.113
         - network: 14061-22822
+          fixed_ip: 192.168.0.121
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -376,6 +398,7 @@ resources:
       networks:
         - network: monitor
         - network: 4713-18142
+          fixed_ip: 192.168.0.98
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -430,6 +453,7 @@ resources:
       networks:
         - network: monitor
         - network: 701-22438
+          fixed_ip: 192.168.0.26
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -484,10 +508,15 @@ resources:
       networks:
         - network: monitor
         - network: 701-22822
+          fixed_ip: 192.168.0.34
         - network: 2497-22822
+          fixed_ip: 192.168.0.74
         - network: 4713-22822
+          fixed_ip: 192.168.0.106
         - network: 14061-22822
+          fixed_ip: 192.168.0.122
         - network: 22822-54825
+          fixed_ip: 192.168.0.129
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
@@ -542,7 +571,9 @@ resources:
       networks:
         - network: monitor
         - network: 701-54825
+          fixed_ip: 192.168.0.42
         - network: 22822-54825
+          fixed_ip: 192.168.0.130
       security_groups:
         - { get_resource: security_group_allallow }
       user_data_format: SOFTWARE_CONFIG
