@@ -36,7 +36,7 @@ resources:
       block_device_mapping_v2:
         - volume_id: { get_resource: monitor_volume }
       networks:
-        - port: monitor_port
+        - port: monitor
       security_groups:
         - { get_resource: security_group_allallow }
 

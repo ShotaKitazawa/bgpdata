@@ -16,6 +16,7 @@ resources:
   monitor_port:
     type: OS::Neutron::Port
     properties:
+      name: monitor
       network: { get_resource: monitor_network }
       fixed_ips:
         - subnet: { get_resource: monitor_subnet }
