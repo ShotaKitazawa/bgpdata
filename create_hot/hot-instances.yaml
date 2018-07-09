@@ -37,8 +37,7 @@ resources:
         - volume_id: { get_resource: monitor_volume }
       networks:
         - port: monitor
-      security_groups:
-        - { get_resource: security_group_allallow }
+        - network: external
 
   script_asn701_1:
     type: OS::Heat::SoftwareConfig

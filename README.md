@@ -29,13 +29,19 @@ pip install -r requirement.txt
 * 事前に必要な OpenStack リソース
     * `external` network
         * 外部ネットワーク
+            * `monitor` インスタンスへのSSHアクセスに使用されます
     * `Ubuntu-Router` image
         * packer にて作成
+            * BGP Speakerとなるインスタンスに使用されます
     * `Ubuntu-Monitor` image
         * packer にて作成
+            * Monitoring用インスタンスに使用されます
     * `default` key-pair
+        * すべてのインスタンスに適用されます
     * `router` flavor
+        * BGP Speakerとなるインスタンスに使用されます
     * `monitor` flavor
+        * Monitoring用インスタンスに使用されます
 
 ## Analyze
 

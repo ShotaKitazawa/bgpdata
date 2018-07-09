@@ -63,8 +63,9 @@ g.write("      block_device_mapping_v2:\n")
 g.write("        - volume_id: { get_resource: monitor_volume }\n")
 g.write("      networks:\n")
 g.write("        - port: monitor\n")
-g.write("      security_groups:\n")
-g.write("        - { get_resource: security_group_allallow }\n")
+g.write("        - network: external\n")
+#g.write("      security_groups:\n")
+#g.write("        - { get_resource: security_group_allallow }\n")
 g.write("\n")
 
 s = 0
