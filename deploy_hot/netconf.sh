@@ -18,7 +18,6 @@ for i in $(seq 1 $(echo $ADVERTISE_ADDRS | wc -w)); do
   echo "auto lo:$NUM" >> /etc/network/interfaces
   echo "iface lo:$NUM inet static" >> /etc/network/interfaces
   echo "address $ADVERTISE_ADDR" >> /etc/network/interfaces
-
   echo >> /etc/network/interfaces
 done
 for i in $(seq 1 $(echo $IFACES | wc -w)); do

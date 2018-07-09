@@ -20,6 +20,35 @@ resources:
           remote_ip_prefix: 0.0.0.0/0
           protocol: icmp
 
+  monitor_script_1:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: ungrouped
+      config:
+        str_replace:
+          template:
+            get_file: netconf.sh
+          params:
+            '$$interfaces': 'eth0 eth1'
+            '$$addresses': 'dhcp dhcp'
+            '$$networks': '172.16.0.0/16 10.111.3.0/24'
+            '$$asaddresses': ''
+  monitor_script_2:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: ungrouped
+      config:
+        str_replace:
+          template:
+            get_file: monitor.sh
+          params:
+            '$$TODO': ''
+  monitor_scripts:
+    type: OS::Heat::MultipartMime
+    properties:
+      parts:
+        - config: { get_resource: monitor_script_1 }
+        - config: { get_resource: monitor_script_2 }
   monitor_volume:
     type: OS::Cinder::Volume
     properties:
@@ -38,6 +67,8 @@ resources:
       networks:
         - port: monitor
         - network: external
+      user_data_format: SOFTWARE_CONFIG
+      user_data: { get_resource: monitor_scripts}
 
   script_asn701_1:
     type: OS::Heat::SoftwareConfig
