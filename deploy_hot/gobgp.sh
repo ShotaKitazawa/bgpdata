@@ -4,6 +4,8 @@ MY_AS='$$my_as'
 NEIGHBOR_ASES='$$neighbor_ases'
 NEIGHBOR_ADDRS='$$neighbor_addresses'
 
+mkdir /etc/gobgp -p
+
 cat << _EOF_ > /etc/gobgp/gobgpd.conf
 [global]
   [global.config]
