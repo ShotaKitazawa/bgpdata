@@ -27,6 +27,13 @@ f.write("      name: monitor\n")
 f.write("      network_id: { get_resource: monitor_network }\n")
 f.write("      ip_version: 4\n")
 f.write("      cidr: 172.16.0.0/16\n")
+f.write("  monitor_port:\n")
+f.write("    type: OS::Neutron::Port\n")
+f.write("    properties:\n")
+f.write("      fixed_ips:\n")
+f.write("        - subnet: { get_resource: monitor_subnet }\n")
+f.write("          ip_address: 172.16.0.254")
+
 f.write("\n")
 
 vlan_id = 101

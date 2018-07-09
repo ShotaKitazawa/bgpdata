@@ -13,7 +13,12 @@ resources:
       network_id: { get_resource: monitor_network }
       ip_version: 4
       cidr: 172.16.0.0/16
-
+  monitor_port:
+    type: OS::Neutron::Port
+    properties:
+      fixed_ips:
+        - subnet: { get_resource: monitor_subnet }
+          ip_address: 172.16.0.254
   net_701-2497:
     type: OS::Neutron::Net
     properties:
