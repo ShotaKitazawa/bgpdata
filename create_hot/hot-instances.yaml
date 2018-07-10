@@ -2,24 +2,6 @@ heat_template_version: pike
 
 resources:
 
-  security_group_allallow:
-    type: OS::Neutron::SecurityGroup
-    properties:
-      name: AllAllow
-      rules:
-        - direction: ingress
-          ethertype: IPv4
-          remote_ip_prefix: 0.0.0.0/0
-          protocol: tcp
-        - direction: ingress
-          ethertype: IPv4
-          remote_ip_prefix: 0.0.0.0/0
-          protocol: udp
-        - direction: ingress
-          ethertype: IPv4
-          remote_ip_prefix: 0.0.0.0/0
-          protocol: icmp
-
   monitor_script_1:
     type: OS::Heat::SoftwareConfig
     properties:
@@ -131,7 +113,7 @@ resources:
         - network: 701-54825
           fixed_ip: 192.168.0.41
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn701 }
 
@@ -194,7 +176,7 @@ resources:
         - network: 2497-22822
           fixed_ip: 192.168.0.73
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn2497 }
 
@@ -255,7 +237,7 @@ resources:
         - network: 2906-14061
           fixed_ip: 192.168.0.89
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn2906 }
 
@@ -316,7 +298,7 @@ resources:
         - network: 4713-22822
           fixed_ip: 192.168.0.105
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn4713 }
 
@@ -375,7 +357,7 @@ resources:
         - network: 14061-22822
           fixed_ip: 192.168.0.121
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn14061 }
 
@@ -430,7 +412,7 @@ resources:
         - network: 4713-18142
           fixed_ip: 192.168.0.98
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn18142 }
 
@@ -485,7 +467,7 @@ resources:
         - network: 701-22438
           fixed_ip: 192.168.0.26
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn22438 }
 
@@ -548,7 +530,7 @@ resources:
         - network: 22822-54825
           fixed_ip: 192.168.0.129
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn22822 }
 
@@ -605,7 +587,7 @@ resources:
         - network: 22822-54825
           fixed_ip: 192.168.0.130
       security_groups:
-        - { get_resource: security_group_allallow }
+        - AllAllow
       user_data_format: SOFTWARE_CONFIG
       user_data: { get_resource: scripts_asn54825 }
 

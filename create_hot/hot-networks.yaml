@@ -2,6 +2,24 @@ heat_template_version: pike
 
 resources:
 
+  security_group_allallow:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name: AllAllow
+      rules:
+        - direction: ingress
+          ethertype: IPv4
+          remote_ip_prefix: 0.0.0.0/0
+          protocol: tcp
+        - direction: ingress
+          ethertype: IPv4
+          remote_ip_prefix: 0.0.0.0/0
+          protocol: udp
+        - direction: ingress
+          ethertype: IPv4
+          remote_ip_prefix: 0.0.0.0/0
+          protocol: icmp
+
   monitor_network:
     type: OS::Neutron::Net
     properties:
