@@ -192,6 +192,7 @@ for line in f:
         g.write("      user_data: {{ get_resource: scripts_asn{0} }}\n".format(asn))
         g.write("\n")
 
+        del as_addresses
         s = 0
 g.close()
 f.close()

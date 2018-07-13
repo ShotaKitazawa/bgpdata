@@ -1,6 +1,13 @@
 #!/bin/bash -e
 # Author: ShotaKitazawa
 
+function exclude_oomkiller(){
+  $@ &
+  PRECOMMAND_PID=$!
+  echo '-1000' > /proc/${PRECOMMAND_PID}/oom_score_adj
+  wait ${PRECOMMAND_PID}
+}
+
 ANALYZED_FILE=${1:?"err: invalid command: bash $0 analyzed_file"}
 echo "init all"
 rm -f $(dirname $0)/network/*
@@ -11,3 +18,4 @@ python $(dirname $0)/create_hot_networks.py
 echo "create HOT on instances"
 rm -f $(dirname $0)/hot-instances.yaml
 python $(dirname $0)/create_hot_instances.py $ANALYZED_FILE
+#exclude_oomkiller python $(dirname $0)/create_hot_instances.py $ANALYZED_FILE
