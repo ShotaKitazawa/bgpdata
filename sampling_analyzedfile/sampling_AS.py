@@ -11,46 +11,47 @@ if len(sys.argv) < 2 and not os.path.isfile(sys.argv[1]) and type(sys.argv[2]) =
 DIR = os.path.abspath(os.path.dirname(__file__))
 
 as_num = set()
-read = open(sys.argv[1], 'r')
-number = int(sys.argv[2]) - 4
+r_file = open(sys.argv[1], 'r')
+number = int(sys.argv[2])
+depth = 20  # 深さ
 
-line = read.readline()
+line = r_file.readline()
+
 # verizon
 while True:
-    line = read.readline()
+    line = r_file.readline()
     if(line == 'AS: 701\n'):
         break
-line = read.readline()
-line = read.readline()
-verizon_n = set(line.split(' '))
+line = r_file.readline()
+line = r_file.readline()
+verizon_n = set(line.split(' '))  # verizonのneighbors
 
 # iij
 while True:
-    line = read.readline()
+    line = r_file.readline()
     if(line == 'AS: 2497\n'):
-        line = read.readline()
+        line = r_file.readline()
         break
-line = read.readline()
-iij_n = set(line.split(' '))
+line = r_file.readline()
+iij_n = set(line.split(' '))  # iijのneighbora
 
 # ocn
 while True:
-    line = read.readline()
+    line = r_file.readline()
     if(line == 'AS: 4713\n'):
-        line = read.readline()
+        line = r_file.readline()
         break
-line = read.readline()
-ocn_n = set(line.split(' '))
+line = r_file.readline()
+ocn_n = set(line.split(' '))  # ocnのneighbors
 
 # google
 while True:
-    line = read.readline()
+    line = r_file.readline()
     if(line == 'AS: 15169\n'):
-        line = read.readline()
+        line = r_file.readline()
         break
-google_a = line.split(' ')
-line = read.readline()
-google_n = set(line.split(' '))
+line = r_file.readline()
+google_n = set(line.split(' '))  # googleのneighbors
 
 
 new_ocn_n = ocn_n.difference(google_n)  # OCNのneighber - Googleのneighber
@@ -58,77 +59,106 @@ new_ocn_n = ocn_n.difference(google_n)  # OCNのneighber - Googleのneighber
 ocn_verizon = new_ocn_n.intersection(verizon_n)  # OCNとverizonの共通要素 - Google
 ocn_verizon_iij = ocn_verizon.intersection(iij_n)  # 3社の共通要素 - Google
 
-number = number - len(ocn_verizon_iij)
 
+# 1段目のneighbors
+neighbors_1 = set()  # 1段目のASのAS番号行の集合(2個)
 
-# 1段目のneighbor
-neighbors_1 = set()
-for i in range(len(ocn_verizon_iij)):
-    a = ocn_verizon_iij.pop()
-    neighbors_1.add("AS: " + a + "\n")
-    as_num.add(a)
-
-result = set()
 neighbors_1.add("AS: 701\n")
 neighbors_1.add("AS: 2497\n")
 neighbors_1.add("AS: 4713\n")
 neighbors_1.add("AS: 15169\n")
+
+result = set()  # 全ピックアップASのAS番号行
+
 for i in neighbors_1:
     result.add(i)
+    number -= 1
 
 as_num.add('701')
 as_num.add('2497')
 as_num.add('4713')
 as_num.add('15169')
 
-n_x = set()
+if number > 0:
+    for i in range(len(ocn_verizon_iij)):
+        neighbor = ocn_verizon_iij.pop()
+        neighbors_1.add("AS: " + neighbor + "\n")
+        as_num.add(neighbor)
+        number -= 1
+
+
+def pick_up(file, asnam):
+    file.seek(0, 0)
+    while True:  # 対象のASが見つかるまで読む
+        l = file.readline()
+        if l == asnam:
+            l = file.readline()
+            l = file.readline()
+            as_neighbors = set(l.split())  # あるASのneighbors
+            as_neighbors.remove("NEIGHBOR:")
+            diff = as_neighbors.difference(as_num)  # resultの中にあるASのneighborですでにピックアップした以外のAS
+            break
+    return diff
+
+
+# 2段目以降のneighbors
 while True:
+
     for x in result:
-        read.seek(0, 0)
+
+        if number < 1:
+            for x in as_num:
+                result.add("AS: " + x + "\n")
+            break
+
+        additional_neighbors = pick_up(r_file, x)
+        dep = depth
+
         while True:
-            l = read.readline()
-            if l == x:
-                l = read.readline()
-                l = read.readline()
-                x_neighbors = set(l.split())
-                x_neighbors.remove("NEIGHBOR:")
-                diff = x_neighbors.difference(as_num)
-                if len(diff) != 0:
-                    as_num.add(diff.pop())
-                    number = number - 1
-                    if number <= 0:
-                        break
+            if len(additional_neighbors) != 0:
+                additional_as = additional_neighbors.pop()
+                as_num.add(additional_as)
+                print("add: {}".format(additional_as))
+                number -= 1
+                print("num: {}".format(number))
+                dep -= 1
+                if number <= 0 or dep <= 0:
+                    break
+
+            if len(additional_neighbors) == 0:
                 break
+            additional_neighbors = pick_up(r_file, "AS: " + additional_as + "\n")
+        print("dep: {}".format(dep))
+        dep = depth
         if number <= 0:
             break
+
     for x in as_num:
         result.add("AS: " + x + "\n")
-    print(len(result))
+    print("result: {}".format(len(result)))
 
     if number <= 0:
         break
 
 
-read.seek(0, 0)
-write = open(DIR + '/neighbors_{}.txt'.format(sys.argv[2]), 'w')
+# 書き込み
+r_file.seek(0, 0)
+w_file = open(DIR + '/neighbors_{}.txt'.format(sys.argv[2]), 'w')
 
 count = 0
-for l in read:
+for l in r_file:
     count += 1
     for AS in result:
         if l == AS:
-            write.write(l)
-            n_line = linecache.getline(sys.argv[1], int(count + 2))
+            w_file.write(l)  # AS番号行を書き込み
+            n_line = linecache.getline(sys.argv[1], int(count + 2))  # neighborの行
             neighbors = set(n_line.split())  # 各ASのneighborの集合
-            neighbors.intersection_update(as_num)
-            write.write(linecache.getline(sys.argv[1], int(count + 1)))
-            write.write("  NEIGHBOR:")
-            for x in sorted(list(map(lambda x: int(x), neighbors))):
-                write.write(" " + str(x))
-            write.write("\n")
+            neighbors.intersection_update(as_num)  # neighborsをas_numにも含まれるもののみに更新
+            w_file.write(linecache.getline(sys.argv[1], int(count + 1)))  # addressesの行を書き込み
+            w_file.write("  NEIGHBOR:")
+            for x in sorted(list(map(lambda x: int(x), neighbors))):  # neighborの中身をintにしてソートされたリストにする
+                w_file.write(" " + str(x))  # neighbors行の書き込み
+            w_file.write("\n")
 
-read.close()
-write.close()
-
-print(len(as_num))
-print(len(result))
+r_file.close()
+w_file.close()

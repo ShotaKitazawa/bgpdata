@@ -66,19 +66,6 @@ resources:
       cidr: 192.168.0.8/29
       enable_dhcp: false
 
-  net_701-10397:
-    type: OS::Neutron::Net
-    properties:
-      name: 701-10397
-  subnet_701-10397:
-    type: OS::Neutron::Subnet
-    properties:
-      name: 701-10397
-      network_id: { get_resource: net_701-10397 }
-      ip_version: 4
-      cidr: 192.168.0.16/29
-      enable_dhcp: false
-
   net_701-15169:
     type: OS::Neutron::ProviderNet
     properties:
@@ -93,7 +80,7 @@ resources:
       name: 701-15169
       network_id: { get_resource: net_701-15169 }
       ip_version: 4
-      cidr: 192.168.0.24/29
+      cidr: 192.168.0.16/29
       enable_dhcp: false
 
   net_701-22822:
@@ -105,6 +92,19 @@ resources:
     properties:
       name: 701-22822
       network_id: { get_resource: net_701-22822 }
+      ip_version: 4
+      cidr: 192.168.0.24/29
+      enable_dhcp: false
+
+  net_701-33052:
+    type: OS::Neutron::Net
+    properties:
+      name: 701-33052
+  subnet_701-33052:
+    type: OS::Neutron::Subnet
+    properties:
+      name: 701-33052
+      network_id: { get_resource: net_701-33052 }
       ip_version: 4
       cidr: 192.168.0.32/29
       enable_dhcp: false
@@ -135,6 +135,32 @@ resources:
       cidr: 192.168.0.48/29
       enable_dhcp: false
 
+  net_2497-5400:
+    type: OS::Neutron::Net
+    properties:
+      name: 2497-5400
+  subnet_2497-5400:
+    type: OS::Neutron::Subnet
+    properties:
+      name: 2497-5400
+      network_id: { get_resource: net_2497-5400 }
+      ip_version: 4
+      cidr: 192.168.0.56/29
+      enable_dhcp: false
+
+  net_2497-8220:
+    type: OS::Neutron::Net
+    properties:
+      name: 2497-8220
+  subnet_2497-8220:
+    type: OS::Neutron::Subnet
+    properties:
+      name: 2497-8220
+      network_id: { get_resource: net_2497-8220 }
+      ip_version: 4
+      cidr: 192.168.0.64/29
+      enable_dhcp: false
+
   net_2497-15169:
     type: OS::Neutron::ProviderNet
     properties:
@@ -149,20 +175,7 @@ resources:
       name: 2497-15169
       network_id: { get_resource: net_2497-15169 }
       ip_version: 4
-      cidr: 192.168.0.56/29
-      enable_dhcp: false
-
-  net_2497-17513:
-    type: OS::Neutron::Net
-    properties:
-      name: 2497-17513
-  subnet_2497-17513:
-    type: OS::Neutron::Subnet
-    properties:
-      name: 2497-17513
-      network_id: { get_resource: net_2497-17513 }
-      ip_version: 4
-      cidr: 192.168.0.64/29
+      cidr: 192.168.0.72/29
       enable_dhcp: false
 
   net_2497-22822:
@@ -175,7 +188,7 @@ resources:
       name: 2497-22822
       network_id: { get_resource: net_2497-22822 }
       ip_version: 4
-      cidr: 192.168.0.72/29
+      cidr: 192.168.0.80/29
       enable_dhcp: false
 
   net_2906-4713:
@@ -188,31 +201,18 @@ resources:
       name: 2906-4713
       network_id: { get_resource: net_2906-4713 }
       ip_version: 4
-      cidr: 192.168.0.80/29
-      enable_dhcp: false
-
-  net_2906-59318:
-    type: OS::Neutron::Net
-    properties:
-      name: 2906-59318
-  subnet_2906-59318:
-    type: OS::Neutron::Subnet
-    properties:
-      name: 2906-59318
-      network_id: { get_resource: net_2906-59318 }
-      ip_version: 4
       cidr: 192.168.0.88/29
       enable_dhcp: false
 
-  net_4713-17513:
+  net_2906-8220:
     type: OS::Neutron::Net
     properties:
-      name: 4713-17513
-  subnet_4713-17513:
+      name: 2906-8220
+  subnet_2906-8220:
     type: OS::Neutron::Subnet
     properties:
-      name: 4713-17513
-      network_id: { get_resource: net_4713-17513 }
+      name: 2906-8220
+      network_id: { get_resource: net_2906-8220 }
       ip_version: 4
       cidr: 192.168.0.96/29
       enable_dhcp: false
@@ -230,46 +230,29 @@ resources:
       cidr: 192.168.0.104/29
       enable_dhcp: false
 
-  net_4713-23629:
+  net_5400-25583:
     type: OS::Neutron::Net
     properties:
-      name: 4713-23629
-  subnet_4713-23629:
+      name: 5400-25583
+  subnet_5400-25583:
     type: OS::Neutron::Subnet
     properties:
-      name: 4713-23629
-      network_id: { get_resource: net_4713-23629 }
+      name: 5400-25583
+      network_id: { get_resource: net_5400-25583 }
       ip_version: 4
       cidr: 192.168.0.112/29
       enable_dhcp: false
 
-  net_15169-59318:
-    type: OS::Neutron::ProviderNet
-    properties:
-      name: 15169-59318
-      physical_network: provider
-      network_type: vlan
-      segmentation_id: 103
-      router_external: true
-  subnet_15169-59318:
-    type: OS::Neutron::Subnet
-    properties:
-      name: 15169-59318
-      network_id: { get_resource: net_15169-59318 }
-      ip_version: 4
-      cidr: 192.168.0.120/29
-      enable_dhcp: false
-
-  net_22822-59318:
+  net_8220-25583:
     type: OS::Neutron::Net
     properties:
-      name: 22822-59318
-  subnet_22822-59318:
+      name: 8220-25583
+  subnet_8220-25583:
     type: OS::Neutron::Subnet
     properties:
-      name: 22822-59318
-      network_id: { get_resource: net_22822-59318 }
+      name: 8220-25583
+      network_id: { get_resource: net_8220-25583 }
       ip_version: 4
-      cidr: 192.168.0.128/29
+      cidr: 192.168.0.120/29
       enable_dhcp: false
 
