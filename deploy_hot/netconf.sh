@@ -37,3 +37,11 @@ done
 
 # restart network.service
 systemctl restart networking
+
+# generate advertise.sh
+if [ ! -d /root/bin ]; then mkdir /root/bin -p; fi
+echo "#!/bin/bash" >> /root/bin/advertise.sh
+echo "" >> /root/bin/advertise.sh
+for i in $ADVERTISE_ADDRS; do
+  echo "gobgp global rib add $i" >> /root/bin/advertise.sh
+done

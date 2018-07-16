@@ -4,8 +4,8 @@ MY_AS='$$my_as'
 NEIGHBOR_ASES='$$neighbor_ases'
 NEIGHBOR_ADDRS='$$neighbor_addresses'
 
-mkdir /etc/gobgp -p
-
+# create conf file
+if [ ! -d /etc/gobgp ]; then mkdir /etc/gobgp -p; fi
 cat << _EOF_ > /etc/gobgp/gobgpd.conf
 [global]
   [global.config]
@@ -43,5 +43,9 @@ done)
       route-disposition = "accept-route"
 _EOF_
 
+# start gobgpd service
 systemctl enable gobgpd
 systemctl restart gobgpd
+
+# advertise
+#bash /root/bin/advertise.sh
