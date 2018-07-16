@@ -55,6 +55,8 @@ f.write("      network: { get_resource: monitor_network }\n")
 f.write("      fixed_ips:\n")
 f.write("        - subnet: { get_resource: monitor_subnet }\n")
 f.write("          ip_address: 172.16.0.254\n")
+f.write("      security_groups:\n")
+f.write("        - { get_resource: security_group_allallow}\n")
 f.write("\n")
 
 vlan_id = 101

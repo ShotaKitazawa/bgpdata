@@ -39,6 +39,8 @@ resources:
       fixed_ips:
         - subnet: { get_resource: monitor_subnet }
           ip_address: 172.16.0.254
+      security_groups:
+        - { get_resource: security_group_allallow}
 
   net_701-2497:
     type: OS::Neutron::Net
