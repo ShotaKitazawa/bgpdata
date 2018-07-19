@@ -88,7 +88,7 @@ resources:
     properties:
       name: asn701
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn701:
     type: OS::Nova::Server
@@ -183,7 +183,7 @@ resources:
     properties:
       name: asn1075
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn1075:
     type: OS::Nova::Server
@@ -240,7 +240,7 @@ resources:
     properties:
       name: asn1239
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn1239:
     type: OS::Nova::Server
@@ -321,7 +321,7 @@ resources:
     properties:
       name: asn1299
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn1299:
     type: OS::Nova::Server
@@ -416,7 +416,7 @@ resources:
     properties:
       name: asn1798
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn1798:
     type: OS::Nova::Server
@@ -491,7 +491,7 @@ resources:
     properties:
       name: asn2200
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn2200:
     type: OS::Nova::Server
@@ -556,7 +556,7 @@ resources:
     properties:
       name: asn2450
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn2450:
     type: OS::Nova::Server
@@ -611,7 +611,7 @@ resources:
     properties:
       name: asn2497
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn2497:
     type: OS::Nova::Server
@@ -704,7 +704,7 @@ resources:
     properties:
       name: asn2518
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn2518:
     type: OS::Nova::Server
@@ -789,7 +789,7 @@ resources:
     properties:
       name: asn2906
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn2906:
     type: OS::Nova::Server
@@ -884,7 +884,7 @@ resources:
     properties:
       name: asn3257
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn3257:
     type: OS::Nova::Server
@@ -979,7 +979,7 @@ resources:
     properties:
       name: asn3356
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn3356:
     type: OS::Nova::Server
@@ -1086,7 +1086,7 @@ resources:
     properties:
       name: asn3549
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn3549:
     type: OS::Nova::Server
@@ -1165,7 +1165,7 @@ resources:
     properties:
       name: asn3741
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn3741:
     type: OS::Nova::Server
@@ -1250,7 +1250,7 @@ resources:
     properties:
       name: asn4323
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn4323:
     type: OS::Nova::Server
@@ -1313,7 +1313,7 @@ resources:
     properties:
       name: asn4637
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn4637:
     type: OS::Nova::Server
@@ -1402,7 +1402,7 @@ resources:
     properties:
       name: asn4713
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn4713:
     type: OS::Nova::Server
@@ -1467,7 +1467,7 @@ resources:
     properties:
       name: asn4862
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn4862:
     type: OS::Nova::Server
@@ -1530,7 +1530,7 @@ resources:
     properties:
       name: asn5394
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn5394:
     type: OS::Nova::Server
@@ -1601,7 +1601,7 @@ resources:
     properties:
       name: asn5650
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn5650:
     type: OS::Nova::Server
@@ -1668,7 +1668,7 @@ resources:
     properties:
       name: asn6453
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn6453:
     type: OS::Nova::Server
@@ -1761,7 +1761,7 @@ resources:
     properties:
       name: asn6717
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn6717:
     type: OS::Nova::Server
@@ -1824,7 +1824,7 @@ resources:
     properties:
       name: asn7018
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn7018:
     type: OS::Nova::Server
@@ -1901,7 +1901,7 @@ resources:
     properties:
       name: asn7529
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn7529:
     type: OS::Nova::Server
@@ -1966,7 +1966,7 @@ resources:
     properties:
       name: asn8262
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn8262:
     type: OS::Nova::Server
@@ -2045,7 +2045,7 @@ resources:
     properties:
       name: asn8359
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn8359:
     type: OS::Nova::Server
@@ -2136,7 +2136,7 @@ resources:
     properties:
       name: asn8492
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn8492:
     type: OS::Nova::Server
@@ -2235,7 +2235,7 @@ resources:
     properties:
       name: asn8767
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn8767:
     type: OS::Nova::Server
@@ -2312,7 +2312,7 @@ resources:
     properties:
       name: asn8928
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn8928:
     type: OS::Nova::Server
@@ -2403,7 +2403,7 @@ resources:
     properties:
       name: asn9505
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn9505:
     type: OS::Nova::Server
@@ -2490,7 +2490,7 @@ resources:
     properties:
       name: asn9999
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn9999:
     type: OS::Nova::Server
@@ -2547,7 +2547,7 @@ resources:
     properties:
       name: asn11222
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn11222:
     type: OS::Nova::Server
@@ -2610,7 +2610,7 @@ resources:
     properties:
       name: asn11798
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn11798:
     type: OS::Nova::Server
@@ -2675,7 +2675,7 @@ resources:
     properties:
       name: asn13005
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn13005:
     type: OS::Nova::Server
@@ -2738,7 +2738,7 @@ resources:
     properties:
       name: asn13859
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn13859:
     type: OS::Nova::Server
@@ -2795,7 +2795,7 @@ resources:
     properties:
       name: asn15301
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn15301:
     type: OS::Nova::Server
@@ -2860,7 +2860,7 @@ resources:
     properties:
       name: asn18127
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn18127:
     type: OS::Nova::Server
@@ -2917,7 +2917,7 @@ resources:
     properties:
       name: asn18187
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn18187:
     type: OS::Nova::Server
@@ -2976,7 +2976,7 @@ resources:
     properties:
       name: asn18383
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn18383:
     type: OS::Nova::Server
@@ -3031,7 +3031,7 @@ resources:
     properties:
       name: asn22822
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn22822:
     type: OS::Nova::Server
@@ -3118,7 +3118,7 @@ resources:
     properties:
       name: asn24482
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn24482:
     type: OS::Nova::Server
@@ -3239,7 +3239,7 @@ resources:
     properties:
       name: asn31287
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn31287:
     type: OS::Nova::Server
@@ -3312,7 +3312,7 @@ resources:
     properties:
       name: asn31420
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn31420:
     type: OS::Nova::Server
@@ -3369,7 +3369,7 @@ resources:
     properties:
       name: asn32915
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn32915:
     type: OS::Nova::Server
@@ -3426,7 +3426,7 @@ resources:
     properties:
       name: asn33491
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn33491:
     type: OS::Nova::Server
@@ -3483,7 +3483,7 @@ resources:
     properties:
       name: asn34224
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn34224:
     type: OS::Nova::Server
@@ -3580,7 +3580,7 @@ resources:
     properties:
       name: asn40065
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn40065:
     type: OS::Nova::Server
@@ -3641,7 +3641,7 @@ resources:
     properties:
       name: asn41349
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn41349:
     type: OS::Nova::Server
@@ -3700,7 +3700,7 @@ resources:
     properties:
       name: asn43581
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn43581:
     type: OS::Nova::Server
@@ -3759,7 +3759,7 @@ resources:
     properties:
       name: asn49344
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn49344:
     type: OS::Nova::Server
@@ -3822,7 +3822,7 @@ resources:
     properties:
       name: asn51088
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn51088:
     type: OS::Nova::Server
@@ -3883,7 +3883,7 @@ resources:
     properties:
       name: asn53850
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn53850:
     type: OS::Nova::Server
@@ -3942,7 +3942,7 @@ resources:
     properties:
       name: asn58511
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn58511:
     type: OS::Nova::Server
@@ -4053,7 +4053,7 @@ resources:
     properties:
       name: asn59103
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn59103:
     type: OS::Nova::Server
@@ -4110,7 +4110,7 @@ resources:
     properties:
       name: asn59105
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn59105:
     type: OS::Nova::Server
@@ -4167,7 +4167,7 @@ resources:
     properties:
       name: asn59120
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn59120:
     type: OS::Nova::Server
@@ -4222,7 +4222,7 @@ resources:
     properties:
       name: asn59545
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn59545:
     type: OS::Nova::Server
@@ -4281,7 +4281,7 @@ resources:
     properties:
       name: asn60169
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn60169:
     type: OS::Nova::Server
@@ -4350,7 +4350,7 @@ resources:
     properties:
       name: asn60200
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn60200:
     type: OS::Nova::Server
@@ -4407,7 +4407,7 @@ resources:
     properties:
       name: asn63206
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn63206:
     type: OS::Nova::Server
@@ -4464,7 +4464,7 @@ resources:
     properties:
       name: asn133098
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn133098:
     type: OS::Nova::Server
@@ -4521,7 +4521,7 @@ resources:
     properties:
       name: asn133229
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn133229:
     type: OS::Nova::Server
@@ -4584,7 +4584,7 @@ resources:
     properties:
       name: asn133748
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn133748:
     type: OS::Nova::Server
@@ -4643,7 +4643,7 @@ resources:
     properties:
       name: asn133778
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn133778:
     type: OS::Nova::Server
@@ -4700,7 +4700,7 @@ resources:
     properties:
       name: asn197216
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn197216:
     type: OS::Nova::Server
@@ -4761,7 +4761,7 @@ resources:
     properties:
       name: asn198618
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn198618:
     type: OS::Nova::Server
@@ -4818,7 +4818,7 @@ resources:
     properties:
       name: asn202112
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn202112:
     type: OS::Nova::Server
@@ -4875,7 +4875,7 @@ resources:
     properties:
       name: asn394469
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn394469:
     type: OS::Nova::Server
@@ -4930,7 +4930,7 @@ resources:
     properties:
       name: asn395823
       image: Ubuntu-Router
-      size: 10
+      size: 5
       availability_zone: nova
   server_asn395823:
     type: OS::Nova::Server

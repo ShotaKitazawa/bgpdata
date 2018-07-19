@@ -174,7 +174,7 @@ def main():
             g.write("    properties:\n")
             g.write("      name: asn{0}\n".format(asn))
             g.write("      image: Ubuntu-Router\n")
-            g.write("      size: 10\n")
+            g.write("      size: 5\n")
             g.write("      availability_zone: nova\n")
             g.write("  server_asn{0}:\n".format(asn))
             g.write("    type: OS::Nova::Server\n")
