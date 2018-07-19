@@ -48,4 +48,4 @@ systemctl enable gobgpd
 systemctl restart gobgpd
 
 # advertise
-#bash /root/bin/advertise.sh
+bash /root/bin/advertise.sh
